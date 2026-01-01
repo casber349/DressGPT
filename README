@@ -1,0 +1,10 @@
+1. 執行data_manager.py:
+用static/dataseet_info內的prompts.txt與scores.txt創建資料集dress_dataset.csv
+(prompts.txt:紀錄生成人像照的prompt)
+(scores.txt:紀錄穿搭評分)
+
+2.執行image_to_embedding.py: 後面訓練會用到。這一步會出現image_embeddings.pt
+
+3.執行train_DressGPT.py: 訓練模型。這一步會出現dressgpt_weights.pth
+
+4.執行app.py: 開啟應用程式。後端會呼叫predict_score.py計算uploads中照片的分數
