@@ -3,121 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DressGPT - 個人 AI 形象顧問</title>
+    <title>DressGPT - AI 穿搭評分系統</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body { background-color: #f8f9fa; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        .hero-section { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px 0; margin-bottom: 30px; }
-        .score-display { font-size: 4rem; font-weight: bold; color: #764ba2; }
-        .recommend-card { transition: transform 0.3s; border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.1); height: 100%; }
-        .recommend-card:hover { transform: translateY(-5px); }
-        .card-weak { border-top: 5px solid #ffc107; }   /* 警告黃 - 微調 */
-        .card-medium { border-top: 5px solid #0d6efd; } /* 藍色 - 進階 */
-        .card-strong { border-top: 5px solid #198754; } /* 綠色 - 極致 */
-        .img-preview { max-width: 100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
-        .outfit-img { width: 100%; height: 250px; object-fit: cover; border-radius: 5px; }
+        body { background-color: #f0f2f5; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 15px; }
+        .upload-card { 
+            max-width: 1200px; 
+            width: 100%; 
+            margin: 0 auto; 
+            padding: 25px; 
+            border-radius: 20px; 
+            background: white; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+        }
+
+        /* 核心佈局控制 */
+        .app-grid {
+            display: grid;
+            grid-template-columns: 1fr; /* 手機版：單欄垂直 */
+            gap: 25px;
+        }
+
+        /* 電腦橫屏版：三欄並排或二對一並排 */
+        @media (min-width: 992px) {
+            .app-grid {
+                grid-template-columns: 350px 1fr 300px; /* 預覽 | 選單 | 結果 */
+                align-items: start;
+            }
+            .result-panel {
+                position: sticky;
+                top: 20px;
+                height: auto;
+            }
+        }
+
+        /* 元素美化 */
+        #preview { 
+            width: 100%; 
+            border-radius: 15px; 
+            object-fit: cover;
+            border: 2px dashed #dee2e6;
+        }
+        
+        .result-box {
+            background: #f8fbff;
+            border: 1px solid #e1efff;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .score-display { 
+            font-size: 4rem; 
+            font-weight: 800; 
+            color: #0d6efd; 
+            line-height: 1;
+            margin: 15px 0;
+        }
+
+        .rec-img { 
+            width: 100%; 
+            border-radius: 10px; 
+            transition: 0.3s;
+        }
+        .rec-img:hover { transform: scale(1.05); }
+
+        .btn-predict {
+            background: linear-gradient(135deg, #0d6efd 0%, #004db3 100%);
+            border: none;
+            padding: 15px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+        
+        /* 確保推薦區的圖片在電腦版不會太大 */
+        .rec-img { 
+            width: 100%; 
+            aspect-ratio: 3/4; /* 統一比例，避免長短不一 */
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* 讓右側分數卡片更有存在感 */
+        .result-box {
+            background: linear-gradient(180deg, #ffffff 0%, #f0f7ff 100%);
+            border: 2px solid #0d6efd;
+            box-shadow: 0 5px 15px rgba(13, 110, 253, 0.1);
+        }
     </style>
 </head>
 <body>
 
-<div class="hero-section text-center">
-    <h1>DressGPT 👗</h1>
-    <p>基於 400 張精準標註數據的個人化穿搭引擎</p>
-</div>
+<div class="container-fluid">
+    <div class="upload-card">
+        <h2 class="text-center mb-4">✨ DressGPT 穿搭診斷系統</h2>
+        
+        <form id="uploadForm">
+            <div class="app-grid">
+                
+                <div class="preview-panel">
+                    <label class="form-label fw-bold">1. 穿搭照片</label>
+                    <input type="file" class="form-control mb-3" name="file" accept="image/*" id="imageInput" required>
+                    <img id="preview" src="https://via.placeholder.com/400x500?text=Upload+Photo" alt="預覽區域">
+                </div>
 
-<div class="container mb-5">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card p-4 shadow-sm">
-                <h4 class="mb-4">開始診斷</h4>
-                <form action="/" method="post" enctype="multipart/form-data">
-                    <div class="mb-3">
-                        <label class="form-label">上傳你的穿搭照片</label>
-                        <input type="file" name="file" class="form-control" required>
+                <div class="config-panel">
+                    <label class="form-label fw-bold">2. 背景參數設定</label>
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <label class="small text-muted">性別</label>
+                            <select class="form-select" name="gender">
+                                <option value="male">男性</option>
+                                <option value="female">女性</option>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                            <label class="small text-muted">年齡層</label>
+                            <select class="form-select" name="age">
+                                <option value="teenager">青少年</option>
+                                <option value="adult" selected>成年人</option>
+                                <option value="middle-aged">中年</option>
+                                <option value="elderly">老年</option>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                            <label class="small text-muted">身材</label>
+                            <select class="form-select" name="body">
+                                <option value="average" selected>普通</option>
+                                <option value="skinny">偏瘦</option>
+                                <option value="athletic">精壯/運動型</option>
+                                <option value="plus_size">大尺碼</option>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                            <label class="small text-muted">季節</label>
+                            <select class="form-select" name="season">
+                                <option value="summer">夏季</option>
+                                <option value="winter">冬季</option>
+                                <option value="spring/fall" selected>春秋季</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label class="small text-muted">場合</label>
+                            <select class="form-select" name="formal">
+                                <option value="casual" selected>休閒日常 (Casual)</option>
+                                <option value="formal">正式商務 (Formal)</option>
+                            </select>
+                        </div>
                     </div>
+                    <button type="submit" class="btn btn-primary btn-predict w-100 mt-4" id="submitBtn">開始 AI 評分</button>
                     
-                    <div class="mb-3">
-                        <label class="form-label">性別</label>
-                        <select name="gender" class="form-select">
-                            <option value="male" {% if gender=='male' %}selected{% endif %}>男性</option>
-                            <option value="female" {% if gender=='female' %}selected{% endif %}>女性</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">當前季節</label>
-                        <select name="season" class="form-select">
-                            <option value="winter" {% if season=='winter' %}selected{% endif %}>冬季 (Winter)</option>
-                            <option value="summer" {% if season=='summer' %}selected{% endif %}>夏季 (Summer)</option>
-                            <option value="spring/fall" {% if season=='spring/fall' %}selected{% endif %}>春秋 (Spring/Fall)</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">場合正式度</label>
-                        <select name="formal" class="form-select">
-                            <option value="casual" {% if formal=='casual' %}selected{% endif %}>休閒 (Casual)</option>
-                            <option value="formal" {% if formal=='formal' %}selected{% endif %}>正式 (Formal)</option>
-                        </select>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary w-100 py-2">立即評分並獲取建議</button>
-                </form>
-            </div>
-        </div>
-
-        <div class="col-md-8">
-            {% if score is not none %}
-            <div class="card p-4 shadow-sm text-center mb-4">
-                <h3>診斷結果</h3>
-                <div class="row align-items-center mt-3">
-                    <div class="col-md-5">
-                        <img src="{{ url_for('static', filename='uploads/' + user_img) }}" class="img-preview mb-3">
-                    </div>
-                    <div class="col-md-7">
-                        <p class="text-muted mb-0">吸引力評分</p>
-                        <div class="score-display">{{ score }} <small style="font-size: 1.5rem;">/ 10</small></div>
-                        <p class="mt-3">系統已根據您的條件，從資料庫中挑選出三套建議：</p>
+                    <div id="recommendationArea" class="mt-4" style="display: none;">
+                        <label class="fw-bold mb-2">🌟 推薦高分樣式</label>
+                        <div class="row g-2" id="recContainer"></div>
                     </div>
                 </div>
-            </div>
 
-            <div class="row g-3">
-                {% for rec in recommendations %}
-                <div class="col-md-4">
-                    <div class="card recommend-card 
-                        {% if loop.index == 1 %}card-weak{% elif loop.index == 2 %}card-medium{% else %}card-strong{% endif %} p-3">
-                        <h6 class="text-center fw-bold">{{ rec.level_label }}</h6>
-                        <hr>
-                        {% if rec.id != "None" %}
-                        <img src="{{ url_for('static', filename='dataset_images/' + rec.id + '.jpg') }}" class="outfit-img mb-2">
-                        <div class="text-center">
-                            <span class="badge bg-secondary">編號: {{ rec.id }}</span>
-                            <span class="badge bg-primary">得分: {{ rec.score }}</span>
+                <div class="result-panel">
+                    <div id="resultArea" style="display: none;">
+                        <div class="result-box">
+                            <h5 class="mb-0">AI 診斷分數</h5>
+                            <div class="score-display" id="scoreValue">0.0</div>
+                            <p class="text-muted small">Score based on CLIP Fusion</p>
+                            <div class="badge bg-primary px-3 py-2">診斷完成</div>
                         </div>
-                        <p class="small text-muted mt-2" style="height: 60px; overflow: hidden;">{{ rec.prompt }}</p>
-                        {% else %}
-                        <div class="text-center py-5">
-                            <p class="text-muted">此區間暫無合適建議</p>
-                        </div>
-                        {% endif %}
                     </div>
                 </div>
-                {% endfor %}
+
             </div>
-            {% else %}
-            <div class="h-100 d-flex flex-column justify-content-center align-items-center text-muted">
-                <img src="https://cdn-icons-png.flaticon.com/512/1110/1110547.png" width="100" class="mb-3" style="opacity: 0.3;">
-                <p>請在上傳圖片並選擇參數後點擊診斷</p>
-            </div>
-            {% endif %}
-        </div>
+        </form>
     </div>
 </div>
 
-<footer class="text-center py-4 text-muted">
-    <small>DressGPT © 2025 - Your Personal Aesthetic Twin</small>
-</footer>
+<script>
+    // 預覽功能
+    document.getElementById('imageInput').onchange = evt => {
+        const [file] = evt.target.files;
+        if (file) {
+            document.getElementById('preview').src = URL.createObjectURL(file);
+            document.getElementById('preview').style.border = "none";
+        }
+    }
+
+    // 提交表單
+    document.getElementById('uploadForm').onsubmit = async (e) => {
+        e.preventDefault();
+        const submitBtn = document.getElementById('submitBtn');
+        const resultArea = document.getElementById('resultArea');
+        const scoreValue = document.getElementById('scoreValue');
+        const recContainer = document.getElementById('recContainer');
+        const recArea = document.getElementById('recommendationArea');
+
+        submitBtn.disabled = true;
+        submitBtn.innerText = "分析中...";
+
+        const formData = new FormData(e.target);
+        
+        try {
+            const response = await fetch('/predict', { method: 'POST', body: formData });
+            const data = await response.json();
+
+            if (data.score !== undefined) {
+                // 更新分數並顯示
+                scoreValue.innerText = data.score;
+                resultArea.style.display = 'block';
+
+                // 更新推薦
+                if (data.recommendations && data.recommendations.length > 0) {
+                    recContainer.innerHTML = '';
+                    data.recommendations.forEach(item => {
+                        recContainer.innerHTML += `
+                            <div class="col-4 col-md-4 text-center">
+                                <img src="${item.img_path}" class="rec-img mb-1 shadow-sm border">
+                                <div class="badge bg-success" style="font-size: 0.7rem;">${item.score} 分</div>
+                            </div>
+                        `;
+                    });
+                    recArea.style.display = 'block';
+                }
+            }
+        } catch (err) {
+            alert("伺服器故障");
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.innerText = "開始 AI 評分";
+        }
+    };
+</script>
 
 </body>
 </html>

@@ -1,73 +1,98 @@
+from flask import Flask, render_template, request, jsonify
 import os
 import pandas as pd
-from flask import Flask, render_template, request, redirect
-import predict_score# 呼叫大腦
+from predict_score import get_prediction
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = 'static/uploads'
+UPLOAD_FOLDER = 'static/uploads'
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-# 在 app.py 中修改這行
-DF = pd.read_csv('dress_dataset.csv', dtype={'id': str})
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
-def get_tiered_recommendations(current_score, pool):
-    """三階段推薦邏輯"""
-    levels = [
-        {"name": "微調方案", "range": (0.01, 1.00)},
-        {"name": "進階方案", "range": (1.01, 2.50)},
-        {"name": "極致改造", "range": (2.51, 10.00)}
-    ]
-    
-    results = []
-    for lv in levels:
-        low, high = lv["range"]
-        # 在符合過濾條件的池子中，尋找分數區間
-        match = pool[(pool['score'] >= current_score + low) & (pool['score'] <= current_score + high)]
-        
-        if not match.empty:
-            # 挑選該區間得分最高的
-            best = match.sort_values(by='score', ascending=False).iloc[0].to_dict()
-            best['level_label'] = lv["name"]
-            results.append(best)
-        else:
-            results.append({"level_label": lv["name"], "id": "None", "score": "-", "prompt": "此區間暫無合適建議"})
-    return results
-
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/')
 def index():
-    if request.method == 'POST':
-        file = request.files['file']
-        u_gender = request.form.get('gender')
-        u_season = request.form.get('season')
-        u_formal = request.form.get('formal')
+    return render_template('index.html')
 
-        if not file: return redirect(request.url)
+@app.route('/predict', methods=['POST'])
+def predict():
+    if 'file' not in request.files:
+        return jsonify({'error': '沒有上傳檔案'})
+    
+    file = request.files['file']
+    if file.filename == '':
+        return jsonify({'error': '未選擇檔案'})
 
-        # 1. 統一存放到 static/uploads
-        img_path = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
-        file.save(img_path)
+    img_path = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
+    file.save(img_path)
 
-        # 2. 統一呼叫大腦評分 (已處理 0-10 截斷)
-        final_score = predict_score.predict_single_score(img_path)
+    user_tags = {
+        'gender': request.form.get('gender', 'male'),
+        'age': request.form.get('age', 'adult'),
+        'body': request.form.get('body', 'average'),
+        'season': request.form.get('season', 'summer'),
+        'formal': request.form.get('formal', 'casual')
+    }
 
-        # 3. 根據標籤過濾資料庫 (Improver 邏輯)
-        mask = (DF['gender'].isin([u_gender, 'both'])) & \
-               (DF['season'] == u_season) & \
-               (DF['formal_level'] == u_formal)
-        filtered_pool = DF[mask]
+    try:
+        score = get_prediction(img_path, user_tags)
+        
+        df = pd.read_csv("dress_dataset.csv")
+        df['id'] = df['id'].apply(lambda x: str(x).zfill(4))
 
-        # 4. 取得三階段推薦
-        recs = get_tiered_recommendations(final_score, filtered_pool)
+        # --- 分層推薦邏輯 ---
+        rec_list = []
+        
+        # 1. 【高分挑戰】使用較寬鬆的過濾 (只看 性別+季節+年齡)
+        challenge_pool = df[
+            (df['gender'] == user_tags['gender']) & 
+            (df['season'] == user_tags['season']) &
+            (df['age'] == user_tags['age'])
+        ]
+        
+        # 如果使用者分數低於 8.5，找一個比他高的
+        if score < 8.5:
+            higher_df = challenge_pool[challenge_pool['score'] > score].sort_values(by='score', ascending=False)
+            if not higher_df.empty:
+                top_one = higher_df.iloc[0]
+                rec_list.append({
+                    'id': top_one['id'], 'score': round(top_one['score'], 2),
+                    'img_path': top_one['img_path'], 'label': '高分挑戰'
+                })
 
-        return render_template('index.html', 
-                               user_img=file.filename,
-                               score=final_score, 
-                               recommendations=recs,
-                               gender=u_gender, 
-                               season=u_season, 
-                               formal=u_formal)
+        # 2. 【風格參考】使用最嚴格過濾 (五項全中)
+        strict_pool = df[
+            (df['gender'] == user_tags['gender']) & 
+            (df['season'] == user_tags['season']) &
+            (df['age'] == user_tags['age']) &
+            (df['body'] == user_tags['body']) &
+            (df['formal'] == user_tags['formal'])
+        ]
 
-    return render_template('index.html', score=None)
+        # 排除已選入挑戰位的 ID
+        used_ids = [item['id'] for item in rec_list]
+        
+        # 填充剩餘的 2 個名額
+        remaining_needed = 3 - len(rec_list)
+        suit_df = strict_pool[~strict_pool['id'].isin(used_ids)].sort_values(by='score', ascending=False)
+        
+        # 如果嚴格過濾不夠 3 套，瀑布式向下填補
+        if len(suit_df) < remaining_needed:
+            backup_df = challenge_pool[~challenge_pool['id'].isin(used_ids)].sort_values(by='score', ascending=False)
+            suit_df = pd.concat([suit_df, backup_df]).drop_duplicates(subset='id')
+
+        for _, row in suit_df.head(remaining_needed).iterrows():
+            rec_list.append({
+                'id': row['id'], 'score': round(row['score'], 2),
+                'img_path': row['img_path'], 'label': '風格參考'
+            })
+
+        return jsonify({
+            'score': score, 'image_url': img_path, 'tags': user_tags, 'recommendations': rec_list
+        })
+        
+    except Exception as e:
+        print(f"Error: {e}")
+        return jsonify({'error': str(e)})
 
 if __name__ == '__main__':
-    os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
     app.run(host="0.0.0.0", port=9528, debug=True)
