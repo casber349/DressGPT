@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DressGPT - AI 穿搭評分系統</title>
+    <title>DressGPT - AI 穿搭診斷系統</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body { background-color: #f0f2f5; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 15px; }
@@ -17,34 +17,54 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
         }
 
-        /* 核心佈局控制 */
         .app-grid {
             display: grid;
-            grid-template-columns: 1fr; /* 手機版：單欄垂直 */
+            grid-template-columns: 1fr;
             gap: 25px;
         }
 
-        /* 電腦橫屏版：三欄並排或二對一並排 */
         @media (min-width: 992px) {
             .app-grid {
-                grid-template-columns: 350px 1fr 300px; /* 預覽 | 選單 | 結果 */
+                grid-template-columns: 350px 1fr 300px;
                 align-items: start;
-            }
-            .result-panel {
-                position: sticky;
-                top: 20px;
-                height: auto;
             }
         }
 
-        /* 元素美化 */
-        #preview { 
-            width: 100%; 
-            border-radius: 15px; 
-            object-fit: cover;
+        /* --- [關鍵修正] 強制 9:16 比例容器 --- */
+        #canvasContainer {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 9 / 16; /* 鎖定比例 */
+            border-radius: 15px;
+            overflow: hidden;
             border: 2px dashed #dee2e6;
+            background: #fdfdfd;
         }
         
+        #preview { 
+            width: 100%; 
+            height: 100%;
+            display: block;
+            object-fit: cover; /* 確保填滿比例 */
+        }
+
+        #maskCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: crosshair;
+            width: 100%;
+            height: 100%;
+            touch-action: none;
+        }
+        
+        .brush-controls {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
         .result-box {
             background: #f8fbff;
             border: 1px solid #e1efff;
@@ -61,12 +81,19 @@
             margin: 15px 0;
         }
 
-        .rec-img { 
-            width: 100%; 
-            border-radius: 10px; 
-            transition: 0.3s;
+        .ref-img-container {
+            width: 100%;
+            aspect-ratio: 9 / 16;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #eee;
         }
-        .rec-img:hover { transform: scale(1.05); }
+
+        .ref-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
         .btn-predict {
             background: linear-gradient(135deg, #0d6efd 0%, #004db3 100%);
@@ -74,22 +101,6 @@
             padding: 15px;
             font-weight: bold;
             border-radius: 10px;
-        }
-        
-        /* 在 <style> 中新增或修改 */
-        .ref-img-container {
-            width: 100%;
-            aspect-ratio: 9 / 16; /* 強制執行 9:16 比例 */
-            border-radius: 10px;
-            overflow: hidden;
-            background-color: #eee;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-
-        .ref-img-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain; /* 確保 9:16 完整顯示不裁切 */
         }
     </style>
 </head>
@@ -103,9 +114,23 @@
             <div class="app-grid">
                 
                 <div class="preview-panel">
-                    <label class="form-label fw-bold">1. 穿搭照片</label>
+                    <label class="form-label fw-bold">1. 穿搭照片 (塗鴉想更換的區域)</label>
                     <input type="file" class="form-control mb-3" name="file" accept="image/*" id="imageInput" required>
-                    <img id="preview" src="https://via.placeholder.com/400x500?text=Upload+Photo" alt="預覽區域">
+                    
+                    <div id="canvasContainer">
+                        <img id="preview" src="https://via.placeholder.com/576x1024?text=Upload+9:16+Photo">
+                        <canvas id="maskCanvas"></canvas>
+                    </div>
+
+                    <div id="canvasControls" class="brush-controls text-center" style="display: none;">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <label class="small fw-bold mb-0">筆刷大小</label>
+                            <input type="range" class="form-range mx-2" id="brushSize" min="5" max="80" value="25">
+                            <span id="brushSizeVal" class="badge bg-secondary">25</span>
+                        </div>
+                        <button type="button" class="btn btn-outline-danger btn-sm w-100" onclick="clearMask()">清除畫布內容</button>
+                        <small class="text-muted d-block mt-1">AI 將針對塗黑區域提供精準重繪</small>
+                    </div>
                 </div>
 
                 <div class="config-panel">
@@ -153,40 +178,36 @@
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary btn-predict w-100 mt-4" id="submitBtn">開始 AI 評分</button>
-                    
-                    <div id="recommendationArea" class="mt-4" style="display: none;">
-                        <label class="fw-bold mb-2">🌟 推薦高分樣式</label>
-                        <div class="row g-2" id="recContainer"></div>
-                    </div>
                 </div>
 
                 <div class="result-panel">
                     <div id="resultArea" style="display: none;">
-                        <div class="result-box">
+                        <div class="result-box mb-3">
                             <h5 class="mb-0">AI 診斷分數</h5>
                             <div class="score-display" id="scoreValue">0.0</div>
-                            <p class="text-muted small">Score based on CLIP Fusion</p>
                             <div class="badge bg-primary px-3 py-2">診斷完成</div>
                         </div>
-                        <div id="comparisonArea" class="row g-3 mb-4" style="display: none;">
+                        
+                        <div id="comparisonArea" class="row g-3 mb-4">
                             <div class="col-6 text-center">
-                                <span class="badge rounded-pill bg-success mb-2 px-3">請參考</span>
+                                <span class="badge rounded-pill bg-success mb-2 px-3">🌟 榜樣圖片</span>
                                 <div class="ref-img-container border border-success border-2">
                                     <img id="goodRefImg" src="">
                                 </div>
                             </div>
                             <div class="col-6 text-center">
-                                <span class="badge rounded-pill bg-danger mb-2 px-3">請避免</span>
+                                <span class="badge rounded-pill bg-danger mb-2 px-3">⚠️ 避雷對象</span>
                                 <div class="ref-img-container border border-danger border-2">
                                     <img id="badRefImg" src="">
                                 </div>
                             </div>
                         </div>
-                        <div id="aiAdviceArea" class="mt-3" style="display: none;">
+
+                        <div id="aiAdviceArea">
                             <div class="card shadow-sm border-0" style="border-radius: 15px; background: #fffcf0; border-left: 5px solid #ffc107 !important;">
                                 <div class="card-body">
                                     <h6 class="card-title fw-bold text-warning-emphasis">💡 AI 穿搭建議</h6>
-                                    <p id="adviceText" class="card-text small text-dark" style="line-height: 1.6;"></p>
+                                    <p id="adviceText" class="card-text small text-dark" style="line-height: 1.6; white-space: pre-line;"></p>
                                 </div>
                             </div>
                         </div>
@@ -199,71 +220,142 @@
 </div>
 
 <script>
-    // 預覽功能
+    const canvas = document.getElementById('maskCanvas');
+    const ctx = canvas.getContext('2d');
+    const previewImg = document.getElementById('preview');
+    const brushInput = document.getElementById('brushSize');
+    const brushValLabel = document.getElementById('brushSizeVal');
+    let drawing = false;
+
+    brushInput.oninput = () => { brushValLabel.innerText = brushInput.value; };
+
+    // 1. 初始化畫布，確保解析度與顯示大小一致
+    function initCanvas() {
+        canvas.width = previewImg.clientWidth;
+        canvas.height = previewImg.clientHeight;
+        clearMask();
+    }
+
     document.getElementById('imageInput').onchange = evt => {
         const [file] = evt.target.files;
         if (file) {
-            document.getElementById('preview').src = URL.createObjectURL(file);
-            document.getElementById('preview').style.border = "none";
+            previewImg.src = URL.createObjectURL(file);
+            previewImg.onload = () => {
+                initCanvas();
+                document.getElementById('canvasControls').style.display = "block";
+            };
         }
     }
 
-    // 提交表單
+    // 2. 塗鴉邏輯
+    function getPos(e) {
+        const rect = canvas.getBoundingClientRect();
+        const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+        const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+        // 計算縮放比例，確保座標精確
+        const scaleX = canvas.width / rect.width;
+        const scaleY = canvas.height / rect.height;
+        return { x: (clientX - rect.left) * scaleX, y: (clientY - rect.top) * scaleY };
+    }
+
+    function startDrawing(e) { drawing = true; draw(e); }
+    function stopDrawing() { drawing = false; ctx.beginPath(); }
+
+    function draw(e) {
+        if (!drawing) return;
+        const pos = getPos(e);
+        ctx.lineWidth = brushInput.value; 
+        ctx.lineCap = "round";
+        ctx.lineJoin = "round";
+        ctx.strokeStyle = "black"; 
+        ctx.lineTo(pos.x, pos.y);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(pos.x, pos.y);
+    }
+
+    canvas.addEventListener('mousedown', startDrawing);
+    canvas.addEventListener('mousemove', draw);
+    window.addEventListener('mouseup', stopDrawing);
+    canvas.addEventListener('touchstart', (e) => { e.preventDefault(); startDrawing(e); });
+    canvas.addEventListener('touchmove', (e) => { e.preventDefault(); draw(e); });
+    canvas.addEventListener('touchend', stopDrawing);
+
+    function clearMask() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }
+
+    // 3. 提交表單
     document.getElementById('uploadForm').onsubmit = async (e) => {
         e.preventDefault();
         const submitBtn = document.getElementById('submitBtn');
-        const resultArea = document.getElementById('resultArea');
-        const scoreValue = document.getElementById('scoreValue');
-        const recContainer = document.getElementById('recContainer');
-        const recArea = document.getElementById('recommendationArea');
+        const formData = new FormData(e.target);
+
+        // --- [核心修正] 確保遮罩是黑底白畫 ---
+        const maskCanvas = document.getElementById('maskCanvas');
+        const tempCanvas = document.createElement('canvas');
+        tempCanvas.width = maskCanvas.width;
+        tempCanvas.height = maskCanvas.height;
+        const tempCtx = tempCanvas.getContext('2d');
+
+        // A. 先塗滿黑色底 (代表不重繪的區域)
+        tempCtx.fillStyle = "black";
+        tempCtx.fillRect(0, 0, tempCanvas.width, tempCanvas.height);
+
+        // B. 將畫布上的塗鴉轉為白色 (代表要重繪的區域)
+        // 即使你在畫布上畫的是黑色，這行也會把有東西的地方轉為白色
+        tempCtx.globalCompositeOperation = 'source-over';
+        tempCtx.filter = 'brightness(0) invert(1)'; // 關鍵：將所有顏色轉為純白
+        tempCtx.drawImage(maskCanvas, 0, 0);
+        
+        const maskData = tempCanvas.toDataURL('image/png');
+        
+        // 判斷是否有塗鴉內容 (簡單用字串長度判斷)
+        if (maskData.length > 5000) { 
+            formData.append('mask_image', maskData);
+        }
 
         submitBtn.disabled = true;
-        submitBtn.innerText = "分析中...";
-
-        const formData = new FormData(e.target);
-        
-        const adviceArea = document.getElementById('aiAdviceArea');
-        const adviceText = document.getElementById('adviceText');
+        submitBtn.innerText = "正在進行 AI 重繪與評分...";;
 
         try {
             const response = await fetch('/predict', { method: 'POST', body: formData });
             const data = await response.json();
 
-            // 在 index.html 的成功處理邏輯中 (約 line 168 附近)
             if (data.score !== undefined) {
-                // 1. 更新分數
-                scoreValue.innerText = data.score;
-                resultArea.style.display = 'block';
-
-                // 2. 更新 AI 建議文字
-                if (data.advice) {
-                    adviceText.innerText = data.advice;
-                    adviceArea.style.display = 'block';
+                document.getElementById('scoreValue').innerText = data.score.toFixed(2);
+                document.getElementById('adviceText').innerText = data.advice;
+                
+                // 更新圖片路徑 (自動補上斜線與時間戳)
+                if (data.image_url) {
+                    const newUrl = (data.image_url.startsWith('/') ? '' : '/') + data.image_url;
+                    previewImg.src = newUrl + "?t=" + new Date().getTime();
+                    
+                    previewImg.onload = () => {
+                        clearMask(); // 成功重繪後自動清除黑墨水
+                        initCanvas(); // 重新對齊
+                    };
                 }
-
-                // 在成功回傳數據的處理區塊中
+                
                 if (data.analysis) {
-                    const compArea = document.getElementById('comparisonArea');
-                    const goodImg = document.getElementById('goodRefImg');
-                    const badImg = document.getElementById('badRefImg');
-                    
-                    // 設定圖片路徑
-                    goodImg.src = data.analysis.good_ref;
-                    badImg.src = data.analysis.bad_ref;
-                    
-                    // 確保區塊顯示
-                    compArea.style.display = 'flex';
+                    document.getElementById('goodRefImg').src = "/" + data.analysis.good_ref;
+                    document.getElementById('badRefImg').src = "/" + data.analysis.bad_ref;
                 }
+                
+                document.getElementById('resultArea').style.display = 'block';
+                document.getElementById('comparisonArea').style.display = 'flex';
             }
         } catch (err) {
             console.error(err);
-            alert("伺服器故障");
+            alert("伺服器繁忙或連線失敗");
         } finally {
             submitBtn.disabled = false;
             submitBtn.innerText = "開始 AI 評分";
         }
     };
-</script>
 
+    // 視窗大小改變時重新對齊畫布
+    window.onresize = initCanvas;
+</script>
 </body>
 </html>

@@ -1,25 +1,38 @@
-from flask import Flask, render_template, request, jsonify
 import os
-import pandas as pd
+import time
+import base64
+import io
 import torch
-# 引入你原本的預測邏輯
+import pandas as pd
+from flask import Flask, render_template, request, jsonify
+from PIL import Image
+
+# 引入自定義模組
 from predict_score import get_prediction 
-# 引入提取特徵的邏輯 (確保 image_to_embedding.py 有這個函式)
 from image_to_embedding import get_single_image_embedding 
-# 引入新寫的建議模組
 from fashion_advisor import FashionAdvisor
 from llm_consultant import DressConsultant
+from inpaint_engine import InpaintEngine
 
 app = Flask(__name__)
-UPLOAD_FOLDER = 'static/uploads'
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+# --- 1. 設定結構化目錄 ---
+BASE_UPLOAD_PATH = 'static/uploads'
+PATHS = {
+    'orig': os.path.join(BASE_UPLOAD_PATH, 'originals'),
+    'mask': os.path.join(BASE_UPLOAD_PATH, 'masks'),
+    'result': os.path.join(BASE_UPLOAD_PATH, 'results')
+}
 
-# 初始化建議系統
-# 確保 image_embeddings.pt 與 dress_dataset.csv 路徑正確
+# 自動建立所有必要目錄
+for path in PATHS.values():
+    os.makedirs(path, exist_ok=True)
+
+# --- 2. 初始化核心引擎 ---
+# 注意：在啟動時載入，避免每次 request 都重新載入模型
 advisor = FashionAdvisor(db_path='image_embeddings.pt', csv_path='dress_dataset.csv')
-consultant = DressConsultant() # 金鑰會自動從 .env 讀取
+consultant = DressConsultant()
+inpainter = InpaintEngine()
 
 @app.route('/')
 def index():
@@ -31,58 +44,88 @@ def predict():
         return jsonify({'error': '沒有上傳檔案'})
     
     file = request.files['file']
-    if file.filename == '':
-        return jsonify({'error': '未選擇檔案'})
-
-    img_path = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
-    file.save(img_path)
+    mask_data = request.form.get('mask_image')
+    timestamp = int(time.time())
 
     user_tags = {
         'gender': request.form.get('gender', 'male'),
         'age': request.form.get('age', 'adult'),
         'body': request.form.get('body', 'average'),
-        'season': request.form.get('season', 'summer'),
+        'season': request.form.get('season', 'spring/fall'),
         'formal': request.form.get('formal', 'casual')
     }
 
     try:
-        # 1. 取得評分
-        score = get_prediction(img_path, user_tags)
-        
-        # 2. 取得該張圖片的 Embedding
-        # 使用你已經寫好的 image_to_embedding 邏輯
-        user_embed = get_single_image_embedding(img_path) 
+        # 1. 處理原始圖片：儲存並調整尺寸
+        img_filename = f"orig_{timestamp}.jpg"
+        img_path = os.path.join(PATHS['orig'], img_filename)
+        raw_img = Image.open(file.stream).convert("RGB")
+        fixed_img = raw_img.resize((576, 1024), Image.LANCZOS)
+        fixed_img.save(img_path)
 
-        # 3. 找出相似的高分與低分範例
+        # 2. [重要] 無論有無重繪，先對原圖做基礎分析
+        # 這樣才能拿到 analysis_results 用來生成動態 Prompt
+        user_embed = get_single_image_embedding(img_path)
         analysis_results = advisor.analyze(user_embed)
-        
-        # 4. 呼叫 Gemini 產生文字建議
-        ai_advice = consultant.generate_advice(score, analysis_results)
 
-        # --- 以下為你原本的推薦清單邏輯 (保持不變) ---
-        df = pd.read_csv("dress_dataset.csv")
-        df['id'] = df['id'].apply(lambda x: str(x).zfill(4))
-        
-        # (這裡省略你原本處理 rec_list 的過濾代碼...)
-        # ... 原本的推薦邏輯 ...
-        rec_list = [] # 假設這裡是產出的推薦清單
+        final_image_path = img_path
+        is_inpainted = False
 
-        # 5. 回傳所有結果給前端
+        # 3. 判斷遮罩是否有內容 (防錯保護)
+        if mask_data and "," in mask_data:
+            header, encoded = mask_data.split(",", 1)
+            mask_bytes = base64.b64decode(encoded)
+            mask_img = Image.open(io.BytesIO(mask_bytes)).convert("L").resize((576, 1024))
+            
+            # 使用 getbbox() 檢查遮罩是否有白色區域 (非全黑)
+            if mask_img.getbbox():
+                mask_filename = f"mask_{timestamp}.png"
+                mask_path = os.path.join(PATHS['mask'], mask_filename)
+                mask_img.save(mask_path)
+                
+                # 從你辛苦手標的 CSV 獲取正向/負向標籤 (即將實作的邏輯)
+                target_prompt, neg_prompt = advisor.get_inpaint_configs(analysis_results, user_tags)
+                
+                print(f"🎨 [AI 重繪處方箋]\n🔥 Positive: {target_prompt}\n🚫 Negative: {neg_prompt}")
+                
+                # 執行重繪
+                inpainted_img = inpainter.generate(img_path, mask_path, target_prompt, neg_prompt)
+                
+                res_path = os.path.join(PATHS['result'], f"res_{timestamp}.jpg")
+                inpainted_img.save(res_path)
+                
+                final_image_path = res_path
+                is_inpainted = True
+                
+                # 重繪後重新分析新圖，獲取最終分數
+                user_embed = get_single_image_embedding(final_image_path)
+                analysis_results = advisor.analyze(user_embed)
+            else:
+                print("⚠️ 警告：偵測到空遮罩，跳過重繪直接分析原圖。")
+
+        # 4. 進行最終評分
+        score = get_prediction(final_image_path, user_tags)
+        
+        # 5. 產生 AI 穿搭建議
+        try:
+            ai_advice = consultant.generate_advice(score, analysis_results, is_inpainted=is_inpainted)
+        except Exception as e:
+            ai_advice = "目前 AI 顧問忙碌中，請參考下方榜樣圖片。"
+
         return jsonify({
-            'score': score, 
-            'image_url': img_path, 
-            'tags': user_tags, 
-            'recommendations': rec_list,
-            'advice': ai_advice,  # LLM 的穿搭建議
+            'score': round(float(score), 2), 
+            'image_url': final_image_path,
+            'advice': ai_advice,
             'analysis': {
-                'good_ref': analysis_results['like_good_example'], # 像哪張好圖
-                'bad_ref': analysis_results['like_bad_example']    # 像哪張壞圖
+                'good_ref': analysis_results['like_good_example'],
+                'bad_ref': analysis_results['like_bad_example']
             }
         })
-        
+
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"❌ 系統錯誤: {e}")
         return jsonify({'error': str(e)})
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=9528, debug=True)
+    # 禁止 reloader 以免載入兩次 SD 模型炸顯存
+    app.run(host="0.0.0.0", port=9528, debug=True, use_reloader=False)

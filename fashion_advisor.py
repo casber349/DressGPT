@@ -52,3 +52,37 @@ class FashionAdvisor:
             "pos_similarity": best_pos_score,
             "neg_similarity": best_neg_score
         }
+    
+    def get_inpaint_configs(self, analysis_results, user_tags):
+        """
+        根據分析結果與使用者標籤，產生重繪用的 Prompt 與 Negative Prompt
+        """
+        # 取得榜樣 ID (例如: 0025.jpg)
+        good_id = analysis_results.get('like_good_example', "")
+        
+        # --- [第 5 階段預留位置] ---
+        # 等你標記完 CSV 後，這裡會改成從 df 讀取 pos_tags 和 neg_tags
+        # 現在我們先用基礎的邏輯確保它能跑
+        
+        # 基礎正向提示 (確保畫質)
+        positive_base = "high quality, professional fashion photography, realistic fabric texture, masterpiece"
+        
+        # 根據場合給予風格描述
+        style_context = user_tags.get('formal', 'casual')
+        gender = user_tags.get('gender', 'person')
+        
+        # 臨時的動態邏輯：如果是特定的榜樣(0025)，給予特殊關鍵字
+        custom_hint = ""
+        # if good_id == "0025.jpg":
+        #     custom_hint = ", minimalist aesthetic, clean tailored lines"
+        
+        # 組合 Prompt
+        prompt = f"{positive_base}, a {gender} in {style_context} outfit{custom_hint}, highly detailed"
+        
+        # 基礎負向提示 (避免崩壞與拼貼感)
+        negative_prompt = (
+            "lowres, bad anatomy, worst quality, low quality, blurry, deformed, "
+            "clashing colors, messy wrinkles, flat texture, cartoon, 2d, sketch"
+        )
+
+        return prompt, negative_prompt
