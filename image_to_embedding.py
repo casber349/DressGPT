@@ -8,11 +8,23 @@ from tqdm import tqdm
 IMAGE_DIR = "./static/dataset_images/"
 OUTPUT_PT = "image_embeddings.pt"
 device = "cuda" if torch.cuda.is_available() else "cpu"
+print(f"正在使用裝置: {device}")
+model, preprocess = clip.load("ViT-B/32", device=device)
+
+def get_single_image_embedding(img_path):
+    """專門為單張上傳的照片提取 Embedding"""
+    try:
+        with torch.no_grad():
+            image = preprocess(Image.open(img_path)).unsqueeze(0).to(device)
+            image_features = model.encode_image(image)
+            # 正規化向量，這樣計算 Cosine Similarity 時才準確
+            image_features /= image_features.norm(dim=-1, keepdim=True)
+            return image_features.cpu()
+    except Exception as e:
+        print(f"提取單張圖片特徵失敗: {e}")
+        return None
 
 def run_extraction():
-    print(f"正在使用裝置: {device}")
-    model, preprocess = clip.load("ViT-B/32", device=device)
-
     # 直接掃描資料夾內所有圖片
     img_files = [f for f in os.listdir(IMAGE_DIR) if f.lower().endswith(('.jpg', '.jpeg', '.png'))]
     img_files.sort()

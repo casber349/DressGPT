@@ -5,3 +5,9 @@
 3. train_DressGPT.py: 訓練模型
 
 4. app.py: 啟動網頁
+
+5. auto_tagger.py: 利用embedding為訓練資料貼標籤
+
+6. fashion_advisor.py: 利用cosine similarity 找出正面教材與負面教材
+
+7. llm_consultant: 呼叫gemini API 生成文字建議
