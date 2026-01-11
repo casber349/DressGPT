@@ -66,7 +66,8 @@ def predict():
         # 2. [重要] 無論有無重繪，先對原圖做基礎分析
         # 這樣才能拿到 analysis_results 用來生成動態 Prompt
         user_embed = get_single_image_embedding(img_path)
-        analysis_results = advisor.analyze(user_embed)
+        # 傳入 user_tags 供 analyze 進行性別過濾
+        analysis_results = advisor.analyze(user_embed, user_tags)
 
         final_image_path = img_path
         is_inpainted = False
@@ -83,7 +84,7 @@ def predict():
                 mask_path = os.path.join(PATHS['mask'], mask_filename)
                 mask_img.save(mask_path)
                 
-                # 從你辛苦手標的 CSV 獲取正向/負向標籤 (即將實作的邏輯)
+                # get_inpaint_configs 會自動根據 user_tags 生成三段式 Prompt
                 target_prompt, neg_prompt = advisor.get_inpaint_configs(analysis_results, user_tags)
                 
                 print(f"🎨 [AI 重繪處方箋]\n🔥 Positive: {target_prompt}\n🚫 Negative: {neg_prompt}")
@@ -99,18 +100,30 @@ def predict():
                 
                 # 重繪後重新分析新圖，獲取最終分數
                 user_embed = get_single_image_embedding(final_image_path)
-                analysis_results = advisor.analyze(user_embed)
+                # 傳入 user_tags 供 analyze 進行性別過濾
+                analysis_results = advisor.analyze(user_embed, user_tags)
             else:
                 print("⚠️ 警告：偵測到空遮罩，跳過重繪直接分析原圖。")
 
         # 4. 進行最終評分
         score = get_prediction(final_image_path, user_tags)
+
+        # 在「5. 產生 AI 穿搭建議」之前加入以下邏輯：
+        # 從 advisor 的資料庫中提取鄰居的原始標籤字串
+        good_row = advisor.df[advisor.df['id_str'] == analysis_results['good_id']].iloc[0]
+        bad_row = advisor.df[advisor.df['id_str'] == analysis_results['bad_id']].iloc[0]
+
+        # 將標籤存入，供 consultant 使用
+        analysis_results['good_tags'] = good_row.get('pos_tags', "無標籤數據")
+        analysis_results['bad_tags'] = bad_row.get('neg_tags', "無標籤數據")
         
         # 5. 產生 AI 穿搭建議
         try:
             ai_advice = consultant.generate_advice(score, analysis_results, is_inpainted=is_inpainted)
         except Exception as e:
-            ai_advice = "目前 AI 顧問忙碌中，請參考下方榜樣圖片。"
+            print(f"⚠️ Gemini API 呼叫失敗: {e}")
+            # API 失敗時，自動切換至顯示原始標籤數據的備用方案
+            ai_advice = consultant.generate_backup_advice(score, analysis_results)
 
         return jsonify({
             'score': round(float(score), 2), 

@@ -1,5 +1,5 @@
-*.csv
-*.pt
-*.pth
 static/uploads/*
 __pycache__
+static/last10
+static/top10
+static/dataset_info/prompts_new.txt

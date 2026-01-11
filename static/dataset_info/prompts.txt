@@ -1,799 +1,802 @@
-0001:Full body photo of a man in a charcoal grey tailored suit, white crisp shirt, no tie, standing in a modern office lobby, cinematic lighting.
+0001:Full body, Asian man, high quality beige blazer, white t-shirt, slim fit trousers, clean sneakers, minimalist office background.
 
-0002:A woman wearing a beige trench coat over a black turtleneck and slim-fit trousers, walking in a rainy London street, holding a transparent umbrella.
+0002:Full body, Caucasian woman, oversized hoodie, baggy jeans, chunky sneakers, urban graffiti wall background.
 
-0003:Man in a navy blue blazer, white chinos, and brown loafers, sitting at an outdoor cafe in Paris, soft afternoon sun.
+0003:Asian woman, vintage floral midi dress, pearl necklace, high heels, sunlit garden.
 
-0004:Woman in a high-waisted leather skirt and a silk emerald green blouse, city skyline background at night.
+0004:Caucasian man, neon green puffer jacket, purple polka dot pants, yellow boots, mismatched style, messy look.
 
-0005:Man in a minimalist black turtleneck and dark grey wool coat, standing in front of a brutalist concrete building.
+0005:Asian woman, linen shirt, wide leg pants, canvas bag, library background, soft lighting.
 
-0006:Full body shot of a person in an oversized neon green hoodie, baggy camo pants, and chunky techwear sneakers, Tokyo Shibuya background.
+0006:Techwear style, black tactical jacket, multiple pockets, joggers, futuristic street, cool lighting.
 
-0007:Woman in a pink metallic puffer jacket, denim micro-skirt, and white platform boots, Y2K aesthetic, retro-futuristic vibes.
+0007:Caucasian woman, simple grey sweater, black leggings, white sneakers, plain white background.
 
-0008:Man wearing a vintage oversized flannel shirt, ripped black skinny jeans, and worn-out combat boots, grunge style, abandoned warehouse background.
+0008:Asian man, half-suit half-tracksuit, weird proportions, ugly color combination, distorted silhouette.
 
-0009:A girl in a tie-dye oversized T-shirt, biker shorts, and high-top sneakers, holding a skateboard, sunset beach background.
+0009:Asian woman, tweed jacket, denim jeans, designer handbag, Seoul cafe background.
 
-0010:Person in an all-denim outfit (Canadian tuxedo) with patches and embroidery, 90s street style, grainy film texture.
+0010:Caucasian man, hiking jacket, cargo shorts, mountain background, bright daylight.
 
-0011:Man in full black techwear outfit, multi-pocket cargo pants, tactical vest, and futuristic mask, rainy cyberpunk city background.
+0011:Caucasian woman, messy pajamas, mismatched socks, messy hair, convenience store background.
 
-0012:Woman in a pastel lilac yoga set (leggings and sports bra) with a white mesh jacket, standing in a high-end gym studio.
+0012:Asian man, navy cardigan, striped tie, khaki pants, university campus.
 
-0013:Man in a bright orange windbreaker, black running tights, and neon running shoes, jogging through a foggy forest trail.
+0013:Asian woman, light blue sundress, straw hat, beach background.
 
-0014:Woman wearing a vintage 80s colorful track suit, high ponytail, standing in a retro roller disco.
+0014:Caucasian man, leather jacket, ripped jeans, combat boots, concert stage.
 
-0015:Person in a sleek silver reflective jumpsuit, futuristic sneakers, minimalist white studio background.
+0015:Caucasian woman, shiny low-quality polyester dress, neon pink, ill-fitting, messy street.
 
-0016:Man in a purple Hawaiian shirt, brown corduroy shorts, and black socks with sandals, backyard BBQ background.
+0016:Asian man, oversized flannel shirt, cap, loose pants, skateboard park.
 
-0017:Woman wearing an oversized yellow knitted sweater, a red floral midi skirt, and green rain boots, standing in a garden.
+0017:Asian woman, sharp power suit, high-waisted trousers, modern skyscraper background.
 
-0018:Man in a pinstripe vest over a graphic T-shirt, baggy cargo shorts, and flip-flops.
+0018:Caucasian man, denim jacket, white tee, chinos, classic diner background.
 
-0019:Woman in a formal evening gown paired with a baseball cap and a denim jacket.
+0019:Caucasian woman, long fringe vest, ethnic patterns, accessories, festival background.
 
-0020:Man wearing a grey tracksuit with a formal tie and leather dress shoes.
+0020:Asian man, old stained t-shirt, loose shorts, messy living room.
 
-0021:Full body of a man in an oversized white shirt, wide-leg beige linen trousers, and leather sandals, minimalist muji style, bright natural light.
+0021:Asian woman, soft knit sweater, pleated skirt, warm afternoon sun.
 
-0022:Woman in a layered Harajuku street style outfit, colorful oversized sweater, pleated plaid skirt, and leg warmers, vibrant urban background.
+0022:Caucasian man, bespoke charcoal suit, silk tie, luxury watch, penthouse view.
 
-0023:Man in a Korean-style oversized black coat, skinny jeans, and Chelsea boots, standing under cherry blossom trees.
+0023:Caucasian woman, matching yoga set, yoga mat, studio background.
 
-0024:Woman in a sophisticated tweed jacket and matching skirt, pearl necklace, and Mary Jane shoes, elegant Seoul cafe background.
+0024:Asian man, plain green t-shirt, jeans, supermarket background.
 
-0025:Person in a technical outdoor outfit (Gorpcore), Arc'teryx jacket, hiking cargo pants, and Salomon sneakers, mountain trail background.
+0025:Asian woman, too many layers of different patterns, clashing colors, oversized accessories.
 
-0026:Man in a 1950s rockabilly style, leather biker jacket, white T-shirt tucked into dark cuffed jeans, pompadour hairstyle.
+0026:Asian man, high quality charcoal wool overcoat, black turtleneck, slim trousers, foggy city street, cinematic lighting.
 
-0027:Woman in a 70s boho chic dress, wide-brimmed hat, fringe vest, and tan suede boots, sunset field background.
+0027:Caucasian woman, extremely oversized sweater, pants that are way too long and dragging on floor, clumsy silhouette.
 
-0028:Man wearing a 90s vintage windbreaker, baggy denim overalls with one strap down, and classic chunky sneakers.
+0028:Asian woman, cropped puffer jacket, high waist leggings, sports cap, modern street background.
 
-0029:Woman in a 1940s tea dress, red lipstick, small pillbox hat, and kitten heels, vintage train station background.
+0029:Caucasian man, shiny cheap purple satin shirt, wrinkled brown corduroy pants, messy hair, clashing textures.
 
-0030:Person in a disco-inspired outfit, silver sequin top, flared bell-bottom trousers, and platform shoes.
+0030:Caucasian woman, tailored white silk blouse, camel pencil skirt, pointed heels, luxury office interior.
 
-0031:Man wearing a heavy cable-knit sweater, a puffer vest over it, and corduroy trousers, autumn park background.
+0031:Asian man, olive green hoodie, khaki chinos, white sneakers, park background.
 
-0032:Woman in a delicate lace dress paired with a rugged oversized denim jacket and combat boots.
+0032:Asian woman, cream knit vest over white shirt dress, beret, autumn leaf background.
 
-0033:Man in a velvet blazer, silk patterned shirt open at the collar, and slim black trousers, luxury lounge lighting.
+0033:Caucasian man, waterproof gore-tex jacket, cargo pants, hiking boots, mountain trail.
 
-0034:Woman in a sheer organza top, a structured corset belt, and wide-leg satin trousers, high-fashion studio shot.
+0034:Caucasian woman, neon orange top, bright pink skirt, electric blue shoes, eye-straining color combination.
 
-0035:Person in a mixture of different patterns: a striped shirt, a polka dot tie, and a checkered waistcoat.
+0035:Asian man, navy blazer, striped shirt, white trousers, loafers, yacht club background.
 
-0036:A businessman in a sharp navy three-piece suit walking through a crowded New York City street, holding a leather briefcase.
+0036:Asian woman, oversized wrinkled pajamas, mismatched slippers, uncombed hair, messy bedroom.
 
-0037:Woman in a high-tech yoga outfit with a semi-transparent rain cape, futuristic urban park background.
+0037:Caucasian man, tweed waistcoat, crisp white shirt, dark jeans, library background.
 
-0038:Man in a rugged workwear style: Carhartt jacket, flannel shirt, heavy-duty work boots, and a beanie, construction site background.
+0038:Caucasian woman, black sports bra, high waist yoga pants, gym background, soft daylight.
 
-0039:Woman in a glamorous red carpet gown with an unexpected neon-colored futuristic visor accessory.
+0039:Asian man, denim vest over grey hoodie, black joggers, urban skate park.
 
-0040:Person in a cozy "home-office" style: a high-quality cashmere sweater and professional glasses, but wearing fluffy pajama pants (only partially visible).
+0040:Asian woman, yellow linen sundress, sandals, sunny street cafe.
 
-0041:Full body of a woman in an "All-White" outfit: white knit top, white silk pants, white heels, warm golden hour lighting.
+0041:Caucasian man, vintage band t-shirt, ripped black jeans, flannel shirt tied around waist.
 
-0042:Man in an "All-Black" techwear outfit with different textures: matte cotton, shiny nylon, and leather, neon blue rim lighting.
+0042:Caucasian woman, elegant emerald green velvet gown, jewelry, grand ballroom, luxury aesthetic.
 
-0043:A person wearing a monochromatic pastel blue outfit: light blue hoodie, blue chinos, and blue sneakers, soft overcast lighting.
+0043:Asian man, extremely thick bloated puffer jacket, too many scarves, looking very round and bulky.
 
-0044:Woman in a high-contrast outfit: bright red dress with bright cyan accessories, standing in front of a neutral grey wall.
+0044:Asian woman, small floral print blouse, striped skirt, clashing patterns, busy look.
 
-0045:Man in an earth-tone outfit: olive green field jacket, tan khakis, and dark brown boots, forest background.
+0045:Caucasian man, light blue dress shirt, navy slacks, leather belt, office hallway.
 
-0046:A man in a formal tuxedo top but wearing brightly colored swimming trunks and flip-flops.
+0046:Caucasian woman, plain white v-neck t-shirt, blue jeans, studio background.
 
-0047:Woman wearing a Victorian-style corset over a modern NASA-branded flight suit.
+0047:Asian man, tan work jacket, olive fatigue pants, boots, industrial background.
 
-0048:Person wearing multiple layers of clothing (at least 5 layers) of different styles, looking extremely bulky and mismatched.
+0048:Asian woman, cashmere beige sweater, silk midi skirt, soft sunlight, high-end feel.
 
-0049:Man in a suit made entirely of shiny gold foil material, standing in a normal supermarket.
+0049:Caucasian man, full neon tracksuit, headbands, glowing colors, too flashy for street.
 
-0050:Woman in a professional business blazer but with extreme goth makeup and spiked accessories.
+0050:Caucasian woman, trench coat, skinny jeans, ankle boots, city sidewalk with fallen leaves.
 
-0051:Man in a cream cashmere turtleneck, tailored camel hair coat, and white trousers, walking in a winter resort.
+0051:Asian woman, mori girl style, loose linen layers, earthy colors, lace details, forest background.
 
-0052:Woman wearing a charcoal grey silk slip dress layered under an oversized beige blazer, pearl earrings, city night background.
+0052:Caucasian man, high-end beige cashmere sweater, tailored white trousers, luxury watch, bright minimal studio.
 
-0053:Man in a light blue oxford shirt, navy knit tie, and grey wool trousers, minimalist professional setting.
+0053:Caucasian woman, wearing 5 different necklaces, huge sunglasses, 3 hats stacked, too many rings, extremely cluttered.
 
-0054:Woman in a high-waisted wide-leg navy trouser, a simple white tank top, and a gold statement belt, Mediterranean yacht background.
+0054:Asian man, 90s vintage windbreaker, baggy denim, retro sneakers, city alleyway.
 
-0055:Person wearing an espresso brown leather trench coat over an all-black outfit, luxury street style.
+0055:Asian woman, tweed set (jacket and skirt), pearl buttons, small handbag, luxury hotel lobby.
 
-0056:A woman in a monochromatic emerald green outfit: silk blouse, tailored pants, and suede heels.
+0056:Caucasian man, wearing a heavy thick parka and scarf in a sunny beach background, looking hot and sweaty.
 
-0057:Man wearing a muted terracotta linen shirt and olive green shorts, earthy desert tones, soft natural lighting.
+0057:Caucasian woman, black turtle neck, grey wool pants, simple leather belt, art gallery background.
 
-0058:Woman in a bright cobalt blue power suit with a contrasting orange clutch bag, standing against a white architectural wall.
+0058:Asian man, brown utility vest, cream t-shirt, olive cargo pants, campsite background.
 
-0059:Person wearing a soft pastel palette: mint green sweater, pale lemon skirt, and lavender shoes, spring garden background.
+0059:Asian woman, long shirt that covers legs entirely, flat shoes, no waistline, looking very short and stumped.
 
-0060:Man in a high-contrast black and white graphic patterned shirt with crisp black chinos.
+0060:Caucasian man, safari jacket, white t-shirt, desert boots, urban park.
 
-0061:A woman in a modern minimalist Cheongsam (Qipao) with contemporary floral prints and sneakers.
+0061:Caucasian woman, red wrap dress with white polka dots, straw bag, Paris balcony background.
 
-0062:Man wearing a modern Japanese Kimono-style cardigan (Haori) over a plain white T-shirt and black joggers.
+0062:Asian man, stained white undershirt, boxer shorts, messy hair, gamer room background.
 
-0063:Woman in a contemporary Indian Saree styled with a leather biker jacket and heavy boots.
+0063:Asian woman, oversized university hoodie, tennis skirt, white socks and sneakers, campus.
 
-0064:Person in a modern Nordic knit sweater with traditional patterns, paired with sleek futuristic tech-pants.
+0064:Caucasian man, black leather biker jacket, white t-shirt, black skinny jeans, motorcycle background.
 
-0065:A man in a traditional Scottish kilt but styled with a modern denim jacket and combat boots.
+0065:Caucasian woman, mismatched floral top and striped pants, chaotic patterns, busy street background.
 
-0066:Woman in a heavy faux-fur coat, leather leggings, and knee-high boots, snowy mountain village background.
+0066:Asian man, white linen shirt, light blue shorts, leather sandals, seaside cafe.
 
-0067:Man wearing a lightweight linen suit, straw fedora, and no socks with loafers, sunny Italian coastal background.
+0067:Asian woman, backless black satin dress, high slit, evening city lights background.
 
-0068:Woman in a translucent yellow raincoat, colorful striped knit dress underneath, holding a bright umbrella.
+0068:Caucasian man, extremely wrinkled linen suit, ill-fitting, messy appearance, cheap looking fabric.
 
-0069:Man wearing an aviator shearling jacket, dark wash jeans, and rugged leather boots, vintage hangar background.
+0069:Caucasian woman, long flowy maxi dress, ethnic embroidery, sunset desert background.
 
-0070:Person in a summer layering: sheer mesh top over a graphic bikini, denim shorts, and many layered necklaces.
+0070:Asian man, long camel coat, black scarf, spectacles, winter street with snow.
 
-0071:A woman in a high-fashion version of a pilot's uniform: structured blazer with gold buttons and silk trousers.
+0071:Asian woman, pink polo shirt, blue denim skirt, supermarket aisle.
 
-0072:Man in a modern chef-inspired aesthetic: clean white mandarin collar shirt and apron-style wrap pants.
+0072:Caucasian man, multiple pocket techwear vest, joggers, industrial rooftop.
 
-0073:Woman wearing a stylized academic gown with modern jewelry and designer heels, library background.
+0073:Caucasian woman, oversized faux fur coat, looking very bulky and heavy, dark winter background.
 
-0074:Man in a sophisticated sailor-inspired look: navy striped Breton top, white tailored shorts, and boat shoes.
+0074:Asian man, school uniform style, white shirt, navy vest, khaki pants, school gate.
 
-0075:Person in a "Space-Age" retro futuristic office outfit: silver metallic details on a grey tailored suit.
+0075:Caucasian woman, full sequin suit, extremely shiny and reflective, distracting and garish.
 
-0076:Woman in an extreme oversized "Power Suit" with massive shoulder pads, 80s inspired but modern fabric.
+0076:Caucasian woman, premium emerald silk slip dress, delicate gold jewelry, luxury evening lounge background.
 
-0077:Man in an ultra-slim fit burgundy suit, cropped trousers showing ankles, and patent leather shoes.
+0077:Asian man, very long t-shirt, very short shorts, white high socks, making legs look extremely short, unbalanced.
 
-0078:Woman wearing a floor-length maxi skirt with an extremely tiny micro-top, dramatic silhouette.
+0078:Caucasian man, flannel shirt over white tee, straight denim jeans, work boots, countryside barn background.
 
-0079:Person in a voluminous balloon-sleeve blouse tucked into very tight skinny jeans.
+0079:Asian woman, oversized blazer, mini skirt, knee-high boots, Seoul street at night.
 
-0080:Man in a long tunic top reaching the knees, layered over wide-leg palazzo pants, avant-garde silhouette.
+0080:Asian man, high quality cream knit polo, tailored charcoal trousers, minimalist architecture background.
 
-0081:Woman in a charcoal grey cashmere sweater dress, mid-calf length, paired with simple black leather ankle boots, minimal jewelry.
+0081:Caucasian woman, stained oversized sweatpants, holey t-shirt, messy bun hair, kitchen background.
 
-0082:Man in a crisp white heavy-cotton T-shirt tucked into tailored black trousers, clean white sneakers, standing in a sunny art gallery.
+0082:Caucasian man, slim-fit grey suit, no tie, crisp open-collar shirt, city rooftop sunset.
 
-0083:Woman wearing a simple beige linen wrap dress, tan leather sandals, holding a small straw bag, beach resort vibe.
+0083:Asian woman, long tunic over wide-leg linen pants, neutral tones, canvas tote, zen garden.
 
-0084:Man in a monochrome slate grey outfit: polo shirt and slim chinos, silver watch as the only accessory.
+0084:Asian man, bright orange jacket, purple pants, neon yellow shirt, clashing saturations.
 
-0085:Person in a high-quality navy blue hoodie paired with matching jogger pants, but tailored in a slim, premium fabric look.
+0085:Caucasian woman, intricate lace maxi dress, many bracelets, sunlit meadow, dreamy atmosphere.
 
-0086:Woman in a crisp white button-down shirt with "slightly" puffy sleeves (not extreme), tucked into high-waisted denim jeans.
+0086:Caucasian man, sleek black tracksuit with white stripes, modern sneakers, urban gym entrance.
 
-0087:Man in a classic trench coat with traditional shoulder tabs (not oversized), worn over a simple grey hoodie and jeans.
+0087:Asian woman, navy trench coat, skinny trousers, leather loafers, busy subway station.
 
-0088:Woman in a fitted knit top with elegant bell sleeves (moderate flare), paired with a sleek pencil skirt.
+0088:Asian man, wearing clothes that look like children's wear, too small, cartoon prints, weird proportions.
 
-0089:Person wearing a structured denim jacket with regular fit, worn over a plain black midi dress.
+0089:Caucasian woman, black wrap top, high-waisted beige pants, simple gold hoops, café terrace.
 
-0090:Man in a well-fitted bomber jacket, plain white tee, and olive cargo pants (slim fit cargo, not baggy).
+0090:Caucasian man, heavy denim jacket, cargo pants, rugged leather boots, workshop background.
 
-0091:Woman in a light blue striped button-up shirt, sleeves neatly rolled up, paired with navy blue cigarette pants and loafers.
+0091:Asian woman, fluffy mohair sweater, silk skirt, soft morning light in a cozy room.
 
-0092:Man in a grey herringbone waistcoat worn over a white shirt (no tie), dark indigo jeans, and clean brown boots.
+0092:Asian man, suit that is two sizes too big, sleeves covering hands, shoulders dropping, looking very untidy.
 
-0093:Woman in a sophisticated forest green pleated skirt, cream silk blouse, and pointed-toe nude pumps.
+0093:Caucasian woman, studded leather jacket, ripped stockings, combat boots, neon-lit alley.
 
-0094:Man wearing a modern "unstructured" blazer in tan color, navy T-shirt underneath, and dark grey chinos.
+0094:Caucasian man, olive tactical vest, black tech pants, hiking background, rugged aesthetic.
 
-0095:Person in a sharp professional look: black turtleneck under a grey checked blazer, black trousers, very clean and focused.
+0095:Asian woman, high-end faux fur stole over a black evening gown, luxury gala event background.
 
-0096:Woman in a plain red dress, but with "only one" gold necklace.
+0096:Asian man, anime t-shirt, plaid pajama pants, sandals with socks, cluttered room.
 
-0097:Man in a subtle micro-checkered shirt (very small pattern), paired with plain navy shorts and clean boat shoes with hidden socks.
+0097:Caucasian woman, white tennis dress, green cardigan over shoulders, country club background.
 
-0098:Woman wearing a black jumpsuit with a "slim" black leather belt and a small silver buckle.
+0098:Caucasian man, high quality black t-shirt, black denim, luxury watch, industrial loft.
 
-0099:Man in a simple olive green field jacket with minimal pockets, worn over a grey henley shirt.
+0099:Asian woman, light yellow floral tea dress, straw hat, flower market background.
 
-0100:Person in a "Quiet Luxury" aesthetic: all earth tones, high-quality fabrics, absolutely no visible logos or heavy accessories.
+0100:Asian man, oversized wool coat, turtleneck, glasses, clean aesthetic, winter park.
 
-0101:Man in a high-quality mountain parka in muted navy, grey wool sweater underneath, and clean hiking boots.
+0101:Asian woman, bright yellow cardigan, white pleated skirt, high socks, campus tennis court, sunny.
 
-0102:Woman in a quilted diamond-pattern vest (not too puffy), white long-sleeve tee, and dark leggings, walking a dog in a park.
+0102:Caucasian man, very long oversized t-shirt reaching knees, baggy shorts, slippers, looking short.
 
-0103:Man wearing a classic denim shirt over a white tee, khaki work pants, and clean leather work boots (rugged but tidy).
+0103:Caucasian woman, camel wool vest, white shirt, black leggings, designer loafers, city park.
 
-0104:Woman in a camel colored wool cape, black skinny pants, and tall riding boots, autumn forest background.
+0104:Asian man, ill-fitting thin polyester suit, reflective fabric, wrinkled sleeves, cheap appearance.
 
-0105:Person in a functional but stylish rain outfit: matte black raincoat, slim waterproof trousers, and stylish rubber boots.
+0105:Asian woman, tweed shorts set, sheer black tights, ankle boots, high-end department store.
 
-0106:Woman in a deep burgundy top paired with navy blue trousers (classic high-contrast color combo).
+0106:Caucasian man, olive M65 field jacket, grey hoodie, raw denim jeans, forest trail.
 
-0107:Man in a mustard yellow sweater worn with dark grey trousers.
+0107:Caucasian woman, high quality little black dress, simple pearl earrings, minimal studio lighting.
 
-0108:Woman wearing a lavender blouse with white trousers and silver flats.
+0108:Asian man, wearing 4 different patterns at once: camo hat, striped shirt, floral pants, plaid socks.
 
-0109:Man in a sage green shirt and cream-colored linen pants.
+0109:Asian woman, oversized brown corduroy jacket, baggy pants, bucket hat, street photography style.
 
-0110:Full body photo of a stylish man wearing a layered outfit in various shades of brown: an espresso-colored wool coat, a latte-colored cashmere sweater, and cream-colored trousers. Cinematic street style, focused on the person's clothing and posture.
+0110:Caucasian man, navy polo shirt, white shorts, boat shoes, sunny country club background.
 
-0111:Full body of a man in a navy summer suit, leather loafers worn WITH visible high-quality dark dress socks, Italian street style.
+0111:Caucasian woman, old oversized hoodie with food stains, messy hair, dark room, unkempt look.
 
-0112:Full body of a woman in a tennis-style white pleated skirt, white polo shirt, and white sneakers WITH classic crew socks.
+0112:Asian man, light grey knit sweater over blue denim shirt, khaki chinos, clean library.
 
-0113:Full body of a man in cropped grey trousers and white sneakers, clearly showing "no-show" socks (hidden socks), clean and minimalist.
+0113:Asian woman, small blue floral wrap dress, straw hat, seaside breeze.
 
-0114:Full body of a person wearing Birkenstock sandals with thick wool socks and loose-fit linen pants.
+0114:Caucasian man, brown leather jacket, black turtleneck, dark jeans, night city lights.
 
-0115:Full body of a man in black dress shoes, black slacks, but wearing bright neon-colored patterned socks as a hidden detail.
+0115:Caucasian woman, huge puffy sleeves, tiny shorts, weird chunky boots, looks like a cartoon character.
 
-0116:Full body of a man in a "perfectly fitted" white T-shirt and dark jeans, shirt is neatly tucked in with a simple leather belt.
+0116:Asian man, crisp white linen shirt, navy trousers, brown loafers, outdoor cafe.
 
-0117:Full body of a woman in a silk button-up shirt that is "half-tucked" (one side in, one side out) into tailored trousers.
+0117:Asian woman, soft lavender sweater, white silk skirt, warm indoor lighting, cozy.
 
-0118:Full body of a person wearing a very oversized hoodie but with structured, slim-fit cargo joggers to balance the silhouette.
+0118:Caucasian man, bespoke navy 3-piece suit, pocket square, luxury watch, skyscraper office.
 
-0119:Full body of a man in a corduroy jacket that is well-maintained and crisp, worn over a simple turtleneck.
+0119:Caucasian woman, black techwear jacket, many straps, cargo pants, cyberpunk city background.
 
-0120:Full body of a woman in a denim-on-denim look where both pieces have the exact same wash and a tailored, sharp cut.
+0120:Asian man, yellowed t-shirt, torn dirty shorts, messy environment, greasy hair.
 
-0121:Full body of a woman in a luxurious velvet evening jumpsuit in deep navy, soft studio lighting highlighting the fabric texture.
+0121:Asian woman, red cardigan with white lace collar, denim skirt, retro bakery background.
 
-0122:Full body of a man in a rugged waxed canvas jacket, raw denim jeans, and sturdy leather boots, outdoor workshop background.
+0122:Caucasian man, grey v-neck sweater, white shirt, black tie, glasses, classic university hall.
 
-0123:Full body of a person wearing a shiny, high-gloss satin midi skirt paired with a matte, heavy-knit wool sweater.
+0123:Caucasian woman, midnight blue velvet gown, diamonds, grand stairs, luxury aesthetic.
 
-0124:Full body of a man in a seersucker summer suit (textured puckered fabric) in light pinstripes, very breathable look.
+0124:Asian man, generic grey t-shirt, blue jeans, backpack, subway station.
 
-0125:Full body of a woman in a soft, fluffy mohair cardigan over a simple slip dress.
+0125:Asian woman, neon orange top, neon green pants, bright purple shoes, clashing and cheap.
 
-0126:Full body of a woman in a modern cheongsam-inspired top (short version) paired with high-waisted wide-leg white trousers.
+0126:Asian woman, high-quality white linen shirt, navy culottes, leather loafers, bright minimal art gallery.
 
-0127:Full body of a man in a blazer with "natural shoulders" (no padding), slim lapels, and a very modern, light construction.
+0127:Caucasian man, expensive suit but extremely wrinkled, shirt untucked, messy tie, looking disheveled.
 
-0128:Full body of a woman in a wrap-style coat that creates an X-silhouette using a matching fabric belt, very elegant.
+0128:Caucasian woman, grey sports bra, matching zip-up hoodie, high-waist leggings, urban gym background.
 
-0129:Full body of a man in a mandarin collar (standing collar) shirt in crisp white linen, worn with navy slacks.
+0129:Asian man, oversized down vest over a very thin summer t-shirt, shorts, and heavy winter boots, mismatched season.
 
-0130:Full body of a person in a minimalist jumpsuit with a hidden zipper and a clean, architectural silhouette.
+0130:Asian woman, 1950s style tea dress, cinched waist, pearl earrings, retro cafe background.
 
-0131:Full body of a man carrying a simple, high-quality leather tote bag, wearing a grey crewneck sweater and dark chinos.
+0131:Caucasian man, flannel shirt, worn-in denim, rugged work boots, woodpile background.
 
-0132:Full body of a woman in a simple summer sundress with a "very small" delicate pendant necklace, standing in a sunflower field.
+0132:Caucasian woman, wearing too many necklaces and bracelets, giant floppy hat, huge earrings, looks very heavy.
 
-0133:Full body of a man in a classic navy pea coat, dark jeans, and "no other accessories," very clean look.
+0133:Asian man, long black wool coat, grey turtleneck, spectacles, street in Seoul during winter.
 
-0134:Full body of a woman wearing a simple headband that matches the color of her knit dress, cohesive and neat.
+0134:Asian woman, oversized hoodie, pleated skirt, canvas backpack, university campus.
 
-0135:Full body of a person in a high-quality raincoat that looks like a regular trench coat, functional but stylish.
+0135:Caucasian man, shiny silver sequin shirt, bright green pants, disco ball background, garish colors.
 
-0136:Full body of a man in a forest green sweater and burgundy scarf, a classic "academic" color combination.
+0136:Caucasian woman, beige trench coat, white t-shirt, straight blue jeans, autumn city street.
 
-0137:Full body of a woman in a monochromatic "Camel" look from head to toe, using different fabrics (wool, silk, leather).
+0137:Asian man, loose stained t-shirt, basketball shorts, flip flops, messy convenience store background.
 
-0138:Full body of a person in a charcoal grey outfit with "one single pop of color": bright blue sneakers.
+0138:Asian woman, cashmere sweater, silk midi skirt, soft morning sunlight, high-end aesthetic.
 
-0139:Full body of a man in a soft lavender shirt paired with dark charcoal trousers.
+0139:Caucasian man, black techwear jacket, cargo pants with many straps, industrial rooftop.
 
-0140:Full body of a woman in a "Navy and Black" combination.
+0140:Caucasian woman, neon yellow top, purple skirt, red stockings, chaotic color palette.
 
-0141:Full body of a woman in a charcoal grey tailored blazer paired with light cream silk trousers and black heels.
+0141:Asian man, light blue dress shirt, navy chinos, leather belt, office building lobby.
 
-0142:Full body of a man in a navy blue quilted vest over a grey heathered hoodie and olive green chinos.
+0142:Asian woman, too many layers of heavy knitwear, looking very bulky and round, no shape.
 
-0143:Full body of a woman in a black turtleneck tucked into a vibrant red A-line skirt, very clean contrast.
+0143:Caucasian man, well-tailored charcoal suit, no tie, white sneakers, modern rooftop lounge.
 
-0144:Full body of a man in a tan trench coat over a white shirt and dark indigo raw denim jeans.
+0144:Caucasian woman, small floral top with large striped pants, clashing patterns, busy street.
 
-0145:Full body of a person in a white knit sweater, grey wool scarf, and black slim-fit trousers.
+0145:Asian man, olive green t-shirt, khaki shorts, white sneakers, sunny park.
 
-0146:Full body of a woman in a "two-piece" set that looks like a jumpsuit but is clearly a separate top and trousers, with a visible belt.
+0146:Asian woman, tweed jacket, white trousers, small designer bag, luxury hotel interior.
 
-0147:Full body of a man in a classic boiler suit but with the top half tied around the waist, wearing a plain white tee underneath.
+0147:Caucasian man, shirt and pants that are 3 sizes too big, sleeves covering hands, very untidy.
 
-0148:Full body of a woman in high-waisted wide-leg trousers and a matching cropped vest (separate pieces), very structured.
+0148:Caucasian woman, long flowy printed dress, multiple layers of jewelry, desert sunset.
 
-0149:Full body of a person in a minimalist denim dungaree worn with a tight-fitting black long-sleeve top.
+0149:Asian man, tank top, striped pajama pants, messy hair, cluttered living room.
 
-0150:Full body of a woman in a coordinated knit skirt and sweater set, but with a contrasting leather jacket on top.
+0150:Asian woman, matching yoga set, sleek ponytail, minimal pilates studio.
 
-0151:Full body of a woman in a "dark chocolate" brown leather jacket and black jeans.
+0151:Asian man, premium heavyweight white t-shirt, tailored black trousers, leather sandals, luxury villa background.
 
-0152:Full body of a man in a "burnt orange" sweater and dark blue jeans
+0152:Caucasian woman, elegant lace evening blouse paired with dirty distressed denim shorts, sneakers, inconsistent style.
 
-0153:Full body of a person in a "cool-toned" taupe (grey-brown) coat over a white outfit.
+0153:Asian woman, oversized linen shirt dress, straw bag, blooming meadow, soft natural lighting.
 
-0154:Full body of a woman in a copper-metallic pleated skirt and a simple black bodysuit.
+0154:Caucasian man, suit jacket with too many pins, 3 different pocket squares, multiple chunky rings, looking cluttered.
 
-0155:Full body of a man in a rust-colored corduroy shirt over a navy T-shirt.
+0155:Caucasian woman, cropped leather jacket, high-waist mom jeans, combat boots, city crosswalk.
 
-0156:Full body of a man with "clean-shaven" face and neat hair, wearing a white linen shirt and light grey trousers.
+0156:Asian man, long hoodie under a short tight denim jacket, looking bulky and misproportioned.
 
-0157:Full body of a woman with elegant jewelry that is "barely visible" (minimalist), wearing a high-neck silk midi dress.
+0157:Asian woman, beige blazer, white t-shirt, blue jeans, pointed flats, Seoul office district.
 
-0158:Full body of a person with very smooth skin texture, wearing a minimalist technical jacket and slim trousers.
+0158:Caucasian man, navy chore coat, white tee, olive chinos, boots, workshop background.
 
-0159:Full body of a man in a professional suit, where the focus is on the "crispness" of the collar and the shine of the shoes.
+0159:Caucasian woman, cheap shiny polyester neon dress, wrinkled, ill-fitting, bright artificial lighting.
 
-0160:Full body of a woman in a sports-luxe outfit, focusing on a "healthy, glowing" appearance and clean-cut athletic wear.
+0160:Asian man, black techwear shell jacket, cargo joggers, futuristic sneakers, rainy city street.
 
-0161:Full body of a woman in a heavy oversized wool coat over a very light, flowing chiffon dress.
+0161:Asian woman, charcoal knit dress, long camel coat, leather boots, autumn park.
 
-0162:Full body of a man in a leather bomber jacket paired with formal pinstripe trousers.
+0162:Caucasian man, baggy old grey sweatpants, stained white tank top, unkempt beard, messy kitchen.
 
-0163:Full body of a person in a matte nylon windbreaker over a shiny sequin skirt
+0163:Caucasian woman, simple black tank top, denim skirt, sunglasses, sunny boardwalk.
 
-0164:Full body of a man in a denim jacket with a corduroy collar, worn over a cashmere sweater.
+0164:Asian man, vertical striped shirt (tucked in), slim navy trousers, loafers, outdoor cafe terrace.
 
-0165:Full body of a woman in a lace top paired with rugged, heavy-duty cargo pants.
+0165:Asian woman, neon pink puffer jacket, neon green leggings, looking very distracting and garish.
 
-0166:Full body of a woman in a "Creative Director" style: oversized white shirt, black cropped trousers, and dramatic glasses.
+0166:Caucasian man, charcoal wool 3-piece suit, silk tie, pocket square, luxury boardroom.
 
-0167:Full body of a man in a "Silicon Valley" style: high-quality grey zip-up hoodie, expensive T-shirt, and dark designer jeans.
+0167:Caucasian woman, suit jacket that is way too large, shoulders drooping, sleeves too long, looking messy.
 
-0168:Full body of a woman in a "Gallery Owner" style: asymmetrical black dress with one bold sculptural silver necklace.
+0168:Asian man, quarter-zip fleece, joggers, running shoes, morning park jog.
 
-0169:Full body of a man in a "Modern Architect" style: all navy blue but with very different textures (cotton, wool, suede shoes).
+0169:Asian woman, navy cardigan over white collared shirt, pleated skirt, library background.
 
-0170:Full body of a person in a "High-End Travel" look: comfortable knit set but layered with a structured long coat.
+0170:Caucasian man, leather jacket over a formal dress shirt and tie, weird stylistic clash.
 
-0171:Full body photo of a woman in a light blue denim pinafore dress worn over a simple white short-sleeve T-shirt, natural makeup, ponytail.
+0171:Caucasian woman, all-black outfit: turtleneck, leather pants, high heels, minimalist background.
 
-0172:Full body photo of a woman in a soft peach-colored sundress, very light and flowing, minimal delicate jewelry, standing in an apple orchard.
+0172:Asian man, generic blue polo shirt, khaki shorts, sandals, supermarket.
 
-0173:Full body photo of a girl in a white cable-knit oversized sweater and a short pleated grey skirt, white sneakers, clean and cute look.
+0173:Asian woman, extremely thick white faux-fur coat, looking like a ball, very bulky.
 
-0174:Full body of a man in a crisp white shirt (regular fit, not tight), dark blue tailored trousers, neat haircut, and clean face.
+0174:Caucasian man, denim shirt, white t-shirt, dark brown chinos, sunny backyard.
 
-0175:Full body of a woman in a elegant red dress but specifically with "very light, natural makeup" and neat hair.
+0175:Caucasian woman, oversized silk shirt, wide-leg linen trousers, beach house sunset.
 
-0176:Full body of a man in a professional grey suit but with "messy, unstyled hair" and "stubble on face".
+0176:Caucasian man, cream cable-knit sweater, light blue button-down shirt, tailored navy chinos, loafers, garden party.
 
-0177:Full body of a man in a white jacket worn over a navy blue polo shirt and khaki trousers.
+0177:Asian woman, very long tunic shirt that reaches mid-thigh, wide-leg pants, flat sneakers, making legs look very short.
 
-0178:Full body of a woman in a soft yellow cardigan paired with a white skirt and tan flats.
+0178:Caucasian woman, charcoal grey wool vest, matching trousers, black leather belt, minimal studio lighting.
 
-0179:Full body of a man in a light grey sweater with a "matching" grey scarf that has a subtle blue stripe, dark slacks.
+0179:Asian man, super oversized puffy jacket, baggy jeans dragging on the floor, looking round and stumpy.
 
-0180:Full body of a person in a combination of "Sand and Sky Blue": light blue shirt and sand-colored chinos.
+0180:Asian woman, varsity jacket, white t-shirt, pleated mini skirt, white socks and sneakers, Seoul campus.
 
-0181:Full body of a woman in a structured blazer and "straight-leg" jeans (neither too tight nor too baggy), black pumps.
+0181:Caucasian man, distressed denim jacket, grey hoodie, black jeans, boots, urban alleyway.
 
-0182:Full body of a man in a classic navy pea coat but specifically with a "slim but not tight" tailored fit.
+0182:Caucasian woman, bright red sweater, neon yellow skirt, purple boots, clashing patterns and colors.
 
-0183:Full body of a woman in a high-waisted midi skirt and a "regular fit" long-sleeve top tucked in, creating a clean X-line.
+0183:Asian man, bespoke grey suit, light blue shirt, navy tie, luxury leather briefcase, modern office.
 
-0184:Full body of a woman in a classic camel wool overcoat (not a raincoat), worn over a black dress and boots.
+0184:Asian woman, soft beige oversized cardigan, silk pajama pants, messy bun, cozy living room.
 
-0185:Full body of a man in a dark green quilted wax jacket (Barbour style) over a grey flannel shirt and dark denim.
+0185:Caucasian man, multiple layers of scarves, huge hat, glasses, many rings and bracelets, very cluttered look.
 
-0186:Full body of a woman in a simple cream-colored trench coat, worn open, showing a simple white tee and blue jeans.
+0186:Caucasian woman, white linen sundress, straw hat, basket bag, sunny vineyard background.
 
-0187:Full body of a woman in the "lavender and charcoal" combo
+0187:Asian man, olive green polo, khaki shorts, boat shoes, sunny park background.
 
-0188:Full body of a man in a "rugged earth tone" palette: dark olive jacket, brown boots, and charcoal pants.
+0188:Asian woman, 3 layers of sweaters, heavy wool scarf, looking very bloated and bulky, messy style.
 
-0189:Full body of a woman in a "power pink" suit but with a very sharp, masculine cut to test the contrast.
+0189:Caucasian man, black techwear jacket with straps, cargo joggers, futuristic sneakers, cyberpunk street.
 
-0190:Full body of a person in "minimalist sports-luxe": a high-quality hoodie under a sharp tailored overcoat, clean sneakers.
+0190:Caucasian woman, high-waist A-line skirt, tucked-in silk blouse, heels, classic European street.
 
-0191:Full body of a man in a "modern preppy" look: a rugby shirt with a white collar, tucked into chinos with a leather belt.
+0191:Asian man, oversized dirty t-shirt, mismatched gym shorts, flip flops, messy street background.
 
-0192:Full body of a woman in a simple black dress with "no jewelry at all," focusing purely on the cut and her neat hair.
+0192:Asian woman, navy blazer, white camisole, slim jeans, designer handbag, business district.
 
-0193:Full body of a man in a denim shirt worn open over a grey T-shirt, black jeans, and "no-show" socks with loafers.
+0193:Caucasian man, wearing a heavy winter parka and wool hat on a tropical sunny beach, looking sweaty.
 
-0194:Full body of a woman in a high-fashion "minimalist" look: all white but with a single black ribbon in her hair.
+0194:Caucasian woman, black leather biker jacket, black turtleneck, black skinny jeans, night city lights.
 
-0195:Full body of a man in a professional suit but wearing "very subtle" patterned tie, no other accessories.
+0195:Asian man, white linen shirt, light grey trousers, leather sandals, seaside cafe.
 
-0196:Full body of a woman in a summer linen set: top and shorts in different but matching earth tones.
+0196:Asian woman, generic grey hoodie, black leggings, backpack, subway station.
 
-0197:Full body of a man in a clean, high-quality tracksuit but worn with a long wool coat over it (European street style)
+0197:Caucasian man, shiny synthetic polyester shirt, neon pink, ill-fitting and wrinkled, messy club background.
 
-0198:Full body of a woman in a vintage-inspired floral dress but with "modern minimalist sandals" and clean hair.
+0198:Caucasian woman, emerald green velvet gown, jewelry, grand opera house staircase.
 
-0199:Full body of a man in a "Total Grey" look but with three distinct shades: light grey shirt, medium grey trousers, dark grey coat.
+0199:Asian man, t-shirt with childish cartoon prints, too short pants, colorful sneakers, looking immature.
 
-0200:Full body of a woman in the most "Perfectly Balanced" outfit based on your feedback: White silk shirt, high-waisted navy trousers, neat bun hairstyle, natural makeup, and simple black pumps.
+0200:Asian woman, sleek yoga set, high-end gym background, perfect posture, athletic look.
 
-0201:Full body photo of a Korean woman in a premium beige wool handmade coat, white turtleneck cashmere sweater, and cream tailored slacks. Minimalist luxury style.
+0201:Caucasian man, navy cashmere sweater over white crisp shirt, tailored grey trousers, high-end leather watch, ivy league campus.
 
-0202:Full body photo of a Korean man in an oversized charcoal blazer, light grey wide-leg trousers, and clean white sneakers. K-pop idol street style.
+0202:Asian woman, silk white blouse, black high-waisted cigarette pants, minimal jewelry, modern art museum interior.
 
-0203:Full body photo of a woman wearing a neon lime green puffy vest over a purple floral lace dress with heavy muddy work boots.
+0203:Asian man, white t-shirt with a stretched-out collar, faded jeans, unkempt appearance, messy urban street.
 
-0204:Full body photo of a Korean woman in a slim-fit navy tweed jacket, high-waisted straight denim, and black pointed-toe heels. Elegant Seoul style.
+0204:Caucasian woman, heavy wool coat over a maxi dress with too many scarves, looks bulky and shapeless, winter park.
 
-0205:Full body photo of a man in a brown corduroy shirt tucked into mustard yellow skinny shorts with neon pink socks and sandals.
+0205:Caucasian man, charcoal wool turtleneck, tailored black overcoat, slim trousers, night city lights, sophisticated.
 
-0206:Full body photo of a Korean woman in a black cropped leather jacket, grey pleated mini skirt, and knee-high leather boots. Chic K-street style.
+0206:Asian woman, navy blazer with gold buttons, pleated white skirt, leather loafers, clean library background.
 
-0207:Full body photo of a Korean man in a sky blue mohair cardigan, white loose-fit t-shirt, and washed light blue jeans. Soft boyfriend look.
+0207:Asian man, faded t-shirt with uneven bleach stains, ripped dirty shorts, worn-out sneakers, abandoned building.
 
-0208:Full body photo of a woman in an oversized ruffled orange blouse with bright red leather leggings and mismatched sneakers.
+0208:Caucasian woman, high-quality leather trench coat, simple black dress underneath, luxury aesthetic, rainy street.
 
-0209:Full body photo of a Korean woman in a sage green knit vest, white button-down shirt, and khaki chino skirts. Neat academic look.
+0209:Caucasian man, sleek performance tech hoodie, slim joggers, expensive running shoes, high-tech gym.
 
-0210:Full body photo of a Korean man in a black trench coat, black turtleneck, and slim black trousers. Monochromatic Seoul night style.
+0210:Asian woman, formal silk evening dress worn over baggy cargo pants, chunky sneakers, weird stylistic clash.
 
-0211:Full body photo of a man wearing a formal tuxedo jacket with baggy camouflage cargo pants and flip-flops.
+0211:Asian man, light blue oxford shirt, beige chinos, white clean sneakers, sunny garden cafe.
 
-0212:Full body photo of a Korean woman in a cream-colored puffer jacket, white jogger pants, and UGG boots. Cozy winter Seoul style.
+0212:Caucasian woman, 5 big gold chains, huge sunglasses, massive earrings, leopard print top, looking very gaudy.
 
-0213:Full body photo of a Korean man in a navy varsity jacket, cream hoodies, and dark indigo denim. Classic youthful look.
+0213:Caucasian man, black leather biker jacket, plain grey t-shirt, dark denim, motorcycle background, clean look.
 
-0214:Full body photo of a woman wearing a tight leopard print jumpsuit with a bright yellow rain poncho on top.
+0214:Asian woman, cropped cardigan, high-waist jeans, making legs look very long, simple and effective.
 
-0215:Full body photo of a Korean woman in a dusty rose chiffon midi dress with a thin white belt and nude pumps. Romantic date look.
+0215:Asian man, oversized military jacket with way too many pockets, baggy pants, looking very short and wide.
 
-0216:Full body photo of a Korean man in a beige linen suit, white inner t-shirt, and brown loafers. Summer refined style.
+0216:Caucasian woman, pastel blue linen dress, leather sandals, straw hat, coastal village background.
 
-0217:Full body photo of a woman in a metallic silver down jacket with a long purple tutu skirt and hiking boots.
+0217:Caucasian man, wrinkled silk pajamas worn as street wear, messy hair, slippers, convenience store background.
 
-0218:Full body photo of a Korean woman in a grey zip-up hoodie, black biker shorts, and white athletic sneakers. K-athleisure style.
+0218:Asian woman, sharp grey power suit, black camisole, high heels, executive office view.
 
-0219:Full body photo of a Korean man in a forest green cable-knit sweater and charcoal corduroy pants. Cozy autumn vibes.
+0219:Asian man, plain navy t-shirt, grey shorts, canvas sneakers, supermarket aisle.
 
-0220:Full body photo of a man in a sequined vest, baggy purple sweatpants, and heavy yellow snow boots.
+0220:Caucasian woman, low-quality thin lace dress, visible loose threads, ill-fitting, bright harsh lighting.
 
-0221:Full body photo of a Korean woman in a white off-shoulder knit top and high-waisted beige mermaid skirt. Soft elegant style.
+0221:Caucasian man, wool vest over flannel shirt, rugged denim, autumn woods, balanced layering.
 
-0222:Full body photo of a Korean man in a light grey denim jacket, white t-shirt, and black straight jeans. Classic K-casual.
+0222:Asian woman, too many ruffles, oversized bow, bright pink and neon yellow, looking immature and cluttered.
 
-0223:Full body photo of a Korean woman in a navy blue blazer dress with gold buttons and black stockings. Professional Seoul style.
+0223:Asian man, olive bomber jacket, black tee, khaki trousers, urban sunset background.
 
-0224:Full body photo of a woman in an oversized Hawaiian shirt tucked into a heavy floor-length velvet skirt with a baseball cap.
+0224:Caucasian woman, high-neck black knit dress, simple gold watch, minimalist white background.
 
-0225:Full body photo of a Korean man in a camel turtleneck sweater and tailored dark brown wool trousers. Warm minimalist style.
+0225:Caucasian man, light grey t-shirt with visible large sweat stains under arms, messy appearance, outdoor gym.
 
-0226:Full body photo of a Korean woman in a black mini skirt (15cm above knee), fitted grey blazer, and black loafers with white socks. Sharp academic style.
+0226:Asian woman, premium white silk dress, minimalist silver jewelry, sun-drenched architectural space, peaceful look.
 
-0227:Full body photo of a Korean man in a charcoal double-breasted coat, slim black jeans, and polished chelsea boots. Sophisticated Seoul style.
+0227:Caucasian man, high-quality blue shirt but with noticeable yellow sweat stains on the collar, unkempt hair.
 
-0228:Full body photo of a woman in a bright pink puffer jacket with a neon green maxi skirt and platform crocs.
+0228:Asian man, charcoal wool overcoat, grey cashmere hoodie, white tee, slim dark jeans, urban winter street.
 
-0229:Full body photo of a Korean woman in a chocolate brown knit maxi dress (ankle length) with a tan trench coat. Rich autumn tones.
+0229:Caucasian woman, wearing a bright patterned scarf, striped top, and floral skirt at the same time, too many textures.
 
-0230:Full body photo of a man in a floral silk shirt with camouflage cargo shorts and tall red rain boots.
+0230:Caucasian man, midnight blue pinstripe suit, crisp white shirt, silk tie, luxury watch, high-rise office.
 
-0231:Full body photo of a Korean woman in a white cropped tweed jacket and high-waisted wide-leg denim. Classic elegant look.
+0231:Asian woman, pale green floral sundress, simple straw hat, sunny garden path, very clean look.
 
-0232:Full body photo of a Korean man in a cream mock-neck sweater and forest green wool trousers. Clean color matching.
+0232:Asian man, long oversized hoodie that reaches the knees, wearing saggy pants, legs look extremely short.
 
-0233:Full body photo of a woman wearing a heavy silver sequin top with baggy orange track pants and sandals.
+0233:Caucasian woman, camel trench coat, black turtleneck, straight leg jeans, leather boots, city sidewalk.
 
-0234:Full body photo of a Korean woman in a sky blue oversized shirt tucked into a navy mini skirt, natural messy hair. Fresh casual style.
+0234:Caucasian man, simple black zip-up hoodie, grey joggers, white sneakers, park background.
 
-0235:Full body photo of a Korean man in a black leather biker jacket, white t-shirt, and dark grey straight trousers. K-rock chic.
+0235:Asian woman, heavy gold necklaces, large butterfly hair clips, bright blue eyeshadow, cluttered and loud style.
 
-0236:Full body photo of a man in a tight leopard print polo shirt with purple dress slacks and yellow sneakers.
+0236:Asian man, oversized cream sweater, light brown slacks, glasses, clean interior, cozy atmosphere.
 
-0237:Full body photo of a Korean woman in a beige tailored vest, matching shorts (mid-thigh), and a white crisp shirt. Summer office look.
+0237:Caucasian woman, oversized shirt with coffee stains, messy hair, dark room with laundry in background.
 
-0238:Full body photo of a Korean man in a navy blue varsity jacket, grey hoodie, and slim-fit khaki chinos. Preppy Seoul style.
+0238:Caucasian man, navy blazer, white polo shirt, khaki shorts, boat shoes, harbor background.
 
-0239:Full body photo of a woman in a massive oversized yellow raincoat with a tiny cocktail dress and heavy combat boots.
+0239:Asian woman, cheap shiny synthetic fabric dress, wrinkled, pulling at seams, poor fit.
 
-0240:Full body photo of a Korean woman in a deep wine-colored velvet dress, cinched waist, pearl earrings. High-end gala style.
+0240:Asian man, plain white short sleeve shirt, navy chinos, clean studio background.
 
-0241:Full body photo of a Korean man in a light tan linen shirt and ivory wide-leg linen pants. Breathable summer aesthetic.
+0241:Caucasian woman, perfectly tailored little black dress, high heels, luxury hotel lobby, elegant silhouette.
 
-0242:Full body photo of a woman in a metallic gold bodysuit with high-waisted baggy sweatpants and a bucket hat.
+0242:Caucasian man, wearing a cowboy hat with a formal tuxedo and flip flops, weird stylistic clash.
 
-0243:Full body photo of a Korean woman in a grey cashmere wrap coat and black leggings with white sneakers. Luxury athleisure.
+0243:Asian woman, soft mohair lavender sweater, white silk skirt, soft morning light.
 
-0244:Full body photo of a Korean man in a mustard yellow cardigan over a blue denim shirt and black trousers. Bold but harmonious.
+0244:Asian man, olive utility jacket, black t-shirt, raw denim, rugged boots, urban workshop.
 
-0245:Full body photo of a man in a neon orange tuxedo jacket with no shirt underneath and baggy denim shorts.
+0245:Caucasian woman, neon orange top, neon purple leggings, electric blue shoes, eye-straining colors.
 
-0246:Full body photo of a Korean woman in a lavender knit top and a white A-line skirt (knee length). Soft and feminine.
+0246:Caucasian man, navy blue tracksuit, high-end sneakers, running track background, healthy look.
 
-0247:Full body photo of a Korean man in a dark green trench coat and black turtleneck. Intellectual winter look.
+0247:Asian woman, grey cardigan, white collared shirt, navy pleated skirt, campus lawn.
 
-0248:Full body photo of a woman in an oversized patchwork denim jacket with a bright red ballroom skirt.
+0248:Asian man, old t-shirt with wavy bacon collar, baggy pants, slippers, messy convenience store.
 
-0249:Full body photo of a Korean woman in a cream silk blouse and high-waisted taupe pencil skirt. Sharp professional.
+0249:Caucasian woman, emerald green satin gown, jewelry, grand opera house, high-end feel.
 
-0250:Full body photo of a Korean man in a simple white t-shirt (premium cotton) and well-fitted indigo denim with a leather belt. Minimalist peak.
+0250:Caucasian man, grey cashmere sweater, white trousers, minimal luxury villa background, clean aesthetic.
 
-0251:Full body photo of a Japanese man in a wide-fit olive cargo pants, an oversized white heavy-cotton t-shirt, and a navy blue worker vest. City boy style.
+0251:Caucasian man, premium charcoal wool field jacket, crisp white tee, olive tailored trousers, sunlit mid-century modern living room, very structured.
 
-0252:Full body photo of a Japanese woman in a white linen tiered maxi skirt, a light beige loose knit sweater, and leather sandals. Mori-girl aesthetic.
+0252:Asian woman, sleek all-white luxury yoga set, high ponytail, minimal zen-style studio with wooden floors, soft bright lighting.
 
-0253:Full body photo of a man in a neon pink tuxedo jacket with baggy floral shorts and bright orange hiking boots.
+0253:Caucasian man, wearing an expensive designer beige coat but with a noticeable coffee spill on the chest, messy hair, luxury street background.
 
-0254:Full body photo of a Japanese man in a wide-leg charcoal trousers, a crisp white oversized button-down shirt, and New Balance sneakers. Minimalist Tokyo street style.
+0254:Asian woman, oversized camel blazer, white crop top, high-waist straight jeans, very clean and sharp silhouette, Seoul city street.
 
-0255:Full body photo of a woman in a tight leopard print dress with a denim vest and purple rain boots.
+0255:Caucasian woman, wearing layered vintage clothes, many patterns, but very tidy hair and clean skin, bright art gallery background.
 
-0256:Full body photo of a Japanese woman in a high-waisted denim midi skirt, a striped long-sleeve tee, and a red beret. Classic FUDGE magazine style.
+0256:Asian man, oversized grey hoodie, faded sweatpants, messy room with low lighting, looking unkempt and exhausted.
 
-0257:Full body photo of a Japanese man in a brown corduroy bucket hat, a beige hoodie, and wide-fit khaki chinos. Cozy Japanese street look.
+0257:Caucasian man, high-quality heavy linen shirt in cream color, navy chinos, leather loafers, clean seaside terrace.
 
-0258:Full body photo of a man wearing a silver sequined blazer with camouflage cargo pants and flip-flops.
+0258:Asian woman, puffer jacket that is 3 sizes too big, long skirt dragging on the floor, heavy boots, looking very bulky and small.
 
-0259:Full body photo of a Japanese woman in a navy navy sailor-collar coat, a white pleated skirt (ankle length), and black Mary Jane shoes.
+0259:Caucasian woman, full metallic gold suit, extremely shiny, mirrored sunglasses, neon lighting, very loud.
 
-0260:Full body photo of a Japanese man in a light grey kimono-style cardigan, a black inner tee, and black hakama-style wide trousers. Modern Japanese Zen style.
+0260:Asian man, plain grey crewneck sweatshirt, blue jeans, clean white sneakers, grocery store background.
 
-0261:Full body photo of a woman in a massive oversized yellow puffer coat with a tiny sequined mini skirt and UGG boots.
+0261:Asian woman, navy varsity jacket, white turtleneck, grey pleated skirt, high socks, very clean ivy league campus.
 
-0262:Full body photo of a Japanese woman in a khaki trench coat (relaxed fit), a white hoodie, and straight-leg blue jeans. Daily Harajuku style.
+0262:Caucasian man, light blue polo shirt with a bacon collar (wavy and stretched), khaki shorts, messy suburban lawn.
 
-0263:Full body photo of a Japanese man in a dark green flannel shirt over a grey waffle-knit henley and raw denim jeans. Rugged Japanese casual.
+0263:Caucasian woman, black silk midi dress, simple gold necklace, minimalist concrete background, sharp lighting.
 
-0264:Full body photo of a man in a bright red bodysuit with an oversized denim jacket and yellow snow boots.
+0264:Asian man, grey t-shirt with visible dark sweat patches under arms, disheveled hair, crowded bus stop background.
 
-0265:Full body photo of a Japanese woman in a black turtleneck, a tan pinafore dress (knee length), and black stockings with loafers. Neat Japanese office look.
+0265:Caucasian woman, high-tech black compression set, neon accents, futuristic gym, very sleek and professional.
 
-0266:Full body photo of a Japanese man in a white graphic tee, a light blue unbuttoned flannel, and wide-fit black work pants. 90s Japanese skater vibes.
+0266:Caucasian man, navy double-breasted blazer, white trousers, brown loafers, luxury yacht club background.
 
-0267:Full body photo of a woman in an oversized neon orange raincoat with purple leggings and metallic sneakers.
+0267:Asian woman, high-quality oversized cashmere knitwear, clean leggings, cozy minimalist bedroom, soft warm light.
 
-0268:Full body photo of a Japanese woman in a light blue denim-on-denim look: oversized jacket and wide-leg jeans, with a white crop top.
+0268:Caucasian woman, bright purple faux-fur coat, cheap shiny leggings, mismatched accessories, messy carnival background.
 
-0269:Full body photo of a Japanese man in a charcoal grey wool suit (relaxed fit) with a simple white t-shirt and clean white leather sneakers.
+0269:Asian man, white long shirt under a navy knit vest, wide grey trousers, clean canvas shoes, minimalist cafe.
 
-0270:Full body photo of a man in a mustard yellow vest with no shirt, baggy purple sweatpants, and sandals.
+0270:Caucasian man, wearing a long coat that reaches his ankles, paired with very baggy pants, looking short and clumsy.
 
-0271:Full body photo of a Japanese woman in a sage green oversized linen blazer and matching wide trousers. Soft tailoring.
+0271:Asian woman, sharp charcoal power suit, white shirt, black pumps, modern skyscraper lobby.
 
-0272:Full body photo of a Japanese man in a navy blue fisherman beanie, a striped navy sweater, and cream corduroy pants. Nautical Japanese look.
+0272:Caucasian woman, neon green top, bright orange pants, purple shoes, clashing and garish colors.
 
-0273:Full body photo of a Japanese woman in a black lace midi skirt and a beige oversized sweatshirt. Mixed texture style.
+0273:Caucasian man, all-white outfit: white linen shirt, white denim, white sneakers, bright sunny beach club.
 
-0274:Full body photo of a woman in a tight metallic gold dress with a heavy oversized flannel shirt tied around her waist.
+0274:Asian man, expensive white business shirt but extremely wrinkled and untucked, messy tie, looking stressed.
 
-0275:Full body photo of a Japanese man in a dark brown leather flight jacket, white t-shirt, and vintage-washed denim. Classic Japanese Americana.
+0275:Asian woman, high-end tweed set, pearl accessories, luxury hotel lobby, perfectly styled hair, cinematic lighting.
 
-0276:Full body photo of a Japanese woman in a white high-neck knit top, an indigo denim pencil skirt (knee length), and a beige trench coat draped over shoulders.
+0276:Caucasian man, premium beige trench coat, perfectly ironed white shirt, slim charcoal trousers, luxury street at dawn, ultra-clean aesthetic.
 
-0277:Full body photo of a Japanese man in a charcoal grey "Samue" inspired modern jacket, black tapered trousers, and premium leather sandals.
+0277:Asian woman, wearing an expensive high-end white silk blouse but with very messy, uncombed hair and smeared makeup.
 
-0278:Full body photo of a woman in a neon green tutu skirt with an oversized silver metallic parka and bright red rain boots.
+0278:Asian man, navy polo shirt (collar perfectly flat), white shorts, luxury watch, expensive yacht background, very tidy.
 
-0279:Full body photo of a Japanese woman in a light brown linen shirt dress (ankle length) with a thin leather belt and a straw hat. Summer Tokyo vibe.
+0279:Caucasian woman, sleek high-performance yoga set in emerald green, tight bun hair, minimalist luxury spa background.
 
-0280:Full body photo of a man in a tight leopard print tank top, bright yellow baggy shorts, and high-top sneakers with wings.
+0280:Caucasian man, extremely oversized long coat with sleeves covering hands, baggy trousers that gather at the ankles, clumsy.
 
-0281:Full body photo of a Japanese man in a navy blue worker jacket, a striped shirt underneath, and wide-leg white carpenter pants. Clean workwear.
+0281:Asian woman, classic grey wool sweater, white shirt collar, navy pleated skirt, black loafers, ivy league library.
 
-0282:Full body photo of a Japanese woman in a black turtleneck, a grey wool pinafore dress, and black beret. Neat intellectual style.
+0282:Caucasian man, high-quality leather jacket but paired with old, stained sweatpants and flip-flops.
 
-0283:Full body photo of a woman in a massive oversized orange puffer vest over a delicate pink silk gown and hiking boots.
+0283:Asian man, oversized but structured white linen shirt, navy cropped trousers, clean leather sandals, zen garden.
 
-0284:Full body photo of a Japanese man in a sage green oversized linen blazer, white t-shirt, and matching linen shorts (mid-thigh).
+0284:Caucasian woman, clashing patterns of animal print and neon polka dots, extremely loud and garish, busy urban street.
 
-0285:Full body photo of a Japanese woman in a navy blue pleated midi skirt, a white crisp shirt with a small silk scarf tied at the neck.
+0285:Asian woman, perfectly tailored navy pinstripe suit, white silk camisole, sharp and professional, modern boardroom.
 
-0286:Full body photo of a man wearing a formal tuxedo jacket with no pants, just bright purple swimming trunks and loafers.
+0286:Caucasian man, wearing a white t-shirt with a clear yellow sweat stain on the back, looking tired and unkempt.
 
-0287:Full body photo of a Japanese man in a dark brown corduroy jacket, a cream cable-knit sweater, and vintage-washed blue jeans.
+0287:Caucasian man, waxed cotton barbour-style jacket, clean denim, rugged but polished boots, countryside morning.
 
-0288:Full body photo of a Japanese woman in an oversized grey hoodie, a black leather mini skirt, and chunky black boots. Harajuku edge.
+0288:Asian man, t-shirt with messy cartoon stickers attached, shorts that are too small, looking very immature and disorganized.
 
-0289:Full body photo of a woman in a tight metallic gold bodysuit with a heavy oversized flannel shirt and cowboy boots.
+0289:Caucasian woman, gold satin slip dress, minimal jewelry, warm sunset lighting on a balcony, very sexy and clean.
 
-0290:Full body photo of a Japanese man in a black long-sleeve tee, a dark grey utility vest, and black techwear cargo pants. Stealth Tokyo style.
+0290:Asian man, standard light blue button-down shirt, khaki pants, office background, no special features.
 
-0291:Full body photo of a Japanese woman in a white lace blouse and light blue high-waisted wide denim. Soft airy style.
+0291:Asian woman, cheap sheer fabric top, visible bra straps, wrinkled leggings, looking untidy and low-quality.
 
-0292:Full body photo of a man in a neon pink bodysuit under a camouflage tactical vest with flip-flops.
+0292:Caucasian man, 1960s mod style, slim fit suit, clean lines, sharp haircut, retro urban background.
 
-0293:Full body photo of a Japanese man in a beige Harrington jacket, a white polo shirt, and navy chino pants. Classic City Boy.
+0293:Asian man, black t-shirt with a visible 'bacon collar' (curled edge), old denim, unkempt beard.
 
-0294:Full body photo of a Japanese woman in a charcoal grey oversized suit with a simple black crop top. Sharp modern look.
+0294:Asian woman, beige wool coat over a white knitted dress, long boots, clean Seoul winter street, very elegant.
 
-0295:Full body photo of a woman in an oversized Hawaiian shirt with a bright red ballroom skirt and a baseball cap.
+0295:Caucasian woman, too many layers of jewelry, scarves, and bags, looking like she is carrying everything she owns.
 
-0296:Full body photo of a Japanese man in a light blue denim shirt (tucked in), tan leather belt, and olive green chinos. Traditional casual.
+0296:Asian man, all-black techwear but very sleek and fitted, no excessive straps, futuristic urban environment.
 
-0297:Full body photo of a Japanese woman in a navy blue wool cape coat over a white turtleneck and black skinny jeans.
+0297:Caucasian man, apron over a shirt with visible flour and oil stains, messy kitchen, looks disorganized.
 
-0298:Full body photo of a Japanese man in a white graphic tee, an unbuttoned flannel shirt in earth tones, and wide-leg black trousers.
+0298:Caucasian woman, crisp white sundress, straw hat, clear blue sky, seaside, extremely fresh and clean.
 
-0299:Full body photo of a woman wearing a heavy silver sequined gown with a neon yellow rain poncho on top.
+0299:Asian woman, wearing a huge boxy jacket that hides the neck and waist, looking like a rectangle, very unflattering.
 
-0300:Full body photo of a Japanese woman in a cream-colored knit cardigan and a light floral print midi skirt. Gentle Mori-style.
+0300:Caucasian man, the perfect classic white tee, raw denim jeans (perfect fit), clean sneakers, sunlit minimal loft.
 
-0301:Full body photo of a Taiwanese woman in a simple white premium cotton t-shirt, high-waisted straight light-blue jeans, and white canvas shoes.
+0301:A handsome man in a sharp business suit, professional office setting, with a small noticeable oil stain on his white collar.
 
-0302:Full body photo of a Taiwanese man in a navy blue functional windbreaker, black tapered joggers, and athletic sneakers. Modern Taipei street look.
+0302:A cute woman in a white school uniform, standing in a park, her skirt covered in large, (obvious dark mud splatters:1.3).
 
-0303:Full body photo of a woman in a bright yellow puffy coat with a long purple tutu skirt and heavy snow boots.
+0303:A gorgeous sexy woman in semi-transparent yoga wear, (heavily drenched in black engine oil and thick grease stains:1.5), dirty skin, grimy environment.
 
-0304:Full body photo of a Taiwanese woman in a sage green oversized linen shirt (tucked in), beige shorts (mid-thigh), and leather sandals.
+0304:A man in a very tidy and clean outfit, (made of extremely shiny and cheap neon polyester fabric:1.4), looking like low-quality plastic.
 
-0305:Full body photo of a man in a tight leopard print shirt with neon green swim trunks and flip-flops.
+0305:A beautiful woman with perfect makeup, wearing an outfit with (violently clashing neon green and hot pink colors:1.4) in a chaotic pattern.
 
-0306:Full body photo of a Taiwanese woman in a grey zip-up hoodie, black leggings, and high-quality running shoes. Neat athleisure.
+0306:A handsome man with a strong jawline, wearing a (delicate feminine lace blouse and layers of pearl necklaces:1.3), soft pose.
 
-0307:Full body photo of a Taiwanese man in a black polo shirt, khaki chino pants, and clean brown leather loafers. Clean office casual.
+0307:A slim man with heavy pink eye shadow, wearing a (floral sundress and high heels:1.4) in a flower garden.
 
-0308:Full body photo of a woman in an oversized Hawaiian shirt with baggy camouflage pants and high-top sneakers.
+0308:A man in a (massive, extremely oversized:1.4) winter puffer jacket, looking like a giant round ball, completely hiding the body shape.
 
-0309:Full body photo of a Taiwanese woman in a navy blue shift dress (knee length) with a small white cardigan and ballet flats.
+0309:A sexy woman with a stunning face, but with (extremely messy bird-nest hair:1.3), standing in a room (filled with trash, litter, and clutter:1.4).
 
-0310:Full body photo of a Taiwanese man in a light grey denim jacket over a white t-shirt and charcoal grey chinos.
+0310:A clean-cut man in a minimalist white t-shirt, standing in a (sterile, perfectly bright white room:1.3), looking ultra-tidy and fresh.
 
-0311:Full body photo of a man wearing a formal tuxedo jacket with baggy purple sweatpants and yellow hiking boots.
+0311:A beautiful woman in a crisp, (perfectly ironed:1.3) white blouse, standing in a modern glass office, looking very capable and sharp.
 
-0312:Full body photo of a Taiwanese woman in a white cropped knit top and high-waisted beige wide-leg trousers.
+0312:An ugly person with (greasy messy hair:1.1) and smeared makeup, wearing (heavily wrinkled mismatched old dirty clothes:1.3).
 
-0313:Full body photo of a Taiwanese man in a forest green t-shirt and dark indigo denim shorts (above knee).
+0313:A handsome man in a light gray t-shirt, with (large, dark, very obvious sweat stains:1.4) under the armpits and on the chest.
 
-0314:Full body photo of a woman wearing a metallic silver down jacket with a bright red ballroom skirt.
+0314:A woman in a (luxurious silk dress:1.3) with exquisite fine texture, soft lighting highlighting the premium expensive fabric.
 
-0315:Full body photo of a Taiwanese woman in a sky blue linen midi dress with a thin belt at the waist.
+0315:A woman with a cute face, wearing a dress made of (pilling, shredded, thinning and low-quality fabric:1.4).
 
-0316:Full body photo of a Taiwanese man in a simple grey sweatshirt and black straight-leg jeans. Minimalist daily style.
+0316:An average man with a simple outfit, but with an (incredibly warm, charming, and bright energetic smile:1.4), cinematic lighting.
 
-0317:Full body photo of a woman in an oversized neon orange raincoat with purple leggings and metallic sneakers.
+0317:A man in a clean business suit but with a (very grumpy, repulsive, and angry facial expression:1.2).
 
-0318:Full body photo of a Taiwanese woman in a black camisole top under a light-brown unbuttoned linen shirt and white denim shorts.
+0318:A beautiful woman wearing (three different hats, five necklaces, and ten colorful bracelets:1.3) all at once, extremely chaotic.
 
-0319:Full body photo of a Taiwanese man in a beige utility vest, white t-shirt, and olive green cargo pants. Functional casual.
+0319:A woman in a sheer transparent outfit, standing in a (dark, gritty, dirty alleyway with puddles and trash:1.4), harsh lighting.
 
-0320:Full body photo of a man in a sequined vest with no shirt underneath and baggy denim shorts.
+0320:A handsome athletic man in a very tight compression shirt, (perfect muscle definition and body proportions:1.3), clean and tidy.
 
-0321:Full body photo of a Taiwanese woman in a navy blue pleated tennis skirt and a white fitted polo shirt. Preppy look.
+0321:A very sweet woman with pigtails, wearing a (pink ruffled lace dress:1.3), surrounded by flowers, soft dreamy focus.
 
-0322:Full body photo of a Taiwanese man in a charcoal grey tailored blazer with a white inner t-shirt and slim black jeans.
+0322:A capable woman in a navy blue power suit, (sharp tailored lines:1.3), standing in a professional high-rise boardroom.
 
-0323:Full body photo of a Taiwanese woman in a light pink chiffon blouse and a white pencil skirt (knee length).
+0323:A man with (very greasy hair:1.3), wearing a (stained yellow tank top with holes and stretched neckline:1.4), unkempt beard.
 
-0324:Full body photo of a woman in a tight metallic gold dress with an oversized flannel shirt tied around her waist.
+0324:A handsome man wearing a black leather jacket, (slightly messy hair:1.1), cool and confident expression, urban street background.
 
-0325:Full body photo of a Taiwanese man in a sky blue Oxford shirt (well-fitted) and khaki trousers. Classic clean style.
+0325:An average woman in a plain gray t-shirt and jeans, neutral expression, neither clean nor dirty, completely ordinary.
 
-0326:Full body photo of a Taiwanese woman in a neat white linen dress, knee length, with a light blue denim shirt tied around the waist.
+0326:A man with a (stunningly handsome face:1.4) and sharp jawline, wearing a tailored charcoal suit, but with a (small noticeable ink stain:1.2) on his sleeve.
 
-0327:Full body photo of a Taiwanese man in a charcoal grey tech-wear bomber jacket and slim-fit black waterproof trousers.
+0327:A man with very average and plain facial features, wearing a simple but (perfectly pressed and crisp:1.3) white shirt, looking (extremely tidy:1.4).
 
-0328:Full body photo of a woman wearing a neon yellow swim cap with a formal tuxedo jacket and baggy floral pants.
+0328:A woman with an (extremely sweet and charming smile:1.4), but her clothes are (slightly wrinkled:1.1) and her hair is a bit messy from the wind.
 
-0329:Full body photo of a Taiwanese woman in a black cropped top and high-waisted olive cargo pants with white sneakers.
+0329:A man with very ordinary and forgettable facial features wearing an (expensive high-quality cashmere coat:1.4) with a (rich soft texture:1.3).
 
-0330:Full body photo of a man in a tight leopard print polo shirt with purple dress slacks and yellow sandals.
+0330:A woman with a (flawless gorgeous face:1.4), but wearing an outfit with (violently clashing neon orange and green:1.5) in a chaotic pattern.
 
-0331:Full body photo of a Taiwanese woman in a light grey oversized sweatshirt and a navy blue A-line midi skirt.
+0331:A woman with a refined elegant face, wearing a classic black dress but overwhelmed by a (chaotic and cluttered:1.3) amount of heavy gold jewelry.
 
-0332:Full body photo of a Taiwanese man in a white graphic tee with a small Taiwanese brand logo, tucked into raw denim jeans.
+0332:A man with (very rugged masculine handsome features:1.3), wearing a (soft delicate pastel pink:1.2) knitted sweater and light trousers.
 
-0333:Full body photo of a woman in an oversized metallic silver parka with a bright red ballroom skirt and UGG boots.
+0333:A woman with an (exquisitely cute face:1.4), with a (tiny dark chocolate smudge:1.2) on her cheek and a small crumb on her clean white shirt.
 
-0334:Full body photo of a Taiwanese woman in a beige tailored vest and matching wide-leg trousers. Clean summer office look.
+0334:A (highly capable professional woman:1.3) with a sharp expression, but her suit is (clearly one size too small and tight:1.4), looking uncomfortable.
 
-0335:Full body photo of a Taiwanese man in a light blue unbuttoned shirt over a white tank top and grey linen shorts.
+0335:A man with a (perfectly athletic body:1.4) in clean gym clothes, but with an (ugly exhausted and repulsive facial expression:1.5).
 
-0336:Full body photo of a man in a sequined vest, camo cargo shorts, and flip-flops.
+0336:A man with a (perfectly clean and tidy appearance:1.4), standing in a background of a (very cluttered and dirty garage:1.3).
 
-0337:Full body photo of a Taiwanese woman in a navy blue polo dress, slim fit, with white sneakers and a ponytail.
+0337:A woman with a pretty and fresh face, wearing a (very old faded vintage dress:1.2) that is (perfectly clean and neatly mended:1.4).
 
-0338:Full body photo of a Taiwanese man in a forest green utility shirt and khaki chino pants.
+0338:A (top-tier handsome man:1.4), but with an (extremely weird and unflattering bowl-cut hairstyle:1.4).
 
-0339:Full body photo of a woman in a massive oversized yellow raincoat with a tiny cocktail dress underneath.
+0339:A cool man with a (sharp stoic handsome face:1.3), wearing a (sleek black leather jacket:1.3) and stylish dark sunglasses.
 
-0340:Full body photo of a Taiwanese woman in a white off-shoulder knit top and a light-blue denim mini skirt.
+0340:A beautiful woman in a complex layered autumn outfit, testing the limit of looking (gorgeous:1.2) vs looking (bloated and bulky:1.4).
 
-0341:Full body photo of a Taiwanese man in a simple black hoodie and well-fitted grey joggers.
+0341:A woman with a (natural clean-looking face:1.3), wearing a simple light blue linen dress, barefoot on a (perfectly clean beach:1.2).
 
-0342:Full body photo of a woman in a metallic gold bodysuit with baggy purple sweatpants and sandals.
+0342:A man with an average handsome face in a (standard perfectly fitted police uniform:1.4), looking (very tidy and professional:1.3).
 
-0343:Full body photo of a Taiwanese woman in a lavender linen shirt, unbuttoned, over a white crop top and denim shorts.
+0343:A (gorgeous woman:1.4) in a luxury silk gown, but with an (arrogant and repulsive sneer:1.5) on her face.
 
-0344:Full body photo of a Taiwanese man in a dark blue denim jacket and black straight-leg trousers.
+0344:A completely average man with average face and body, wearing a plain beige polo shirt, neutral expression, in a simple room.
 
-0345:Full body photo of a man wearing a bright red bodysuit with a heavy oversized flannel shirt.
+0345:A (very cute woman:1.4), but wearing a dress made of (thin shiny and cheap synthetic lace:1.5) that looks low-quality.
 
-0346:Full body photo of a Taiwanese woman in a cream-colored silk camisole and a beige pencil skirt.
+0346:A handsome man with a (perfectly groomed beard:1.3) and styled hair, wearing a (crisp clean vest and tie:1.3).
 
-0347:Full body photo of a Taiwanese man in a simple white t-shirt and light-brown corduroy shorts.
+0347:A beautiful woman in a bohemian outfit with (many chaotic patterns and layers:1.3), testing the limit of (cluttered:1.2).
 
-0348:Full body photo of a woman in a tight leopard print jumpsuit with neon green hiking boots.
+0348:A handsome man after a workout, (clean sweat glistening:1.2) on his skin (not dirty), looking (energetic and fresh:1.3).
 
-0349:Full body photo of a Taiwanese woman in a charcoal grey blazer and matching shorts, professional but casual.
+0349:A sweet-faced woman wearing (very large thick-framed black glasses:1.4) that hide most of her eyes and facial features.
 
-0350:Full body photo of a Taiwanese man in a navy blue fisherman beanie, white t-shirt, and olive green trousers.
+0350:A man who is (slightly handsome:1.1), (slightly messy:1.1), but (very energetic and clean:1.3).
 
-0351:Full body photo of a Taiwanese woman in a navy blue pleated tennis skirt, a white slim-fit polo shirt, and white crew socks with loafers. High-end Preppy style.
+0351:A beautiful woman wearing an (elegant:1.2) silk blouse, (refined:1.1) features, sitting in a luxury cafe, (soft lighting:1.1).
 
-0352:Full body photo of a Taiwanese man in a cream-colored varsity jacket with leather sleeves, a white t-shirt, and dark indigo jeans.
+0352:A handsome man wearing (high-quality:1.2) functional techwear, (sharp:1.1) tailoring, standing in a futuristic city street.
 
-0353:Full body photo of a woman in a bright yellow puffy coat with a long purple tutu skirt and heavy snow boots.
+0353:A (sweet:1.2) woman in a simple knit sweater, holding a coffee cup, (warm:1.1) sunlight, looking very (tidy:1.2).
 
-0354:Full body photo of a Taiwanese woman in a grey zip-up hoodie, black biker shorts, and white chunky sneakers. Neat sports-chic.
+0354:A woman in a (breathable:1.1) linen dress, natural look, standing in a (clean:1.2) botanical garden, (vibrant:1.1) colors.
 
-0355:Full body photo of a man in a tight leopard print polo shirt with neon green swim trunks and flip-flops.
+0355:A man in a (fitted:1.2) professional suit, looking (capable:1.2) and (handsome:1.1), modern office background.
 
-0356:Full body photo of a Taiwanese woman in a white V-neck cricket sweater, a light blue denim mini skirt, and canvas sneakers.
+0356:A woman in (vintage:1.2) style clothing, (well-coordinated:1.1) layers, soft film grain texture, (gorgeous:1.1) face.
 
-0357:Full body photo of a Taiwanese man in a black oversized hoodie, grey jogger pants, and high-quality athletic shoes.
+0357:A handsome man in a (simple:1.1) white t-shirt and (clean:1.2) jeans, (athletic:1.1) body proportion, standing in a studio.
 
-0358:Full body photo of a woman in an oversized Hawaiian shirt with baggy camouflage pants and hiking boots.
+0358:A beautiful woman in a (complex:1.1) bohemian outfit, (colorful:1.1) textures, testing the boundary of (cluttered:1.2).
 
-0359:Full body photo of a Taiwanese woman in a sage green tennis dress with a small white collar and white headband.
+0359:A handsome man in a clean shirt, but with (slightly:1.1) messy hair and a (faint:1.1) stain on the cuff.
 
-0360:Full body photo of a Taiwanese man in a navy blue rugby shirt with a white collar, tucked into khaki chino shorts.
+0360:A (gorgeous:1.2) woman in a black velvet evening dress, (exquisite:1.2) jewelry, cinematic lighting.
 
-0361:Full body photo of a man wearing a formal tuxedo jacket with baggy purple sweatpants and yellow hiking boots.
+0361:A woman in (fit:1.2) yoga wear, (energetic:1.2) pose, standing in a (bright:1.1) modern gym.
 
-0362:Full body photo of a Taiwanese woman in a baby blue sweatshirt and white pleated mini skirt. Sweet academic style.
+0362:A man with (strong:1.1) jawline, wearing a (soft:1.2) knit cardigan, balancing (handsome:1.1) and (sweet:1.1).
 
-0363:Full body photo of a Taiwanese man in a grey heather t-shirt, black athletic shorts (above knee), and running sneakers.
+0363:A beautiful woman under a clear umbrella, (damp:1.1) street reflection, (tidy:1.2) raincoat, (moody:1.1) lighting.
 
-0364:Full body photo of a woman wearing a metallic silver down jacket with a bright red ballroom skirt.
+0364:An average woman but with (perfectly:1.2) styled hair and (gorgeous:1.1) makeup, wearing (simple:1.1) clothes.
 
-0365:Full body photo of a Taiwanese woman in a black cropped windbreaker and high-waisted white tennis skirt.
+0365:A man with (glasses:1.1), wearing a (tidy:1.2) sweater vest and collared shirt, (intelligent:1.1) look, library background.
 
-0366:Full body photo of a Taiwanese man in a forest green varsity jacket and black straight-leg trousers.
+0366:A woman in an (all-white:1.1) outfit, (minimalist:1.2), standing in a (sterile:1.1) white space, very (clean:1.2).
 
-0367:Full body photo of a woman in an oversized neon orange raincoat with purple leggings and metallic sneakers.
+0367:A handsome man in (rugged:1.1) outdoor gear, (durable:1.1) fabrics, (capable:1.2) appearance, mountain background.
 
-0368:Full body photo of a Taiwanese woman in a white cable-knit vest over a crisp light-blue shirt dress.
+0368:A slim man with (soft:1.2) features, wearing a (stylish:1.1) silk scarf and long coat, testing (sissy:1.1).
 
-0369:Full body photo of a Taiwanese man in a navy blue track suit jacket and matching tapered track pants, very clean and fitted.
+0369:A woman in a (perfectly:1.2) color-coordinated outfit, muted earth tones, (elegant:1.1) and (simple:1.1).
 
-0370:Full body photo of a man in a sequined vest with no shirt underneath and baggy denim shorts.
+0370:A handsome man in (high-contrast:1.2) lighting, wearing a dark leather jacket, (cool:1.2) and (handsome:1.1).
 
-0371:Full body photo of a Taiwanese woman in a lavender sports bra with a sheer white oversized jacket and high-waisted leggings.
+0371:A beautiful woman in a (slightly:1.1) wrinkled cotton dress, (natural:1.1) aesthetic, (sweet:1.1) expression.
 
-0372:Full body photo of a Taiwanese man in a white polo shirt, navy shorts, and white sneakers with no-show socks. Classic tennis look.
+0372:A man in a (heavy:1.1) wool overcoat, (tidy:1.2), dark tones, looking (mature:1.1) and (handsome:1.2).
 
-0373:Full body photo of a Taiwanese woman in a grey hoodie under a beige trench coat with black leggings. Urban sport mix.
+0373:A woman in (layered:1.1) sheer fabrics, (gorgeous:1.2) look, (ethereal:1.2) lighting, very (clean:1.1).
 
-0374:Full body photo of a woman in a tight metallic gold dress with an oversized flannel shirt.
+0374:A (capable:1.2) man with rolled-up sleeves, (tidy:1.1) but practical clothes, working in a (clean:1.1) workshop.
 
-0375:Full body photo of a Taiwanese man in a dark grey baseball jersey (unbuttoned) over a white t-shirt and black jeans.
+0375:A woman with (sexy:1.1), (cute:1.1), and (tidy:1.1) attributes, wearing an everyday casual outfit.
 
-0376:Full body photo of a Taiwanese woman in a white cropped tennis shirt and a navy high-waisted pleated skirt. Ultra-clean academic look.
+0376:A (gorgeous:1.2) woman with a (sweet:1.3) smile, wearing a (stylish camisole:1.2) and high-waist jeans, (sexy:1.1) yet (clean:1.2), city rooftop background.
 
-0377:Full body photo of a Taiwanese man in a light grey varsity jacket, white t-shirt, and slim-fit black chino shorts.
+0377:A (top-tier handsome:1.3) man, (fresh:1.2) and (confident:1.2), wearing a (perfectly tidy:1.3) white shirt with rolled sleeves, (sharp:1.1) look, minimalist background.
 
-0378:Full body photo of a woman in a neon pink bodysuit with oversized metallic silver puffer pants.
+0378:A very cute young asian woman in (sports bra:1.2) and yoga pants, (fit:1.3) body proportion, (energetic:1.2) and (sexy:1.1), (clean:1.2) gym setting.
 
-0379:Full body photo of a Taiwanese woman in a forest green sweatshirt and white biker shorts with high-top athletic sneakers.
+0379:A (cool:1.3) man in a (high-quality:1.2) plain black t-shirt, (athletic:1.2) build, (confident:1.2) expression, (very tidy:1.2) short hair.
 
-0380:Full body photo of a man in a tight leopard print tank top with purple dress slacks and yellow sandals.
+0380:A (gorgeous:1.2) woman in a (silk camisole:1.2), (refined:1.1) jewelry, (sweet:1.2) face, (clean:1.2) and (elegant:1.1), soft evening light.
 
-0381:Full body photo of a Taiwanese woman in a navy blue blazer over a white hoodie and grey pleated mini skirt.
+0381:A handsome asian man with (neat:1.2) hair, wearing a (fitted:1.2) polo shirt, looking (capable:1.3) and (confident:1.2), (clean:1.2) outdoor setting. full body photo 
 
-0382:Full body photo of a Taiwanese man in a crisp white polo shirt tucked into navy blue tailored trousers. Professional athlete style.
+0382:A (very sweet:1.3) woman in a (simple:1.2) summer dress, (natural:1.2) beauty, (tidy:1.2) and (fresh:1.2), standing in a bright street.
 
-0383:Full body photo of a woman in a massive orange raincoat over a delicate lace wedding dress.
+0383:A (handsome:1.2) man with an (energetic:1.3) smile, wearing (clean:1.2) linen clothes, (sharp:1.1) jawline, (confident:1.2) posture.
 
-0384:Full body photo of a Taiwanese woman in a cream-colored cable-knit sweater vest and a light blue denim mini skirt.
+0384:A (gorgeous:1.3) woman in a (plain white tank top:1.2) and shorts, (sexy:1.2) but (simple:1.3), (clean:1.2) and (fresh:1.2) look.
 
-0385:Full body photo of a Taiwanese man in a black tech-wear windbreaker and tapered charcoal joggers.
+0385:A (mature handsome:1.2) man, (well-groomed:1.3), wearing a (crisp:1.2) light blue shirt, (capable:1.2) and (tidy:1.2), professional background.
 
-0386:Full body photo of a man wearing a formal tuxedo jacket with neon green swim trunks.
+0386:A (sexy:1.1) woman with (exquisite:1.2) features and a (sweet:1.3) expression, wearing a (short cardigan and camisole:1.2), (tidy:1.1).
 
-0387:Full body photo of a Taiwanese woman in a sky blue sports bra under a sheer white zip-up jacket and black leggings.
+0387:A (handsome:1.2) man in a (clean:1.2) denim jacket and white tee, (confident:1.3) gaze, (well-coordinated:1.2) and (tidy:1.2).
 
-0388:Full body photo of a Taiwanese man in a navy blue rugby shirt and khaki shorts. Classic preppy.
+0388:A beautiful asian woman with (clean:1.3) skin, wearing a (simple:1.2) sheer layered top (with camisole), (gorgeous:1.2) and (fresh:1.2). full body photo 
 
-0389:Full body photo of a woman wearing a metallic silver down jacket with a bright red ballroom skirt.
+0389:A (fit:1.2) handsome asian man in (high-quality:1.2) sports gear, (energetic:1.3) and (tidy:1.2), (confident:1.2) athletic pose.
 
-0390:Full body photo of a Taiwanese woman in a white fitted t-shirt, a navy blue baseball cap, and high-waisted light-blue denim shorts.
+0390:A (gorgeous:1.2) woman in a (form-fitting:1.2) ribbed knit dress, (sexy:1.2) and (sweet:1.1), (very clean:1.3) and (tidy:1.2).
 
-0391:Full body photo of a Taiwanese man in a grey heather hoodie and black straight-leg jeans. Simple and clean.
+0391:A handsome man in a (simple:1.2) beige sweater and (clean:1.2) trousers, (polished:1.2) and (tidy:1.3), (confident:1.1) look.
 
-0392:Full body photo of a woman in a bright yellow puffy coat with purple leggings and hiking boots.
+0392:A (sweet:1.2) woman in a (camisole top:1.2), (sexy:1.1) shoulder lines, (fresh:1.3) and (clean:1.2), (bright:1.2) sunlight.
 
-0393:Full body photo of a Taiwanese woman in a lavender sweatshirt and white tennis skirt.
+0393:A (capable:1.3) handsome asian man with (sharp:1.2) features, wearing (simple:1.1) but (perfectly fitted:1.2) office casual, (tidy:1.3).
 
-0394:Full body photo of a Taiwanese man in a dark green varsity jacket and grey chino pants.
+0394:A woman with (natural:1.3) beauty and a (sweet:1.2) smile, wearing (clean:1.2) and (simple:1.3) clothes, (perfect tidy hair:1.2).
 
-0395:Full body photo of a man in a sequined vest with no shirt and baggy camouflage shorts.
+0395:A handsome man in a (high-quality:1.2) cotton shirt, (fresh:1.2) and (clean:1.3), (well-proportioned:1.2) and (confident:1.2).
 
-0396:Full body photo of a Taiwanese woman in a navy blue V-neck cricket sweater and white linen shorts.
+0396:A (gorgeous:1.2) woman in a (minimalist:1.3) black dress, (sexy:1.1) back detail, (elegant:1.1) and (tidy:1.2), (clean:1.2).
 
-0397:Full body photo of a Taiwanese man in a white graphic tee tucked into raw denim jeans with a brown leather belt.
+0397:A (sharp:1.2) handsome man, (clean-cut:1.3), wearing a (simple:1.2) grey tee, (athletic:1.1) and (confident:1.2). full body photo
 
-0398:Full body photo of a Taiwanese woman in a charcoal grey zip-up hoodie and black biker shorts.
+0398:A woman with (beautiful:1.2) eyes and a (sweet:1.3) smile, wearing (simple:1.2) but (sexy:1.2) streetwear, (very clean:1.2). full body photo
 
-0399:Full body photo of a woman in a tight metallic gold dress with a heavy oversized flannel shirt.
+0399:A (top-tier handsome:1.2) asian man, (spotless:1.3) appearance, (tidy:1.3) clothes, (confident:1.2) and (capable:1.2).
 
-0400:Full body photo of a Taiwanese woman in a beige trench coat over a white sports bra and black leggings. Urban athleisure peak.
+0400:A (sweet:1.3) young asian woman with sports bra and long tennis skirt, (perfectly tidy:1.2) aesthetic. ponytail, full body photo
+
+
+
