@@ -1,5 +1,6 @@
 import pandas as pd
 import re
+import json
 
 def analyze_weighted_trends(file_path='dress_dataset.csv'):
     try:
@@ -53,6 +54,16 @@ def analyze_weighted_trends(file_path='dress_dataset.csv'):
     # 計算「有效影響力」（偏微分斜率）
     stats['effective_impact'] = (stats['avg_score'] - 5.0) / stats['avg_weight']
     stats = stats.sort_values('effective_impact', ascending=False)
+
+    # --- 關鍵修改：匯出 JSON 藥力表 ---
+    # 將 DataFrame 轉換為字典格式 {tag: impact}
+    potency_map = dict(zip(stats['tag'], stats['effective_impact']))
+    
+    with open('labels_potency.json', 'w', encoding='utf-8') as f:
+        json.dump(potency_map, f, ensure_ascii=False, indent=4)
+    
+    print(f"✅ 藥理資料庫已儲存至 labels_potency.json，共紀錄 {len(potency_map)} 種藥性標籤。")
+    # --- 結束修改 ---
 
     print(f"\n --- 所有標籤 (共 {len(stats)} 種) ---")
     print(stats[['tag', 'avg_weight', 'avg_score', 'effective_impact']])

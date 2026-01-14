@@ -226,6 +226,9 @@
     const brushInput = document.getElementById('brushSize');
     const brushValLabel = document.getElementById('brushSizeVal');
     let drawing = false;
+    // --- 新增：追蹤連續重繪狀態 ---
+    let currentImageUrl = null; 
+    let isNewUpload = true;
 
     brushInput.oninput = () => { brushValLabel.innerText = brushInput.value; };
 
@@ -239,6 +242,7 @@
     document.getElementById('imageInput').onchange = evt => {
         const [file] = evt.target.files;
         if (file) {
+            isNewUpload = true; // --- 新增：一旦選了新檔案，就標記為新上傳 ---
             previewImg.src = URL.createObjectURL(file);
             previewImg.onload = () => {
                 initCanvas();
@@ -289,7 +293,13 @@
     document.getElementById('uploadForm').onsubmit = async (e) => {
         e.preventDefault();
         const submitBtn = document.getElementById('submitBtn');
+        // --- 修改：根據狀態決定傳檔案還是傳路徑 ---
         const formData = new FormData(e.target);
+        if (!isNewUpload && currentImageUrl) {
+            formData.set('last_result_path', currentImageUrl); // 傳路徑給後端
+            formData.delete('file'); // 移除空的 file 欄位避免干擾
+        }
+        // ----------------------------------------
 
         // --- [核心修正] 確保遮罩是黑底白畫 ---
         const maskCanvas = document.getElementById('maskCanvas');
@@ -321,6 +331,12 @@
         try {
             const response = await fetch('/predict', { method: 'POST', body: formData });
             const data = await response.json();
+            // --- 加入這段錯誤攔截 ---
+            if (data.error) {
+                alert("後端錯誤: " + data.error);
+                return; // 停止執行
+            }
+            // ----------------------
 
             if (data.score !== undefined) {
                 document.getElementById('scoreValue').innerText = data.score.toFixed(2);
@@ -328,6 +344,10 @@
                 
                 // 更新圖片路徑 (自動補上斜線與時間戳)
                 if (data.image_url) {
+                    // --- 修改：儲存這次的結果，供下一次重繪使用 ---
+                    currentImageUrl = data.image_url; 
+                    isNewUpload = false; 
+                    // ------------------------------------------
                     const newUrl = (data.image_url.startsWith('/') ? '' : '/') + data.image_url;
                     previewImg.src = newUrl + "?t=" + new Date().getTime();
                     

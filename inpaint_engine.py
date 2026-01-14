@@ -22,7 +22,7 @@ class InpaintEngine:
             self.pipe.enable_attention_slicing()
             # self.pipe.enable_model_cpu_offload() # 如果還是炸顯存再開這行
 
-    def generate(self, image_path, mask_path, prompt, negative_prompt):
+    def generate(self, image_path, mask_path, prompt, negative_prompt, inpaint_strength):
         # 讀取圖片
         init_image = Image.open(image_path).convert("RGB")
         mask_image = Image.open(mask_path).convert("RGB")
@@ -40,7 +40,7 @@ class InpaintEngine:
                 image=init_image,
                 mask_image=mask_image,
                 num_inference_steps=30,
-                strength=1.0,
+                strength=inpaint_strength,
                 guidance_scale=7.0,
                 padding_mask_crop=32
             ).images[0]
