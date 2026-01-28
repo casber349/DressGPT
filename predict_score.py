@@ -3,19 +3,14 @@ import torch.nn as nn
 import clip
 from PIL import Image
 
-# 1. 必須與訓練時完全相同的對照表
-GENDER_MAP = {"male": 0, "female": 1}
-AGE_MAP = {"teenager": 0, "adult": 1, "middle-aged": 2, "elderly": 3}
-BODY_MAP = {"skinny": 0, "athletic": 1, "plus_size": 2, "average": 3}
-SEASON_MAP = {"summer": 0, "winter": 1, "spring/fall": 2}
-FORMAL_MAP = {"formal": 0, "casual": 1}
+from feature_utils import get_one_hot_tags
 
 # 2. 定義模型架構 (必須與 train_DressGPT.py 一致)
 class DressGPT(nn.Module):
     def __init__(self):
         super(DressGPT, self).__init__()
         self.net = nn.Sequential(
-            nn.Linear(517, 256), # 512 + 5 = 517
+            nn.Linear(527, 256), # 512 + 15 = 527
             nn.ReLU(),
             nn.Dropout(0.2),
             nn.Linear(256, 64),
@@ -47,14 +42,8 @@ def get_prediction(image_path, user_tags):
         img_feat = clip_model.encode_image(image).to(torch.float32)
         img_feat /= img_feat.norm(dim=-1, keepdim=True) # 正規化
         
-        # C. 處理使用者選取的標籤特徵 (5維)
-        tag_feat = torch.tensor([
-            GENDER_MAP.get(user_tags.get('gender'), 0),
-            AGE_MAP.get(user_tags.get('age'), 1),
-            BODY_MAP.get(user_tags.get('body'), 3),
-            SEASON_MAP.get(user_tags.get('season'), 2),
-            FORMAL_MAP.get(user_tags.get('formal'), 1)
-        ], dtype=torch.float32).to(device).unsqueeze(0)
+        # 這裡 user_tags 是前端傳來的 dict，直接丟進去
+        tag_feat = get_one_hot_tags(user_tags).to(device).unsqueeze(0)
         
         # D. 拼接特徵並預測
         combined_feat = torch.cat([img_feat, tag_feat], dim=1)

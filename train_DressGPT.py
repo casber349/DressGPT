@@ -4,16 +4,10 @@ import torch.optim as optim
 import pandas as pd
 import numpy as np
 
+from feature_utils import get_one_hot_tags  # 匯入共用函式
 # 1. 設定路徑
 CSV_PATH = "dress_dataset.csv"
 EMBEDDINGS_PATH = "image_embeddings.pt"
-
-# 2. 建立標籤轉換對照表 (將 CSV 的文字轉為數字，讓 AI 能計算)
-GENDER_MAP = {"male": 0, "female": 1}
-AGE_MAP = {"teenager": 0, "adult": 1, "middle-aged": 2, "elderly": 3}
-BODY_MAP = {"skinny": 0, "athletic": 1, "plus_size": 2, "average": 3}
-SEASON_MAP = {"summer": 0, "winter": 1, "spring/fall": 2}
-FORMAL_MAP = {"formal": 0, "casual": 1}
 
 def load_and_prepare_data():
     # 讀取 CSV 並確保 ID 格式正確 (如 0001)
@@ -35,16 +29,10 @@ def load_and_prepare_data():
             # A. 取得 512 維圖片向量
             img_feat = id_to_feat[img_id].to(torch.float32).flatten()
             
-            # B. 取得 5 維自定義標籤特徵 (使用對照表轉為數字)
-            tag_feat = torch.tensor([
-                GENDER_MAP.get(row.get('gender', 'male'), 0),
-                AGE_MAP.get(row.get('age', 'adult'), 1),
-                BODY_MAP.get(row.get('body', 'average'), 3),
-                SEASON_MAP.get(row.get('season', 'summer'), 2),
-                FORMAL_MAP.get(row.get('formal', 'casual'), 1)
-            ], dtype=torch.float32)
+            # 直接呼叫，傳入 row (pandas Series 可以當 dict 用)
+            tag_feat = get_one_hot_tags(row)
             
-            # C. 拼接特徵：512 (圖片) + 5 (標籤) = 517 維
+            # C. 拼接特徵：512 (圖片) + 5 (標籤) = 527 維
             combined_feat = torch.cat([img_feat, tag_feat])
             
             X_list.append(combined_feat)
@@ -62,12 +50,12 @@ def load_and_prepare_data():
 X, y, ids = load_and_prepare_data()
 print(f"✅ 載入成功！訓練樣本數: {len(X)}, 輸入總維度: {X.shape[1]}")
 
-# 3. 定義模型 (輸入維度改為 517)
+# 3. 定義模型 (輸入維度改為 527)
 class DressGPT(nn.Module):
     def __init__(self):
         super(DressGPT, self).__init__()
         self.net = nn.Sequential(
-            nn.Linear(517, 256), 
+            nn.Linear(527, 256), 
             nn.ReLU(),
             nn.Dropout(0.2), # 增加穩定性
             nn.Linear(256, 64),
@@ -83,7 +71,7 @@ criterion = nn.MSELoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
 # 4. 開始訓練
-epochs = 1000
+epochs = 2000
 print(f"🚀 開始訓練 DressGPT (Deep Feature Fusion)...")
 
 for epoch in range(epochs):

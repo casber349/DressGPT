@@ -89,12 +89,18 @@ def predict():
         user_embed = get_single_image_embedding(img_path)
         user_diagnosis = infer_user_tags_via_neighbors(user_embed, 'dress_dataset.csv', 'image_embeddings.pt')
         
-        # 3. [分析階段] 傳入診斷結果，獲取結構化分析報告
-        # 注意：現在 analyze 必須傳入 user_diagnosis 才能生成 user_report
-        analysis_results = advisor.analyze(user_embed, user_tags, user_diagnosis)
-        
         # 預先取得原圖分數作為基準
         original_score = get_prediction(img_path, user_tags)
+
+        # 3. [分析階段] 傳入診斷結果，獲取結構化分析報告
+        # 注意：現在 analyze 必須傳入 user_diagnosis 才能生成 user_report
+        analysis_results = advisor.analyze(user_embed, user_tags, user_diagnosis, original_score)
+
+        if analysis_results is None:
+            # 這是針對你提到的「找不到人就報錯」的處理
+            return jsonify({
+                'error': '數據庫中找不到符合您條件的對比範本，請嘗試更換照片或調整標籤。'
+            }), 404
 
         final_image_path = img_path
         is_inpainted = False
@@ -170,7 +176,8 @@ def predict():
                 # --- 關鍵修正：重繪後需重新執行 analyze 以更新數據給 LLM ---
                 # 這樣 LLM 才能知道「術後」的 user_report 有什麼變化
                 new_user_embed = get_single_image_embedding(final_image_path)
-                analysis_results = advisor.analyze(new_user_embed, user_tags, user_diagnosis)
+                #analysis_results = advisor.analyze(new_user_embed, user_tags, user_diagnosis)
+                analysis_results = advisor.analyze(new_user_embed, user_tags, user_diagnosis, final_score)
             else:
                 print("⚠️ 偵測到空遮罩，進入「無 Mask 流程」...")
 

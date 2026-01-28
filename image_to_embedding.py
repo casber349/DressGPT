@@ -12,7 +12,7 @@ print(f"正在使用裝置: {device}")
 model, preprocess = clip.load("ViT-B/32", device=device)
 
 def get_single_image_embedding(img_path):
-    """專門為單張上傳的照片提取 Embedding"""
+    """專門為單張上傳的照片提取 Embedding (512維)"""
     try:
         with torch.no_grad():
             image = preprocess(Image.open(img_path)).unsqueeze(0).to(device)

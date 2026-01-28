@@ -91,7 +91,7 @@ import os
 
 def infer_user_tags_via_neighbors(user_embed, csv_path, all_embeddings_path, k=10):
     """
-    從資料庫鄰居中推論標籤強度，並處理 ID 格式不一致的問題
+    從資料庫鄰居(只使用512維embedding)中推論標籤強度，並處理 ID 格式不一致的問題
     """
     df = pd.read_csv(csv_path)
     # 強制將 ID 欄位轉為字串，方便後續比對
