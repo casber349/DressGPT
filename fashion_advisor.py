@@ -34,40 +34,45 @@ class FashionAdvisor:
             1.6: 1.22, 1.7: 1.25, 1.8: 1.27, 1.9: 1.3
         }
 
+        # 💡 新增：臉部特徵黑名單 (這些標籤絕不放入 C 段 Prompt，避免重繪時臉部崩壞)
+        self.face_tags = {
+            'good_mood', 'bad_mood', 'heavy_makeup'
+        }
+
         embedding_list = [self.db_dict.get(str_id, torch.zeros((1, 512))) for str_id in self.df['id_str']]
         self.embeddings = torch.cat(embedding_list, dim=0)
 
     def _get_weight_template(self, user_tags):
-        # 構建「邏輯相似度」權重向量 (15維)
+        # 構建「邏輯合理度」權重向量 (15維) (0.0分是絕對不能出現的選項，0.1~0.9代表可接受但不是最適合的選項)
         # 根據你提供的對照表，建立一個與 user_tags 相對應的權重模板
         weight_template = torch.zeros(15)
         
-        # --- A. 性別 (0-1) ---
+        # --- A. 性別 (0-1) --- (男/女)
         u_g = user_tags.get('gender', 'male')
         if u_g == 'male': weight_template[0:2] = torch.tensor([1.0, 0.0])
         else:             weight_template[0:2] = torch.tensor([0.0, 1.0])
 
-        # --- B. 年齡 (2-5) ---
+        # --- B. 年齡 (2-5) --- (少/青/中/老)
         u_a = user_tags.get('age', 'adult')
         if u_a == 'teenager':    weight_template[2:6] = torch.tensor([1.0, 0.8, 0.0, 0.0])
         elif u_a == 'adult':     weight_template[2:6] = torch.tensor([0.6, 1.0, 0.7, 0.0])
         elif u_a == 'middle-aged': weight_template[2:6] = torch.tensor([0.0, 0.6, 1.0, 0.2])
         else:                    weight_template[2:6] = torch.tensor([0.0, 0.0, 0.5, 1.0])
 
-        # --- C. 身材 (6-9) ---
+        # --- C. 身材 (6-9) --- (普通/瘦/健美/胖)
         u_b = user_tags.get('body', 'average')
-        if u_b == 'average':   weight_template[6:10] = torch.tensor([1.0, 0.4, 0.4, 0.0])
-        elif u_b == 'skinny':  weight_template[6:10] = torch.tensor([0.6, 1.0, 0.0, 0.0])
-        elif u_b == 'athletic': weight_template[6:10] = torch.tensor([0.5, 0.0, 1.0, 0.3])
+        if u_b == 'average':   weight_template[6:10] = torch.tensor([1.0, 0.5, 0.5, 0.0])
+        elif u_b == 'skinny':  weight_template[6:10] = torch.tensor([0.6, 1.0, 0.3, 0.0])
+        elif u_b == 'athletic': weight_template[6:10] = torch.tensor([0.5, 0.3, 1.0, 0.2])
         else:                  weight_template[6:10] = torch.tensor([0.0, 0.0, 0.2, 1.0])
 
-        # --- D. 季節 (10-12) ---
+        # --- D. 季節 (10-12) --- (夏/冬/春秋)
         u_s = user_tags.get('season', 'spring/fall')
         if u_s == 'summer':      weight_template[10:13] = torch.tensor([1.0, 0.0, 0.4])
         elif u_s == 'winter':    weight_template[10:13] = torch.tensor([0.0, 1.0, 0.2])
         else:                    weight_template[10:13] = torch.tensor([0.5, 0.6, 1.0])
 
-        # --- E. 正式度 (13-14) ---
+        # --- E. 正式度 (13-14) --- (休閒/正式)
         u_f = user_tags.get('formal', 'casual')
         if u_f == 'casual':      weight_template[13:15] = torch.tensor([1.0, 0.6])
         else:                    weight_template[13:15] = torch.tensor([0.0, 1.0])
@@ -205,49 +210,123 @@ class FashionAdvisor:
 
     def get_precision_prescription(self, user_diagnosis, good_id):
         """
-        方案 2 實作：只向一個高分榜樣學習，避免風格打架
+        方案 3 實作：比大小邏輯 (Target-Oriented) + 臉部保護機制
         """
+        # 1. 建立使用者標籤字典 {tag: weight}
         u_dict = {tag: weight for tag, weight in user_diagnosis}
+        
+        # 2. 獲取好鄰居標籤字典
         good_row = self.df[self.df['id_str'] == good_id].iloc[0]
+        # 修改後 (允許空白，但在冒號前停止)
+        n_tags_list = re.findall(r'\(?([^:\(\)]+):([\d\.]+)\)?', str(good_row.get('pos_tags', "")))
+        n_dict = {tag: float(w) for tag, w in n_tags_list}
         
-        # 解析單一榜樣標籤
-        n_tags = re.findall(r'\(?([^:,\(\)\s]+):([\d\.]+)\)?', str(good_row.get('pos_tags', "")))
-        
-        healing_candidates = []
-        for tag, n_w_str in n_tags:
-            n_w = float(n_w_str)
+        final_pos_prompts = []
+        final_neg_prompts = []
+
+        # --- A. 正向標籤處理 (比大小) ---
+        # 遍歷好鄰居的所有優點
+        for tag, n_w in n_dict.items():
+            # [規則 1] 臉部標籤跳過 (不重繪臉)
+            if tag in self.face_tags:
+                continue
+            
+            # 取得我的權重 (如果沒有就是 0.0)
             u_w = u_dict.get(tag, 0.0)
-            delta = max(0, n_w - u_w) # 劑量差
-            potency = self.potency_map.get(tag, 0.0)
-            if potency > 0:
-                healing_candidates.append((tag, n_w, delta * potency))
+            
+            # [規則 2] 只有當鄰居比我強時，才加入 Prompt
+            # 且使用鄰居的權重進行轉換
+            if n_w > u_w:
+                # 查表轉換權重 (四捨五入到小數點第一位以符合 key)
+                mapped_w = self.weight_map.get(round(n_w, 1), 1.0)
+                if mapped_w == 1.0:
+                    final_pos_prompts.append(f"{tag}")
+                else:
+                    final_pos_prompts.append(f"({tag}:{mapped_w})")
 
-        # 負向清除
-        killing_candidates = []
+        # --- B. 負向標籤處理 (大掃除) ---
+        # 遍歷我身上的所有標籤
         for tag, u_w in u_dict.items():
+            # 檢查是否為負向標籤 (potency < 0)
             potency = self.potency_map.get(tag, 0.0)
+            
             if potency < 0:
-                killing_candidates.append((tag, u_w, u_w * abs(potency)))
+                # [規則 1] 臉部標籤跳過 (例如 bad mood 不放入 negative prompt)
+                if tag in self.face_tags:
+                    continue
+                
+                # [規則 3] 負向標籤全部放入 Negative Prompt
+                # 使用我原本的權重進行轉換
+                mapped_w = self.weight_map.get(round(u_w, 1), 1.0)
+                if mapped_w == 1.0:
+                    final_pos_prompts.append(f"{tag}")
+                else:
+                    final_pos_prompts.append(f"({tag}:{mapped_w})")
 
-        healing_candidates.sort(key=lambda x: x[2], reverse=True)
-        killing_candidates.sort(key=lambda x: x[2], reverse=True)
-
-        rx_pos = [f"({tag}:{self.weight_map.get(round(w, 1), 1.1)})" for tag, w, _ in healing_candidates[:3]]
-        rx_neg = [f"({tag}:{self.weight_map.get(round(w + 0.2, 1), 1.2)})" for tag, w, _ in killing_candidates[:3]]
-
-        return ", ".join(rx_pos), ", ".join(rx_neg)
+        # [規則 4] 不再限制長度 (移除 [:3])
+        return ", ".join(final_pos_prompts), ", ".join(final_neg_prompts)
 
     def _parse_to_list(self, tag_str):
         if pd.isna(tag_str) or tag_str == "": return []
-        return [m[0].strip() for m in re.findall(r'\(?([^:,\(\)\s]+):([\d\.]+)\)?', tag_str)]
+        # 修改後
+        return [m[0].strip() for m in re.findall(r'\(?([^:\(\)]+):([\d\.]+)\)?', tag_str)]
 
     def get_inpaint_configs(self, analysis_results, user_tags, user_diagnosis):
-        rx_pos, rx_neg = self.get_precision_prescription(user_diagnosis, analysis_results['good_id'])
+        # --- 取得 C 段處方 (優先排序) ---
+        c_pos, c_neg = self.get_precision_prescription(user_diagnosis, analysis_results['good_id'])
         
-        base_p = "(masterpiece, high quality:1.2), (accurate body features, full body photo:1.15)"
-        base_n = "(low quality, gaps:1.15), (extra limbs, missing limbs, bad anatomy, deformed:1.1)"
+        # --- A+B 段極限封裝 (權重階層化版) ---
         
-        gender_word = "handsome man" if user_tags['gender'] == 'male' else "beautiful woman"
-        cond_p = f"({gender_word}:1.1), ({user_tags['season']} outfit:1.05)"
+        # A+：正確穿衣(1.3) -> 身體結構(1.0) -> 品質(1.2) 
+        a_pos = "(properly clothed:1.3), accurate body features, (best quality:1.2)"
         
-        return f"{base_p}, {cond_p}, {rx_pos}", f"{base_n}, {rx_neg}"
+        # A-：只保留裸露排除為最高權重，其餘合併為 1.2
+        a_neg = "(naked, nude, shirtless:1.3), (bad anatomy, deformed, gaps:1.2)"
+        
+        # B 段動態判定
+        b_pos_list = [] # B+
+        b_neg_list = [] # B-
+        
+        # 1. 性別與身材：性別鎖定使用 1.2
+        if user_tags['gender'] == 'male':
+            b_pos_list.append("(1man:1.2)")
+            b_neg_list.append("(skirt, female curve:1.2)") # 排除女性特徵用 1.2
+        else:
+            b_pos_list.append("(1woman:1.2)")
+            b_neg_list.append("(muscular:1.2), lingerie, panties") # 排除男性特徵用1.2
+
+        # 身材：回歸 1.0，不加權
+        body = user_tags['body']
+        if body == 'skinny':
+            b_pos_list.append("slim")
+            b_neg_list.append("muscular build")
+        elif body == 'plus_size':
+            b_pos_list.append("plus size")
+            b_neg_list.append("tight clothes")
+
+        # 2. 季節與正式度
+        season = user_tags['season']
+        if season == 'summer':
+            b_pos_list.append("summer outfit") # 1.0
+            b_neg_list.append("heavy jacket, coat")
+        elif season == 'winter':
+            b_pos_list.append("winter outfit") # 1.0
+            b_neg_list.append("short sleeves")
+            
+        if user_tags.get('formal') == 'formal':
+            b_pos_list.append("(formal attire:1.2)") # 正式度給予 1.2 確保風格
+
+        # --- 組合最終 Prompt (關鍵：優先級排序) ---
+        # 策略：C 段 (藥方) 放第一，性別放第二，其餘放後面
+        b_pos_str = ", ".join(b_pos_list)
+        b_neg_str = ", ".join(b_neg_list)
+        
+        # Positive 排序：處方(C+) > 條件(B+) > 畫質(A+)
+        # 即使 Token 爆掉，被截斷的也是最後面的 quality，而非藥方
+        full_pos = f"{c_pos}, {b_pos_str}, {a_pos}" if c_pos else f"{b_pos_str}, {a_pos}"
+        
+        # Negative 排序：保護(A-) > 條件(B-) > 藥方(C-)
+        full_neg = f"{a_neg}, {b_neg_str}"
+        if c_neg: full_neg += f", {c_neg}"
+        
+        return full_pos, full_neg

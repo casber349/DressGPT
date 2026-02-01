@@ -1,63 +1,57 @@
 import torch
 import torch.nn as nn
 import torch.optim as optim
-import pandas as pd
+from sklearn.model_selection import KFold
+from sklearn.metrics import r2_score
 import numpy as np
+import pandas as pd
+import os
+import copy  # 用來複製最佳模型參數
 
-from feature_utils import get_one_hot_tags  # 匯入共用函式
+from feature_utils import get_one_hot_tags
+
 # 1. 設定路徑
 CSV_PATH = "dress_dataset.csv"
 EMBEDDINGS_PATH = "image_embeddings.pt"
+MODEL_SAVE_DIR = "./DressGPT_models"
+INFO_FILE_PATH = "./DressGPT_models/model_info.txt"
+
+# 確保儲存資料夾存在
+if not os.path.exists(MODEL_SAVE_DIR):
+    os.makedirs(MODEL_SAVE_DIR)
 
 def load_and_prepare_data():
-    # 讀取 CSV 並確保 ID 格式正確 (如 0001)
     df = pd.read_csv(CSV_PATH)
     df['id'] = df['id'].apply(lambda x: str(x).zfill(4))
-    
-    # 💡 關鍵修正點：直接讀取字典格式 {id: tensor}
     id_to_feat = torch.load(EMBEDDINGS_PATH)
     
     X_list = []
     y_list = []
-    valid_ids = []
-
+    
     print("🔄 正在對齊圖片特徵與文字標籤...")
     for _, row in df.iterrows():
         img_id = row['id']
-        # 現在直接從字典裡用 ID 領取向量
         if img_id in id_to_feat:
-            # A. 取得 512 維圖片向量
             img_feat = id_to_feat[img_id].to(torch.float32).flatten()
-            
-            # 直接呼叫，傳入 row (pandas Series 可以當 dict 用)
             tag_feat = get_one_hot_tags(row)
-            
-            # C. 拼接特徵：512 (圖片) + 5 (標籤) = 527 維
-            combined_feat = torch.cat([img_feat, tag_feat])
-            
+            combined_feat = torch.cat([img_feat, tag_feat]) # 527 維
             X_list.append(combined_feat)
             y_list.append(row['score'])
-            valid_ids.append(img_id)
 
     if not X_list:
-        raise ValueError("❌ 錯誤：沒有成功對齊任何資料，請檢查 CSV 的 ID 與向量檔案是否匹配！")
+        raise ValueError("❌ 錯誤：沒有成功對齊任何資料！")
 
     X = torch.stack(X_list)
     y = torch.tensor(y_list, dtype=torch.float32).view(-1, 1)
-    return X, y, valid_ids
+    return X, y
 
-# 載入資料
-X, y, ids = load_and_prepare_data()
-print(f"✅ 載入成功！訓練樣本數: {len(X)}, 輸入總維度: {X.shape[1]}")
-
-# 3. 定義模型 (輸入維度改為 527)
+# 定義模型
 class DressGPT(nn.Module):
     def __init__(self):
         super(DressGPT, self).__init__()
         self.net = nn.Sequential(
             nn.Linear(527, 256), 
             nn.ReLU(),
-            nn.Dropout(0.2), # 增加穩定性
             nn.Linear(256, 64),
             nn.ReLU(),
             nn.Linear(64, 1)
@@ -66,35 +60,86 @@ class DressGPT(nn.Module):
     def forward(self, x):
         return self.net(x)
 
-model = DressGPT()
-criterion = nn.MSELoss()
-optimizer = optim.Adam(model.parameters(), lr=0.001)
+# 載入資料
+X, y = load_and_prepare_data()
 
-# 4. 開始訓練
-epochs = 2000
-print(f"🚀 開始訓練 DressGPT (Deep Feature Fusion)...")
+# 2. 5-Fold Ensemble 訓練
+kf = KFold(n_splits=5, shuffle=True, random_state=42)
+fold_stats = [] # 用來存每個 fold 的數據
+epochs = 1000
 
-for epoch in range(epochs):
-    model.train()
-    optimizer.zero_grad()
+print(f"🚀 開始 5-Fold Ensemble 訓練 (將儲存 5 個模型)...")
+
+for fold, (t_idx, v_idx) in enumerate(kf.split(X)):
+    X_t, X_v, y_t, y_v = X[t_idx], X[v_idx], y[t_idx], y[v_idx]
     
-    outputs = model(X)
-    loss = criterion(outputs, y)
+    model = DressGPT()
+    optimizer = optim.Adam(model.parameters(), lr=0.001)
+    criterion = nn.MSELoss()
     
-    loss.backward()
-    optimizer.step()
+    best_v_r2 = -float('inf')
+    best_t_r2 = 0
+    best_epoch = 0
+    patience_counter = 0
+    best_model_wts = copy.deepcopy(model.state_dict()) # 初始化最佳權重
+
+    for epoch in range(1, epochs + 1):
+        model.train()
+        optimizer.zero_grad()
+        loss = criterion(model(X_t), y_t)
+        loss.backward()
+        optimizer.step()
+        
+        # 每 10 epoch 檢查一次
+        if epoch % 10 == 0:
+            model.eval()
+            with torch.no_grad():
+                current_t_r2 = r2_score(y_t.numpy(), model(X_t).numpy())
+                current_v_r2 = r2_score(y_v.numpy(), model(X_v).numpy())
+                
+                if current_v_r2 > best_v_r2:
+                    best_v_r2 = current_v_r2
+                    best_t_r2 = current_t_r2
+                    best_epoch = epoch
+                    best_model_wts = copy.deepcopy(model.state_dict()) # 📸 抓拍最佳權重
+                    patience_counter = 0
+                else:
+                    patience_counter += 1
+            
+            if patience_counter >= 5: # Early Stop
+                break
     
-    if (epoch + 1) % 100 == 0:
-        print(f"Epoch [{epoch+1}/{epochs}], Loss: {loss.item():.4f}")
+    # 儲存該 Fold 的最佳模型
+    save_path = os.path.join(MODEL_SAVE_DIR, f"fold{fold+1}.pth")
+    torch.save(best_model_wts, save_path)
+    
+    # 記錄數據
+    fold_stat = {
+        "fold": fold + 1,
+        "epoch": best_epoch,
+        "train_r2": best_t_r2,
+        "val_r2": best_v_r2
+    }
+    fold_stats.append(fold_stat)
+    
+    print(f"✅ Fold {fold+1} 完成: Saved at Epoch {best_epoch} | Val R2: {best_v_r2:.4f}")
 
-# 5. 儲存模型
-torch.save(model.state_dict(), "dressgpt_weights.pth")
-print("\n✅ 訓練完成！模型權重已儲存為 dressgpt_weights.pth")
+# 3. 輸出 model_info.txt
+print(f"\n📝 正在寫入訓練報告至 {INFO_FILE_PATH}...")
 
-# 6. 驗證前 5 筆預測
-model.eval()
-with torch.no_grad():
-    preds = model(X[:5])
-    print("\n--- 預測結果對比 ---")
-    for i in range(min(5, len(ids))):
-        print(f"ID: {ids[i]} | 實際分數: {y[i].item():.2f} | AI 預測: {preds[i].item():.2f}")
+avg_epoch = np.mean([s['epoch'] for s in fold_stats])
+avg_train_r2 = np.mean([s['train_r2'] for s in fold_stats])
+avg_val_r2 = np.mean([s['val_r2'] for s in fold_stats])
+
+with open(INFO_FILE_PATH, "w", encoding="utf-8") as f:
+    f.write("=== DressGPT 5-Fold Ensemble Report ===\n\n")
+    f.write(f"{'Fold':<5} | {'Epoch':<6} | {'Train R2':<10} | {'Val R2':<10}\n")
+    f.write("-" * 45 + "\n")
+    
+    for s in fold_stats:
+        f.write(f"{s['fold']:<5} | {s['epoch']:<6} | {s['train_r2']:.4f}     | {s['val_r2']:.4f}\n")
+    
+    f.write("-" * 45 + "\n")
+    f.write(f"{'AVG':<5} | {int(avg_epoch):<6} | {avg_train_r2:.4f}     | {avg_val_r2:.4f}\n")
+
+print(f"🎉 訓練完成！所有模型與報告已儲存於 {MODEL_SAVE_DIR}")

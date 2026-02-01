@@ -89,84 +89,95 @@ import torch.nn.functional as F
 import image_to_embedding
 import os
 
+ENERGY_THRESHOLD_RATIO = 0.25
+
 def infer_user_tags_via_neighbors(user_embed, csv_path, all_embeddings_path, k=10):
     """
-    從資料庫鄰居(只使用512維embedding)中推論標籤強度，並處理 ID 格式不一致的問題
+    [God Mode] 完整輸出所有鄰居標籤與權重計算過程
     """
     df = pd.read_csv(csv_path)
-    # 強制將 ID 欄位轉為字串，方便後續比對
     df['id'] = df['id'].astype(str)
-    
     all_embeddings = torch.load(all_embeddings_path, map_location="cpu")
     
     ids = list(all_embeddings.keys())
     db_matrix = torch.stack([all_embeddings[i].flatten() for i in ids]).to(torch.float32)
     user_embed = user_embed.to(torch.float32).view(1, -1)
     
+    # 相似度計算
     sims = F.cosine_similarity(user_embed, db_matrix)
     top_values, top_indices = torch.topk(sims.flatten(), k=min(k, len(ids)))
     
     tag_accumulator = {} 
     sim_sum_accumulator = {}
 
-    print(f"\n[系統訊息] 正在分析最相似的 {k} 個樣本...")
+    print(f"\n" + "="*60)
+    print(f"🕵️‍♂️ [深度審核] 正在分析相似度前 {k} 名的鄰居...")
+    print(f"="*60)
 
     match_count = 0
     for i in range(len(top_indices)):
         idx = top_indices[i].item()
         sim = top_values[i].item()
-        neighbor_id = str(ids[idx]) # 確保從 Embedding 拿到的 ID 是字串
+        neighbor_id = str(ids[idx])
         
-    # --- 精準 ID 匹配邏輯 ---
-        # 1. 移除副檔名並轉為整數，再轉回字串（例如 "0001.jpg" -> "0001" -> 1 -> "1"）
+        # ID 處理邏輯
         try:
             clean_id = neighbor_id.split('.')[0]
-            if clean_id.isdigit():
-                lookup_id = str(int(clean_id)) # 核心修正：0020 -> 20
-            else:
-                lookup_id = clean_id
+            lookup_id = str(int(clean_id)) if clean_id.isdigit() else clean_id
         except:
             lookup_id = neighbor_id
 
-        # 在 CSV 中搜尋
         match_rows = df[df['id'].astype(str) == lookup_id]
-        
-        # 備援機制：如果還是找不到，嘗試原始 ID 匹配
         if match_rows.empty:
             match_rows = df[df['id'].astype(str) == neighbor_id]
 
         if not match_rows.empty:
             match_count += 1
             row = match_rows.iloc[0]
-            # 整合所有標籤欄位
+            # 取得該鄰居所有 pos_tags 與 neg_tags
             tags_str = f"{row.get('pos_tags', '')}, {row.get('neg_tags', '')}"
-            
-            # 使用 Regex 解析 (tag:weight)
             matches = re.findall(r"\(([^:]+):([\d\.]+)\)", tags_str)
             
+            print(f"📍 鄰居 {i+1}: ID={lookup_id.zfill(4)} | 相似度={sim:.4f}")
+            print(f"   📜 原始標籤: {tags_str}") # 直接列印完整字串，不截斷
+
             for tag, weight in matches:
                 w = float(weight)
+                # 權重 * 相似度 累積
                 tag_accumulator[tag] = tag_accumulator.get(tag, 0) + (w * sim)
                 sim_sum_accumulator[tag] = sim_sum_accumulator.get(tag, 0) + sim
         else:
-            # 偵錯用：印出找不到的 ID 範例
-            if i < 3: 
-                print(f"⚠️ 無法在 CSV 匹配 ID: {neighbor_id} (處理後: {clean_id})")
+            print(f"⚠️ 鄰居 {neighbor_id} 在 CSV 中找不到，請檢查 ID 格式")
 
-    if match_count == 0:
-        print("❌ 錯誤：完全找不到匹配的 CSV 數據。")
-        print(f"提示：CSV 的 ID 範例: {df['id'].iloc[0]}, Embedding 的 ID 範例: {ids[0]}")
-        return []
-
-    print(f"✅ 成功從 {match_count} 個鄰居中提取特徵。")
-
+    print(f"\n" + "-"*60)
+    print(f"🧮 梯度權重計算報告 (User Tag Inference):")
+    print(f"-"*60)
+    
     final_results = []
     for tag in tag_accumulator:
-        weighted_avg = tag_accumulator[tag] / sim_sum_accumulator[tag]
-        clamped_w = max(0.1, min(1.9, weighted_avg))
-        final_results.append((tag, clamped_w))
+        total_energy = tag_accumulator[tag] # 這裡已經是 w * sim 的總和
+        
+        
+        # 只有能量達標的才進入 final_results
+        if total_energy >= ENERGY_THRESHOLD_RATIO * k:
+            weighted_avg = round(total_energy / sim_sum_accumulator[tag], 1)
+            clamped_w = max(0.1, min(1.9, weighted_avg))
+            final_results.append((tag, clamped_w))
+            print(f"保留{(tag, clamped_w)}標籤。標籤總強度:{total_energy}")
+        else:
+            print(f"捨棄{tag}標籤。標籤總強度:{total_energy}")
     
     final_results.sort(key=lambda x: x[1], reverse=True)
+
+    # --- 在 auto_tagger.py 的 return final_results 前面加入 ---
+    print("\n" + "!"*20 + " [核心算法診斷] " + "!"*20)
+    print(f"總共參考了 {match_count} 個鄰居。")
+    print("最終計算出的 User Tags (權重已完成相似度歸一化):")
+    for tag, weight in final_results:
+        # 這裡印出所有參與計算的標籤及其最終強度
+        print(f" >> [標籤]: {tag:15s} | [最終權重]: {weight}")
+    print("!"*55 + "\n")
+
     return final_results
 
 # --- 終端機執行測試 ---

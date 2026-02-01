@@ -14,7 +14,7 @@ class InpaintEngine:
         self.pipe = StableDiffusionInpaintPipeline.from_pretrained(
             model_id,
             torch_dtype=torch.float16 if self.device == "cuda" else torch.float32,
-            safety_checker=None # 關閉安全檢查以加速並避免誤判
+            safety_checker=None # 關閉安全檢查以加速並避免誤判 (有夠煩，不要開)
         ).to(self.device)
 
         # 顯存優化：如果顯存低於 8GB，啟用以下設定
@@ -31,6 +31,9 @@ class InpaintEngine:
         # 或是如果你顯存較小，可以縮放成 (448, 800)
         init_image = init_image.resize((576, 1024))
         mask_image = mask_image.resize((576, 1024))
+
+        print(f"Prompt: {prompt}")
+        print(f"Negative prompt: {negative_prompt}")
 
         with torch.autocast("cuda"):
             # 執行重繪

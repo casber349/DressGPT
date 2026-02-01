@@ -1,45 +1,44 @@
 ==================================================
-DressGPT 第七階段：混合維度評分與穩健搜尋引擎 (Algorithm Robustness Stage)
+DressGPT 第八階段：集成學習架構與權重階層化 Prompt (Ensemble & Hierarchy Stage)
 ==================================================
 
 核心檔案更新：
-- train_DressGPT.py, predict_score.py (修正模型結構)
-- fashion_advisor.py (搜尋邏輯完全重構、雙門檻機制實裝)
-- app.py (整合診斷與分析流程、後台數據監控)
-- logic_utils.py (新增 Tensor 運算優化工具)
+- train_DressGPT.py: 由全數據訓練轉向 5-Fold Cross Validation + Early Stopping 訓練模式 。
+- predict_score.py: 重構為 Ensemble 預測機制，整合 5 個模型的權重進行平均評分 。
+- fashion_advisor.py: 實作 A/B/C 三段式權重階層化 Prompt 引擎 。
+- auto_tagger.py: 優化標籤過濾演算法，改用權重總和門檻機制，並排除非服裝標籤。
+- app.py: 後台監控邏輯強化，新增大量診斷、權重計算與匹配細節之 Debug 訊息 。
 
 --------------------------------------------------
 技術細節與重大更新：
 
-1. 527 維混合特徵評分模型 (Hybrid Dimension Scoring)
-   - [視覺層 512維]：來自 CNN/Transformer 的 Image Embedding，負責捕捉色彩、紋理、剪裁等視覺特徵。
-   - [語義層 15維]：基於 One-hot Encoding 的條件向量 (性別/場合/季節/身材/年齡)。
-   - 突破點：將原本單純的「以圖搜圖」進化為「具備邏輯約束的視覺搜尋」，徹底解決跨性別或場合錯亂的推薦問題。
+1. 引入5-Fold Cross Validation，並採用集成評分系統 (Ensemble Scorer)
+   - 抗過擬合策略：為解決小樣本(400張)導致的嚴重 Overfitting 問題，全面改採 5-Fold Cross Validation。
+   - 早停機制 (Early Stop): 訓練過程自動追蹤 Validation R2，若連續 50 Epoch 未提升則觸發早停，鎖定最佳泛化權重。
+   - 多重模型評分機制: 推論時不再依賴單一權重檔案，而是載入 5 個獨立 Fold 模型進行平均運算。
+   - 目前平均 Train R2 為 0.7750，Validation R2 為 0.5109。
 
-2. 動態雙門檻搜尋系統 (Dual-Threshold Search Engine)
-   - 針對不同分數段 (高/中/低) 的使用者，設計了具備容錯能力的搜尋策略：
-   - [Mode A: 精英模式 (Strict)]：
-      - 優先尋找匹配度 (Match Score) > 0.4 且分數極高(榜樣)或極低(避雷)的樣本。
-      - 確保推薦對象在視覺上與使用者高度相似，具有參考價值。
-   - [Mode B: 生存模式 (Fallback)]：
-      - 當精英模式搜尋失敗時自動觸發。
-      - 改為尋找「比使用者好/壞一點點」的鄰居 (User Score ± 0.1)。
-      - 徹底解決了容易遭遇空集合回傳 (None) 的系統崩潰問題。
+2. 三段式階層權重 Prompt 引擎 (Tri-Tier Weighted Prompting)
+   - 為解決生成過程中偶發的結構錯誤與衣服缺失問題，重新定義 Prompt 優先級邏輯:
+   - Positive Prompt (C+ → B+ → A+):
+      - C段 (診斷藥方)：最優先，直接放置客製化建議（如顏色修正、特定服飾），確保修改效果最顯著。
+      - B段 (環境條件)：中優先，鎖定性別與季節標籤（如 (1man:1.2), winter outfit）。
+      - A段 (畫質基礎)：基礎權重，維持 (properly clothed:1.3) 與畫質特徵 。
+   - Negative Prompt (A- → B- → C-):
+      - A段 (結構防線)：最高優先級，強力排除 (naked, nude, shirtless:1.3) 與 bad anatomy。
+      - B段 (風格過濾)：中優先，排除不符性別或身材的特徵（如男裝排除 skirt, female curve）。
+      - C段 (藥方排除)：低優先，排除與診斷建議相反的元素 。
 
-3. 硬約束與軟權重過濾 (Hard Constraints & Soft Weights)
-   - [硬約束]：實作矩陣連乘過濾 (Matrix Multiplication Masking)。性別或場合不符者，權重直接歸零 (一票否決)。
-   - [軟權重]：針對年齡、身材等模糊標籤採用加權評分 (0.2~1.0)，保留推薦的多樣性與彈性。
-   - 演算法優化：將 Pandas Series 運算全面轉為 PyTorch Tensor 運算，解決了布林值歧義 (Boolean Value Ambiguous) 的底層報錯。
+3. 標籤精煉與 Auto-Tagger 優化:
+   - 權重總和門檻過濾：在標籤選取時，不再僅依賴單一標籤強度，而是透過總和門檻篩選出真正具代表性的特徵，自動捨棄低強度雜訊。
+   - 診斷範圍鎖定：在 C+/C-段Prompt 中自動過濾臉部相關標籤（如 face, eye），確保生成資源完全集中於服裝重繪，維持人物身份一致性。
 
-4. 系統透明化與白箱監控 (White-box Monitoring)
-   - 後台終端機 (Terminal) 現可即時顯示搜尋細節，包括：
-      - 原始評分 (Raw Score)
-      - 最終匹配度 (Cosine * Logic Match)
-      - 觸發模式 (Strict / Fallback)
-   - 開發者能直觀判斷推薦品質，不再依賴黑箱猜測。
+4. 系統監控與 Debug 強化 (White-box Monitoring Plus)
+   - 標籤強度追蹤：後台可監控所有候選標籤（如 clean, messy, color match）在相似度歸一化後的最終權重 。
+   - Ensemble 詳細輸出：推論時即時顯示 Fold 1 至 Fold 5 每個模型的原始預測值，便於判斷評分的一致性 。
 
 --------------------------------------------------
 實驗結果:
-原圖: 4.13 (PR 28)
-DressGPT優化後 5.58 (PR 65)
+原圖: 3.41 (PR 14)
+DressGPT優化後 5.13 (PR 54)
 ==================================================
