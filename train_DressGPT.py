@@ -9,6 +9,7 @@ import os
 import copy  # 用來複製最佳模型參數
 
 from feature_utils import get_one_hot_tags
+from model_arch import DressGPT  # 從新檔案引入
 
 # 1. 設定路徑
 CSV_PATH = "dress_dataset.csv"
@@ -44,21 +45,6 @@ def load_and_prepare_data():
     X = torch.stack(X_list)
     y = torch.tensor(y_list, dtype=torch.float32).view(-1, 1)
     return X, y
-
-# 定義模型
-class DressGPT(nn.Module):
-    def __init__(self):
-        super(DressGPT, self).__init__()
-        self.net = nn.Sequential(
-            nn.Linear(527, 256), 
-            nn.ReLU(),
-            nn.Linear(256, 64),
-            nn.ReLU(),
-            nn.Linear(64, 1)
-        )
-        
-    def forward(self, x):
-        return self.net(x)
 
 # 載入資料
 X, y = load_and_prepare_data()

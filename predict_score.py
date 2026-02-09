@@ -5,21 +5,7 @@ from PIL import Image
 import os  # 新增：用於處理路徑
 
 from feature_utils import get_one_hot_tags
-
-# 1. 定義模型架構 (必須與 train_DressGPT.py 完全一致)
-class DressGPT(nn.Module):
-    def __init__(self):
-        super(DressGPT, self).__init__()
-        self.net = nn.Sequential(
-            nn.Linear(527, 256), 
-            nn.ReLU(),
-            nn.Linear(256, 64),
-            nn.ReLU(),
-            nn.Linear(64, 1)
-        )
-        
-    def forward(self, x):
-        return self.net(x)
+from model_arch import DressGPT  # 從新檔案引入
 
 # 2. 預測函式 (改為 Ensemble 版本)
 def get_prediction(image_path, user_tags):

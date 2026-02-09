@@ -1,44 +1,33 @@
 ==================================================
-DressGPT 第八階段：集成學習架構與權重階層化 Prompt (Ensemble & Hierarchy Stage)
+DressGPT 第九階段：千張標註里程碑與視覺化對標牆 (1k Milestone & Visual Benchmark Stage)
 ==================================================
 
 核心檔案更新：
-- train_DressGPT.py: 由全數據訓練轉向 5-Fold Cross Validation + Early Stopping 訓練模式 。
-- predict_score.py: 重構為 Ensemble 預測機制，整合 5 個模型的權重進行平均評分 。
-- fashion_advisor.py: 實作 A/B/C 三段式權重階層化 Prompt 引擎 。
-- auto_tagger.py: 優化標籤過濾演算法，改用權重總和門檻機制，並排除非服裝標籤。
-- app.py: 後台監控邏輯強化，新增大量診斷、權重計算與匹配細節之 Debug 訊息 。
+- dataset/: 資料集擴充至 1000 張標註樣本，建立全新審美分佈常模。
+- gallery.html: 新增視覺化對標牆介面，取代原有的 check_benchmarks.py 文字輸出模式。
+- server.py (或 app.py): 新增靜態網頁路由，支援對標牆的圖片與分數動態渲染。
+- visualize.py: 強化長條圖邏輯，依照「性別 x 人種」拆分為四色堆疊顯示，用於指導資料補強策略。
 
 --------------------------------------------------
 技術細節與重大更新：
 
-1. 引入5-Fold Cross Validation，並採用集成評分系統 (Ensemble Scorer)
-   - 抗過擬合策略：為解決小樣本(400張)導致的嚴重 Overfitting 問題，全面改採 5-Fold Cross Validation。
-   - 早停機制 (Early Stop): 訓練過程自動追蹤 Validation R2，若連續 50 Epoch 未提升則觸發早停，鎖定最佳泛化權重。
-   - 多重模型評分機制: 推論時不再依賴單一權重檔案，而是載入 5 個獨立 Fold 模型進行平均運算。
-   - 目前平均 Train R2 為 0.7750，Validation R2 為 0.5109。
+1. 達成 1000 張樣本里程碑 (1k Data Milestone)
+   - 規模擴張：資料庫由 400 張擴增至 1000 張，大幅提升模型對於「審美極端值」的判讀能力。
+   - 新天花板 (New Ceiling)：ID: 1000 -> 9.94 / 10 分。
+   - 新地板 (New Floor)：ID: 0305 -> 0.06 / 10 分。
 
-2. 三段式階層權重 Prompt 引擎 (Tri-Tier Weighted Prompting)
-   - 為解決生成過程中偶發的結構錯誤與衣服缺失問題，重新定義 Prompt 優先級邏輯:
-   - Positive Prompt (C+ → B+ → A+):
-      - C段 (診斷藥方)：最優先，直接放置客製化建議（如顏色修正、特定服飾），確保修改效果最顯著。
-      - B段 (環境條件)：中優先，鎖定性別與季節標籤（如 (1man:1.2), winter outfit）。
-      - A段 (畫質基礎)：基礎權重，維持 (properly clothed:1.3) 與畫質特徵 。
-   - Negative Prompt (A- → B- → C-):
-      - A段 (結構防線)：最高優先級，強力排除 (naked, nude, shirtless:1.3) 與 bad anatomy。
-      - B段 (風格過濾)：中優先，排除不符性別或身材的特徵（如男裝排除 skirt, female curve）。
-      - C段 (藥方排除)：低優先，排除與診斷建議相反的元素 。
+2. 網頁版視覺化對標牆 (Visual Benchmark Wall)
+   - 實體化邊框權重：引入 CSS 動態邊框邏輯，以厚度 (6px → 2px) 與顏色 (金/銀/銅/鐵 vs 紅色警示) 視覺化分數權重。
+   - PR 值 (Percentile Rank) 系統：在每個分區顯示 PR 值（如 PR 99.6, PR 50.0），提供比絕對分數更具參考價值的相對排名資訊。
+   - 標籤視覺化：直接在卡片下方展示該樣本的關鍵 Tags (如 ugly, messy, handsome)，驗證模型評分依據。
 
-3. 標籤精煉與 Auto-Tagger 優化:
-   - 權重總和門檻過濾：在標籤選取時，不再僅依賴單一標籤強度，而是透過總和門檻篩選出真正具代表性的特徵，自動捨棄低強度雜訊。
-   - 診斷範圍鎖定：在 C+/C-段Prompt 中自動過濾臉部相關標籤（如 face, eye），確保生成資源完全集中於服裝重繪，維持人物身份一致性。
+3. 參考點解析度提升 (Granular Reference System)
+   - 舊制：僅依賴 (2, 3.5, 5, 6.5, 8) 五個參考點。
+   - 新制：擴展為 11 個層級 (BTM 4, 1, 2, 3, 4, 5, 6, 7, 8, 9, TOP 4)，涵蓋從審美災難到極致美學的完整光譜。
+   - 優勢：解決了原本 3.5~5 分與 6.5~8 分之間跨度過大，導致「路人」與「型人」界線模糊的問題。
 
-4. 系統監控與 Debug 強化 (White-box Monitoring Plus)
-   - 標籤強度追蹤：後台可監控所有候選標籤（如 clean, messy, color match）在相似度歸一化後的最終權重 。
-   - Ensemble 詳細輸出：推論時即時顯示 Fold 1 至 Fold 5 每個模型的原始預測值，便於判斷評分的一致性 。
+4. 數據平衡策略視覺化 (Demographic Visualization)
+   - 在 visualize.py 中引入四色分類（男性/女性 x 歐美/亞洲），精確識別特定分數段（如 3-4 分區）的樣本缺口。
+   - 依據此視覺化結果，有針對性地補充了缺乏的樣本，修正了模型在特定性別或膚色上的評分偏差。
 
---------------------------------------------------
-實驗結果:
-原圖: 3.41 (PR 14)
-DressGPT優化後 5.13 (PR 54)
 ==================================================

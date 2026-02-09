@@ -10,6 +10,13 @@ TAG_MAPS = {
         ],
         "labels": ["male", "female"]
     },
+    "race": {
+        "options": [
+            "a photo of an East Asian person, Chinese, Japanese, or Korean ethnicity", 
+            "a photo of a Caucasian person, Western ethnicity, European facial features"
+        ],
+        "labels": ["asian", "caucasian"]
+    },
     "age": {
         "options": [
             "a young teenager or child under 18 years old", 

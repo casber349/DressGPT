@@ -1,3 +1,4 @@
 static/uploads/*
 __pycache__
 static/dataset_info/prompts_new.txt
+static/new_photos_for_dressgpt

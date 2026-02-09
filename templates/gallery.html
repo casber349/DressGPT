@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>DressGPT 審美對標牆</title>
+    <style>
+        /* === CSS 樣式區 === */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 { text-align: center; color: #fff; margin-bottom: 10px; }
+        p.subtitle { text-align: center; color: #888; margin-bottom: 30px; }
+
+        /* 4. 調整網格，確保三欄的寬度分配更均勻 */
+        .container {
+            display: grid;
+            /*grid-template-columns: 80px 340px 340px; /* 固定寬度，避免自動撐開 */
+            grid-template-columns: 80px 1fr 1fr;
+            gap: 20px;
+            max-width: 1600px;
+            margin: 0 auto;
+            align-items: start; /* 改為頂部對齊，避免照片高度微差導致錯位 */
+        }
+
+            /* 男性/女性的子容器，內部使用 flex 或 grid 橫向排列 */
+        .gender-zone {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 15px;
+        }
+
+        /* 標題列 */
+        .header {
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            border-radius: 8px;
+            color: #ffcc00;
+        }
+
+        /* 分數標籤 */
+        .score-label {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            color: #ffcc00;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* 修改後的卡片與圖片樣式 */
+        .card {
+            background-color: #1e1e1e;
+            border-radius: 16px;
+            padding: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            transition: transform 0.2s;
+            border: 2px solid transparent;
+            
+            /* 1. 強制卡片寬度一致 */
+            /*width: 300px;*/
+            width: 100%; 
+            margin: 0 auto; /* 置中 */
+        }
+        
+        .card:hover { transform: translateY(-5px); z-index: 10; border-color: #666;}
+        
+        /* 性別顏色區分 */
+        .card.male { border-bottom: 4px solid #4da6ff; }
+        .card.female { border-bottom: 4px solid #ff99cc; }
+
+        .card img {
+            /* 2. 寬度填滿卡片，高度由比例決定 */
+            width: 100%;
+            aspect-ratio: 9 / 16; 
+            
+            /* 3. 等比例縮放的核心：這行確保圖片不變形，多餘的會被裁掉 */
+            object-fit: cover; 
+            
+            border-radius: 12px;
+            background-color: #000;
+            display: block;
+        }
+
+        .info {
+            padding: 12px 5px 5px 5px;
+            font-size: 0.95rem;
+        }
+
+        .info .top-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .info .id { font-weight: bold; color: #fff; }
+        .info .score { color: #ffcc00; font-weight: bold; font-size: 1.1em; }
+        
+        .info .tags { 
+            display: block; 
+            font-size: 0.8rem; 
+            color: #888; 
+            white-space: nowrap; 
+            overflow: hidden; 
+            text-overflow: ellipsis; 
+            background: #2a2a2a;
+            padding: 4px;
+            border-radius: 4px;
+        }
+        
+        .loading { grid-column: 1 / span 3; text-align: center; padding: 50px; color: #666; }
+    </style>
+</head>
+<body>
+
+    <h1>🚀 DressGPT 審美對標牆</h1>
+
+    <div class="container" id="gallery">
+        <div class="loading" id="loadingText">正在載入數據與圖片...</div>
+    </div>
+
+    <script>
+        // 修改後的特殊行渲染函式
+        function renderSpecialRow(label, subLabel, list, defaultColor) {
+            const gallery = document.getElementById('gallery');
+            const medalColors = ["#FFD700", "#C0C0C0", "#CD7F32", "#708090"]; 
+            const dangerColors = ["#ff0000", "#cc0000", "#8b0000", "#4a0000"]; 
+            // 定義厚度陣列：第一名(或最後一名) 6px，依序遞減到 2px
+            const borderThickness = ["6px", "4px", "3px", "2px"]; 
+
+            const labelDiv = document.createElement('div');
+            labelDiv.className = 'score-label';
+            labelDiv.style.color = defaultColor; 
+            labelDiv.innerHTML = `
+                <div style="font-size: 1.5rem;">${label}</div>
+                <div style="font-size: 0.7rem; color: #888; font-weight: normal;">${subLabel}</div>
+            `;
+            gallery.appendChild(labelDiv);
+
+            const zones = [document.createElement('div'), document.createElement('div')];
+            zones.forEach(z => { z.className = 'gender-zone'; });
+
+            list.forEach((p, index) => {
+                const card = createCard(p, 'special');
+                let frameColor;
+
+                if (label.includes("TOP")) {
+                    frameColor = medalColors[index];
+                } else if (label.includes("BTM")) {
+                    frameColor = dangerColors[index]; // 0是最後一名，對應鮮紅
+                } else {
+                    frameColor = defaultColor;
+                }
+                
+                // --- 動態調整厚度與顏色 ---
+                card.style.borderColor = frameColor;
+                card.style.borderWidth = borderThickness[index]; // 越前面的名次框越厚
+                card.style.borderStyle = "solid"; // 確保邊框樣式啟動
+                
+                // 配合厚度，加強發光半徑（厚邊框配大發光）
+                const glowRadius = (6 - index) * 3; 
+                card.style.boxShadow = `0 0 ${glowRadius}px ${frameColor}66`; 
+                
+                (index < 2 ? zones[0] : zones[1]).appendChild(card);
+            });
+
+            gallery.appendChild(zones[0]);
+            gallery.appendChild(zones[1]);
+        }
+
+        const prMap = {
+            "9": "PR 99.6", // 第4名 / 1000人
+            "8": "PR 97.7", // 第23名 / 1000人
+            "7": "PR 90.8", // 第92名 / 1000人
+            "6": "PR 74.9", // 第251名 / 1000人
+            "5": "PR 50.0", // 第500名 / 1000人
+            "4": "PR 25.1", // 第749名 / 1000人
+            "3": "PR 9.2", // 第908名 / 1000人
+            "2": "PR 2.3", // 第977名 / 1000人
+            "1": "PR 0.4" // 第996名 / 1000人
+        };
+        
+        document.addEventListener('DOMContentLoaded', async () => {
+            const gallery = document.getElementById('gallery');
+            const loadingText = document.getElementById('loadingText');
+
+            try {
+                const response = await fetch('/api/benchmarks');
+                const resData = await response.json(); // 假設後端改為回傳物件
+                const data = resData.benchmarks;
+                loadingText.style.display = 'none';
+
+                if (data.error) {
+                    gallery.innerHTML += `<div style="grid-column: 1/-1; color: red;">錯誤: ${data.error}</div>`;
+                    return;
+                }
+
+                // 1. 渲染頂部「全場天花板 (TOP 4)」
+                renderSpecialRow("🏆 TOP 4", "The Ceiling", resData.top_four, "#ffcc00");
+
+                // 修改 JS 的渲染部分
+                data.forEach(row => {
+                    // (A) 分數標籤
+                    const scoreDiv = document.createElement('div');
+                    scoreDiv.className = 'score-label';
+                    // --- 關鍵修改點：加入 PR 值顯示 ---
+                    // row.score 是 1~9 的整數字串，對應 prMap 裡的 key
+                    const prValue = prMap[row.score] || ""; 
+                    
+                    scoreDiv.innerHTML = `
+                        ${row.score}
+                        <div style="font-size: 1rem; color: #ccc; margin-top: 5px; text-shadow: none;">
+                            ${prValue}
+                        </div>
+                    `;
+                    // ----------------------------
+                    gallery.appendChild(scoreDiv);
+
+                    // (B) 男性區
+                    const maleZone = document.createElement('div');
+                    maleZone.className = 'gender-zone';
+                    row.male_list.forEach(p => maleZone.appendChild(createCard(p, 'male')));
+                    gallery.appendChild(maleZone);
+
+                    // (C) 女性區
+                    const femaleZone = document.createElement('div');
+                    femaleZone.className = 'gender-zone';
+                    row.female_list.forEach(p => femaleZone.appendChild(createCard(p, 'female')));
+                    gallery.appendChild(femaleZone);
+                });
+
+                // 3. 渲染底部「全場地板 (BOTTOM 4)」
+                renderSpecialRow("💀 BTM 4", "The Floor", resData.bottom_four, "#ff4444");
+
+            } catch (err) {
+                console.error(err);
+                loadingText.innerText = "連線失敗";
+            }
+        });
+
+        function createCard(personData, genderType) {
+            const card = document.createElement('div');
+            card.className = `card ${genderType}`;
+
+            if (!personData) {
+                card.innerHTML = `
+                    <div style="aspect-ratio: 9/16; display:flex; align-items:center; justify-content:center; background:#222; border-radius:12px; color:#555;">
+                        N/A
+                    </div>`;
+            } else {
+                card.innerHTML = `
+                    <img src="${personData.img_path}" alt="${personData.id}" title="${personData.tags}">
+                    <div class="info">
+                        <div class="top-row">
+                            <span class="id">ID: ${personData.id}</span>
+                            <span class="score">${personData.score}</span>
+                        </div>
+                        <span class="tags" title="${personData.tags}">${personData.tags}</span>
+                    </div>
+                `;
+            }
+            return card;
+        }
+    </script>
+</body>
+</html>

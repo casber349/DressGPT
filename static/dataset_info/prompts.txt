@@ -798,5 +798,1205 @@
 
 0400:A (sweet:1.3) young asian woman with sports bra and long tennis skirt, (perfectly tidy:1.2) aesthetic. ponytail, full body photo
 
+0401:full body shot, an Asian man in a plain grey polo shirt, navy chino shorts, casual sneakers, standing in a library, (simple:1.0), (tidy:0.9)
+
+0402:full body shot, a Caucasian woman in (emerald green silk blouse:1.2), high-waisted white trousers, gold earrings, city rooftop sunset, (gorgeous:1.2), (sexy:1.1), (clean:1.2), (high quality fabric:1.1)
+
+0403:full body shot, a Caucasian man in a brown zip-up hoodie, blue jeans, walking in a residential area, (ordinary:0.9), (simple:1.0)
+
+0404:full body shot, an Asian woman in (clashing neon green top and hot pink leggings:1.3), yellow rubber boots, chaotic street market background, (color mismatch:1.2), (messy:1.1)
+
+0405:full body shot, an Asian woman in a white cotton t-shirt, light denim skirt, white socks and sneakers, standing in a coffee shop, (simple:1.1), (tidy:1.0)
+
+0406:full body shot, a Caucasian woman in a basic red summer dress, sandals, holding a coffee cup, park background, (simple:1.0), (clean:0.9)
+
+0407:full body shot, an Asian man in a striped long sleeve shirt, black trousers, standing near a bus stop, (tidy:0.9), (simple:1.0)
+
+0408:full body shot, an Asian woman in (minimalist cream linen dress:1.2), (delicate pearl necklace:1.1), woven straw tote bag, soft sunlight in a botanical garden, (sweet:1.3), (elegant:1.2), (tidy:1.2)
+
+0409:full body shot, a Caucasian man in a plain blue t-shirt, grey jeans, brown leather belt, street background, (simple:1.0), (ordinary:0.8)
+
+0410:full body shot, a Caucasian man wearing (extremely tight tiny tank top:1.2) and (massive oversized puffer pants:1.3), dirty sneakers, cluttered garage background, (sloppy:1.2), (ugly:1.1)
+
+0411:full body shot, an Asian woman in a navy blue cardigan, pleated grey skirt, school campus background, (tidy:1.1), (simple:1.0)
+
+0412:full body shot, a Caucasian woman in a casual black jumpsuit, flat sandals, walking in a shopping mall, (simple:1.1), (ordinary:1.0)
+
+0413:full body shot, an Asian man in a beige crew neck sweater, white undershirt visible, dark jeans, (clean:1.0), (simple:0.9)
+
+0414:full body shot, a Caucasian man in (charcoal herringbone overcoat:1.2), black turtleneck, slim dark trousers, leather boots, winter street in London, (handsome:1.3), (sophisticated:1.1), (clean:1.2)
+
+0415:full body shot, an Asian woman in a light blue denim jacket, white cotton tee, black leggings, university campus background, (simple:1.1), (tidy:1.0)
+
+0416:full body shot, a Caucasian man in a plain grey cotton hoodie, dark wash jeans, sneakers, standing in a supermarket aisle, (simple:1.0), (ordinary:0.8)
+
+0417:full body shot, an Asian man in (wrinkled oversized stained undershirt:1.3), baggy worn-out sweatpants, mismatched slippers, messy bedhead hair, (sloppy:1.3), (untidy:1.2)
+
+0418:full body shot, a Caucasian woman in a pink floral blouse, white denim shorts, sunny beach path background, (simple:1.0), (ordinary:1.0)
+
+0419:full body shot, an Asian man in a dark green windbreaker, khaki pants, holding an umbrella, rainy street, (simple:1.0), (ordinary:0.9)
+
+0420:full body shot, an Asian man wearing (oversized olive trench coat:1.1), white crisp shirt, wide-leg beige chinos, (tidy hair:1.2), modern art gallery background, (clean:1.3), (handsome:1.2), (stylish:1.1)
+
+0421:full body shot, a Caucasian woman in an oversized beige blazer, white t-shirt, blue jeans, city sidewalk, (simple:1.1), (ordinary:1.0)
+
+0422:full body shot, an Asian woman in a black turtleneck, plaid mini skirt, standing in a bookstore, (tidy:1.1), (simple:1.0)
+
+0423:full body shot, a Caucasian woman in (neon purple sequin ball gown:1.3), (excessive colorful plastic jewelry:1.2), heavy mismatched eye makeup, laundry room background, (overdressed:1.3), (messy:1.1)
+
+0424:full body shot, a Caucasian man in a flannel checkered shirt, olive cargo pants, outdoor forest trail, (simple:1.0), (ordinary:0.9)
+
+0425:full body shot, an Asian man in a light yellow short sleeve shirt, navy trousers, office hallway, (clean:1.0), (simple:0.9)
+
+0426:full body shot, a Caucasian man in a dark grey crew neck sweater, olive green chinos, brown desert boots, walking in a quiet neighborhood, (simple:1.0), (ordinary:0.9)
+
+0427:full body shot, an Asian woman wearing (preppy style oversized navy blazer:1.2), pleated white skirt, high socks with loafers, (sweet:1.3), (cute:1.2), (tidy:1.1), university brick wall background
+
+0428:full body shot, a Caucasian woman in (wrinkled neon orange tracksuit:1.3), clashing blue sandals, messy hair tied with a cheap plastic clip, (sloppy:1.2), (color mismatch:1.3), cluttered kitchen background
+
+0429:full body shot, an Asian woman in a floral print midi dress, denim jacket draped over shoulders, sandals, city park background, (simple:1.1), (tidy:1.0)
+
+0430:full body shot, a Caucasian man in a light blue button-down shirt, khaki work pants, black belt, office parking lot background, (clean:1.0), (simple:0.9)
+
+0431:full body shot, a Caucasian man in (tailored tan linen suit:1.3), white premium cotton shirt, dark brown loafers, (good body proportion:1.2), (handsome:1.1), (good fabric:1.2), beach club sunset background
+
+0432:full body shot, an Asian man in a black graphic t-shirt, baggy cargo shorts, white sneakers, standing near a vending machine, (simple:1.0), (ordinary:0.8)
+
+0433:full body shot, an Asian man wearing (undersized tight yellow tank top:1.2) that looks (bloated:1.1), worn-out stained grey sweatpants, flip-flops, messy hair, (sloppy:1.3), (untidy:1.2)
+
+0434:full body shot, a Caucasian woman in a beige trench coat, skinny black jeans, ankle boots, autumn street background, (clean:1.1), (simple:1.0)
+
+0435:full body shot, an Asian woman in a pastel purple hoodie, white tennis skirt, sneakers, holding a tennis racket, (cute:1.1), (simple:1.0)
+
+0436:full body shot, a Caucasian woman in (minimalist black silk slip dress:1.2), (delicate silver jewelry:1.1), black high heels, elegant rooftop bar, (gorgeous:1.3), (sexy:1.2), (clean:1.2)
+
+0437:full body shot, an Asian man in a denim shirt worn open over a white tee, olive chinos, boots, (tidy:1.1), (simple:1.0)
+
+0438:full body shot, a Caucasian man in a red flannel shirt, dark jeans, work boots, holding a toolbox, (ordinary:0.9), (simple:1.0)
+
+0439:full body shot, a Caucasian man in (oversaturated neon pink tuxedo:1.3), (clashing bright green bowtie:1.2), shiny gold shoes, standing in a messy backyard, (color mismatch:1.3), (ugly:1.2)
+
+0440:full body shot, an Asian woman in a grey knit sweater, black leggings, boots, winter street background, (simple:1.0), (tidy:0.9)
+
+0441:full body shot, a Caucasian woman in a navy polo shirt, white shorts, boat shoes, yacht club background, (clean:1.1), (simple:1.0)
+
+0442:full body shot, an Asian man in (premium black leather motorcycle jacket:1.2), white high-quality tee, slim grey jeans, (handsome:1.2), (good body proportion:1.3), (good fabric:1.1), urban night street background
+
+0443:full body shot, an Asian man in a yellow raincoat, dark trousers, holding an umbrella, rainy bus stop, (simple:1.0), (ordinary:0.9)
+
+0444:full body shot, a Caucasian woman in a striped long-sleeve tee, denim overalls, white sneakers, (cute:1.1), (simple:1.0)
+
+0445:full body shot, an Asian woman in a camel cashmere turtleneck, cream wool pants, (tidy:1.2), (simple:1.1), library interior
+
+0446:full body shot, a Caucasian man in a basic black hoodie, charcoal joggers, running shoes, gym entrance background, (simple:1.0), (ordinary:0.8)
+
+0447:full body shot, an Asian woman in (excessive layered heavy lace gowns:1.3), (clashing neon accessories:1.2), thick cakey makeup, supermarket background, (overdressed:1.3), (ugly:1.1)
+
+0448:full body shot, an Asian man in a light blue summer shirt, white linen pants, sandals, poolside background, (clean:1.1), (simple:1.0)
+
+0449:full body shot, a Caucasian woman in a dark green v-neck sweater, tan skirt, flats, (tidy:1.1), (simple:1.0)
+
+0450:full body shot, an Asian man in a maroon sweatshirt, grey cargo pants, sneakers, (ordinary:0.9), (simple:1.0)
+
+0451:full body shot, an Asian woman in a (oversized beige knit sweater:1.1), brown corduroy trousers, white sneakers, holding a book, library background, (simple:1.1), (tidy:1.2)
+
+0452:full body shot, a Caucasian man in a (dark denim jacket:1.2) over a light grey hoodie, slim black jeans, (distressed leather boots:1.1), urban alley background, (handsome:1.2), (tidy:1.1), (good body proportion:1.2)
+
+0453:full body shot, an Asian man wearing a (neon green tight muscle shirt:1.3) with a (deep v neck:1.2), (clashing orange track pants:1.3), messy sandals, (color mismatch:1.3), (sloppy:1.2)
+
+0454:full body shot, a Caucasian woman in a casual denim romper, white sandals, straw hat, coastal boardwalk background, (simple:1.0), (clean:1.1)
+
+0455:full body shot, an Asian man in a charcoal grey long sleeve tee, khaki trousers, black belt, standing in a subway station, (simple:1.0), (tidy:1.1)
+
+0456:full body shot, an Asian woman in a (classic trench coat:1.2), black turtleneck, slim blue jeans, (leather loafers:1.1), rainy city street with umbrella, (elegant:1.3), (tidy:1.2), (clean:1.1)
+
+0457:full body shot, a Caucasian man in a flannel shirt over a white tee, dark grey chinos, outdoor hiking trail, (ordinary:0.9), (simple:1.0)
+
+0458:full body shot, an Asian woman in a light blue button-up shirt tucked into high-waisted white pants, brown belt, office lobby, (clean:1.2), (simple:1.1)
+
+0459:full body shot, a Caucasian woman in a (layered neon pink lace dress:1.3) with (excessive glittery makeup:1.2), (deep v neck:1.1), standing in a hardware store, (overdressed:1.3), (ugly:1.1)
+
+0460:full body shot, a Caucasian man in a navy quilted vest, grey sweatshirt, jeans, sneakers, walking a dog in a park, (simple:1.0), (ordinary:0.9)
+
+0461:full body shot, a Caucasian woman in (high-waisted wool trousers:1.2), fitted black cashmere sweater, (delicate gold watch:1.1), minimalist art gallery background, (sophisticated:1.3), (clean:1.2), (tidy:1.2)
+
+0462:full body shot, an Asian man in a burgundy polo shirt, cream shorts, boat shoes, summer patio background, (simple:1.0), (clean:1.1)
+
+0463:full body shot, an Asian woman in a sage green midi skirt, white puff-sleeve blouse, flat shoes, garden background, (sweet:1.1), (tidy:1.2)
+
+0464:full body shot, an Asian man in an (extra-long oversized stained t-shirt:1.3) that looks (bloated:1.1), sagging cargo pants, mismatched socks, (sloppy:1.3), (untidy:1.2)
+
+0465:full body shot, a Caucasian woman in a mustard yellow cardigan, floral skirt, ankle boots, autumn forest, (simple:1.0), (ordinary:0.9)
+
+0466:full body shot, an Asian man in a grey zip-up hoodie, black joggers, gym entrance, (simple:1.0), (ordinary:0.8)
+
+0467:full body shot, an Asian man in a (well-fitted charcoal suit:1.2), crisp white shirt (no tie:1.1), (polished black dress shoes:1.2), high-end restaurant background, (handsome:1.3), (tidy:1.3), (good body proportion:1.2)
+
+0468:full body shot, a Caucasian woman in a grey blazer, white t-shirt, blue jeans, city sidewalk, (simple:1.1), (tidy:1.1)
+
+0469:full body shot, an Asian woman in a navy striped tee, khaki shorts, sandals, holding an ice cream cone, pier background, (cute:1.1), (simple:1.0)
+
+0470:full body shot, a Caucasian man in a olive field jacket, black jeans, rugged boots, urban park background, (cool:1.1), (simple:1.0)
+
+0471:full body shot, a Caucasian man in (oversaturated bright yellow suit:1.2), mismatched purple shoes, (color mismatch:1.3), (ugly:1.3)
+
+0472:full body shot, an Asian woman in a black shift dress, pearl earrings, standing in a theater lobby, (tidy:1.2), (simple:1.0)
+
+0473:full body shot, a Caucasian man in a light blue linen shirt, white shorts, standing on a beach, (clean:1.1), (simple:1.0)
+
+0474:full body shot, an Asian man in a brown harrington jacket, navy chinos, sneakers, university campus, (simple:1.1), (tidy:1.1)
+
+0475:full body shot, a Caucasian woman in a teal turtleneck, grey plaid trousers, office setting, (clean:1.2), (tidy:1.1)
+
+0476:full body shot, an Asian man in a (tailored olive green field jacket:1.2), crisp white tee, charcoal slim chinos, brown leather boots, (clean:1.2), (tidy:1.1), industrial loft background
+
+0477:full body shot, a Caucasian woman in a tan oversized blazer, light blue jeans, white loafers, urban street background, (simple:1.1), (tidy:1.0)
+
+0478:full body shot, an Asian woman in a (neon purple shiny vinyl dress:1.3) with (exaggerated ruffled shoulders:1.2), (clashing orange heels:1.3), messy living room background, (ugly:1.2), (color mismatch:1.3)
+
+0479:full body shot, an Asian man in a navy blue cardigan, white oxford shirt, grey trousers, standing in a bookstore, (simple:1.1), (clean:1.1)
+
+0480:full body shot, a Caucasian man in a black turtleneck, dark grey wool coat, jeans, winter park background, (tidy:1.1), (simple:0.9)
+
+0481:full body shot, a Caucasian woman in a (premium beige cashmere coat:1.3), white wide-leg silk trousers, (minimalist gold jewelry:1.1), luxury hotel lobby, (elegant:1.3), (clean:1.2), (tidy:1.2)
+
+0482:full body shot, an Asian woman in a floral print wrap dress, denim jacket, white sneakers, picnic in a park, (simple:1.0), (ordinary:0.9)
+
+0483:full body shot, a Caucasian man in (oversized lime green polo shirt:1.2) that is (wrinkled:1.2), stained khaki cargo shorts, socks with sandals, (sloppy:1.3), (untidy:1.2)
+
+0484:full body shot, an Asian man in a mustard yellow crew neck sweater, dark blue jeans, canvas sneakers, (simple:1.0), (clean:1.1)
+
+0485:full body shot, a Caucasian woman in a red sundress, tan sun hat, sandals, vineyard background, (simple:1.0), (tidy:1.1)
+
+0486:full body shot, an Asian woman in a (well-fitted navy jumpsuit:1.2), (minimalist leather belt:1.1), high heels, modern rooftop garden, (sophisticated:1.3), (tidy:1.2), (clean:1.1)
+
+0487:full body shot, a Caucasian man in a grey zip-up jacket, black t-shirt, khaki pants, airport terminal background, (simple:1.0), (ordinary:0.8)
+
+0488:full body shot, an Asian woman in a pastel pink hoodie, white pleated tennis skirt, sneakers, (cute:1.1), (simple:1.0)
+
+0489:full body shot, an Asian man in an (extremely tight shiny silver spandex suit:1.3), (clashing neon green vest:1.2), standing in a messy garage, (color mismatch:1.3), (ugly:1.1)
+
+0490:full body shot, a Caucasian woman in a striped long-sleeve knit top, dark green corduroy skirt, boots, (simple:1.0), (tidy:1.1)
+
+0491:full body shot, a Caucasian man in a (premium black leather jacket:1.3), fitted grey t-shirt, slim black jeans, (polished leather boots:1.1), urban neon night street, (handsome:1.3), (cool:1.2), (good body proportion:1.2)
+
+0492:full body shot, an Asian man in a light blue summer button-up, white shorts, boat shoes, harbor background, (clean:1.1), (simple:1.0)
+
+0493:full body shot, a Caucasian man in a maroon flannel shirt, blue jeans, work boots, holding a coffee cup, (ordinary:0.9), (simple:1.0)
+
+0494:full body shot, an Asian woman in a grey wool blazer, white tee, black slim pants, office setting, (tidy:1.2), (simple:1.1)
+
+0495:full body shot, a Caucasian woman in a navy trench coat, beige scarf, boots, autumn city street, (clean:1.1), (simple:1.0)
+
+0496:full body shot, a Caucasian woman in (tattered oversized grey sweatpants:1.2), (neon yellow tank top with deep v neck:1.3), messy hair, standing in a dirty laundromat, (sloppy:1.3), (untidy:1.2)
+
+0497:full body shot, an Asian man in a olive green henley shirt, khaki chinos, brown sneakers, (simple:1.0), (ordinary:0.9)
+
+0498:full body shot, a Caucasian man in a white polo shirt, navy shorts, sunglasses, poolside background, (clean:1.1), (simple:1.0)
+
+0499:full body shot, an Asian woman in a black turtleneck, camel midi skirt, flats, museum interior, (tidy:1.2), (simple:1.1)
+
+0500:full body shot, a Caucasian woman in a chambray shirt, white jeans, brown sandals, farmers market background, (simple:1.0), (clean:1.1)
+
+0501:full body shot, an Asian woman in a (champagne silk blouse:1.2) tucked into (high-waisted charcoal wool trousers:1.2), minimalist gold necklace, standing in a sunlit modern office, (elegant:1.3), (clean:1.2), (tidy:1.2)
+
+0502:full body shot, a Caucasian man in a grey thermal long-sleeve shirt, navy chinos, brown desert boots, walking in a suburban neighborhood, (simple:1.1), (ordinary:0.9)
+
+0503:full body shot, an Asian man in a (wrinkled oversized neon orange tank top:1.3), (sagging purple gym shorts:1.2), mismatched flip-flops, messy hair, (sloppy:1.3), (untidy:1.2), (color mismatch:1.2)
+
+0504:full body shot, an Asian woman in a light lavender cardigan, white camisole, denim jeans, carrying a canvas tote bag, bookstore background, (simple:1.0), (clean:1.1)
+
+0505:full body shot, a Caucasian man in a (tailored navy pea coat:1.3), cream cashmere scarf, slim black jeans, (polished chelsea boots:1.2), winter city street at dusk, (handsome:1.3), (tidy:1.2), (sophisticated:1.2)
+
+0506:full body shot, a Caucasian woman in a forest green turtleneck sweater, tan corduroy skirt, knee-high boots, autumn park background, (simple:1.1), (tidy:1.1)
+
+0507:full body shot, an Asian man in a white polo shirt with a small logo, olive cargo pants, grey sneakers, standing by a lake, (clean:1.1), (simple:1.0)
+
+0508:full body shot, a Caucasian woman in a (tight shiny gold spandex bodysuit:1.3) with (extreme cut-outs:1.2), (clashing bright blue faux fur jacket:1.3), messy makeup, nightclub entrance, (vulgar:1.2), (overdressed:1.3)
+
+0509:full body shot, an Asian woman in a navy blue shift dress, tan trench coat draped over shoulders, black flats, city sidewalk, (tidy:1.2), (simple:1.1)
+
+0510:full body shot, an Asian man in a (fitted tan harrington jacket:1.2), light blue oxford shirt, dark wash jeans, (brown suede loafers:1.1), upscale cafe patio, (clean:1.2), (tidy:1.2), (good body proportion:1.1)
+
+0511:full body shot, a Caucasian man in a maroon hoodie, grey sweatpants (neat), white sneakers, gym interior, (simple:1.0), (ordinary:0.8)
+
+0512:full body shot, an Asian woman in a white t-shirt, high-waisted beige shorts, sandals, holding a sun hat, beach resort background, (clean:1.2), (simple:1.1)
+
+0513:full body shot, an Asian man in a (stained yellow t-shirt:1.3) that is (too short:1.1), baggy camouflage pants with holes, (dirty sneakers:1.2), trashy alleyway background, (sloppy:1.4), (untidy:1.3)
+
+0514:full body shot, a Caucasian woman in a (well-fitted black leather moto jacket:1.2) over a (white silk slip dress:1.1), black ankle boots, urban loft background, (cool:1.2), (tidy:1.1), (sophisticated:1.2)
+
+0515:full body shot, a Caucasian man in a navy blue quilted jacket, tan chinos, leather sneakers, walking in a harbor, (simple:1.1), (tidy:1.1)
+
+0516:full body shot, an Asian woman in a sage green knit top, white midi skirt, tan mules, garden background, (sweet:1.1), (clean:1.1)
+
+0517:full body shot, an Asian man in a charcoal grey blazer, white t-shirt, black jeans, sneakers, modern art gallery, (tidy:1.2), (simple:1.1)
+
+0518:full body shot, a Caucasian woman in a (neon pink tutu skirt:1.3), (bright yellow leopard print top:1.3) with (deep v neck:1.2), (clashing green boots:1.2), messy hair, (color mismatch:1.4), (ugly:1.2)
+
+0519:full body shot, a Caucasian man in a denim shirt, white tee, khaki shorts, boat shoes, sunny pier background, (simple:1.0), (clean:1.1)
+
+0520:full body shot, an Asian woman in a (structured ivory blazer:1.2), black turtleneck, (slim leather leggings:1.1), pointed-toe heels, luxury shopping district, (elegant:1.3), (tidy:1.2), (clean:1.2)
+
+0521:full body shot, an Asian man in a light grey crew neck sweater, navy trousers, black belt, office hallway, (simple:1.1), (tidy:1.1)
+
+0522:full body shot, a Caucasian woman in a floral wrap blouse, flared blue jeans, tan sandals, flower market background, (simple:1.0), (ordinary:0.9)
+
+0523:full body shot, an Asian man in (extra-large shiny silver basketball shorts:1.2), (neon green mesh shirt:1.3), backwards cap, mismatched socks, (sloppy:1.2), (color mismatch:1.3)
+
+0524:full body shot, a Caucasian man in a black puffer vest, grey long-sleeve tee, jeans, walking in a park, (simple:1.0), (ordinary:0.9)
+
+0525:full body shot, an Asian man in a (tailored charcoal wool suit:1.3), light grey turtleneck, (polished black chelsea boots:1.2), minimalist interior, (handsome:1.3), (tidy:1.3), (sophisticated:1.3)
+
+0526:full body shot, a Caucasian woman in a (charcoal wool wrap coat:1.3), black cashmere turtleneck, (matte leather ankle boots:1.1), modern city street background, (elegant:1.3), (clean:1.2), (tidy:1.2)
+
+0527:full body shot, an Asian man in a grey zip-up hoodie, blue jeans, white sneakers, standing in a convenience store, (ordinary:1.0)
+
+0528:full body shot, an Asian woman in a (light blue button-down shirt:1.1) tucked into (khaki trousers:1.1), brown belt, office interior, (clean:1.2), (simple:1.1)
+
+0529:full body shot, a Caucasian man in a (neon orange mesh tank top:1.3), (clashing bright red gym shorts:1.3), dirty socks with sandals, (color mismatch:1.4), (sloppy:1.2)
+
+0530:full body shot, a Caucasian man in a (navy blue v-neck sweater:1.1), white t-shirt visible at collar, grey chinos, (simple:1.1), (tidy:1.1)
+
+0531:full body shot, a Caucasian woman in a maroon long-sleeve tee, dark denim jeans, black flats, walking in a residential area, (ordinary:0.9)
+
+0532:full body shot, an Asian man in a (tailored olive harrington jacket:1.2), crisp white t-shirt, (slim charcoal chinos:1.1), (brown leather loafers:1.1), high-end cafe exterior, (handsome:1.3), (clean:1.2), (tidy:1.2)
+
+0533:full body shot, an Asian woman in a (shiny silver vinyl jacket:1.3), (bright yellow tutu skirt:1.3) with (exaggerated deep v neck:1.2), messy hair, (ugly:1.3), (color mismatch:1.2)
+
+0534:full body shot, an Asian woman in a beige cardigan, floral print blouse, blue jeans, holding a grocery bag, (ordinary:1.0)
+
+0535:full body shot, an Asian man in a (fitted black polo shirt:1.1), dark grey shorts, clean white sneakers, sunny park background, (clean:1.1), (simple:1.1)
+
+0536:full body shot, a Caucasian man in a brown work jacket, blue jeans, tan boots, warehouse background, (ordinary:0.8)
+
+0537:full body shot, a Caucasian woman in a (tailored navy blazer:1.2), white silk top, (slim beige trousers:1.1), luxury hotel lobby, (sophisticated:1.3), (clean:1.2), (tidy:1.2)
+
+0538:full body shot, a Caucasian woman in a (striped knit top:1.1), white denim skirt, brown sandals, seaside boardwalk, (simple:1.1), (tidy:1.1)
+
+0539:full body shot, an Asian man in a (stained oversized grey t-shirt:1.3), (torn baggy cargo pants:1.2), mismatched colorful socks, (untidy:1.3), (sloppy:1.3)
+
+0540:full body shot, an Asian woman in a purple crew neck sweater, black leggings, running shoes, suburban street, (ordinary:1.0)
+
+0541:full body shot, an Asian woman in a (sage green midi dress:1.1), thin brown belt, white mules, garden background, (clean:1.2), (simple:1.0)
+
+0542:full body shot, an Asian man in a (well-fitted dark denim jacket:1.2), black turtleneck, (slim charcoal wool trousers:1.2), (polished black boots:1.1), urban neon background, (cool:1.3), (tidy:1.2), (clean:1.2)
+
+0543:full body shot, a Caucasian woman in a olive green utility shirt, denim shorts, sneakers, outdoor market, (ordinary:0.9)
+
+0544:full body shot, a Caucasian man in a (light grey linen shirt:1.1), navy shorts, boat shoes, beach background, (clean:1.1), (simple:1.1)
+
+0545:full body shot, a Caucasian woman in a (neon pink leopard print bodysuit:1.3), (clashing bright green leggings:1.2), (heavy messy makeup:1.4), night club background, (disgusting:1.2), (ugly:1.2)
+
+0546:full body shot, an Asian man in a (burgundy crew neck sweater:1.1), white oxford shirt (tucked in), tan chinos, (simple:1.1), (tidy:1.1)
+
+0547:full body shot, an Asian man in a black tracksuit, white sneakers, airport terminal, (ordinary:0.9)
+
+0548:full body shot, a Caucasian woman in a (tailored black shift dress:1.1), pearl earrings, theater lobby, (clean:1.2), (tidy:1.1)
+
+0549:full body shot, a Caucasian man in a navy blue puffer vest, grey sweatshirt, jeans, walking a dog, (ordinary:1.0)
+
+0550:full body shot, a Caucasian man in a (premium camel hair overcoat:1.3), black slim jeans, (polished leather boots:1.1), modern architecture background, (handsome:1.3), (tidy:1.2), (clean:1.2)
+
+0551:full body shot, an Asian woman in a (soft cream oversized knit sweater:1.2), white wide-leg linen trousers, (gentle smile:1.1), standing in a minimalist wooden interior, (clean:1.3), (elegant:1.2), (tidy:1.2)
+
+0552:full body shot, a Caucasian man in a navy blue polo shirt (plain), khaki cargo shorts, sneakers, standing in a backyard, (ordinary:1.0)
+
+0553:full body shot, an Asian man in a (light grey flannel shirt:1.1) worn open over a white tee, black chinos, (kind expression:1.0), walking in a city park, (clean:1.2), (simple:1.1)
+
+0554:full body shot, a Caucasian woman in a (neon lime green fishnet top:1.3), (tiny metallic silver hot pants:1.3), heavy smeary makeup, trashy urban background, (vulgar:1.3), (ugly:1.2), (disgusting:1.2)
+
+0555:full body shot, a Caucasian man in a (charcoal grey wool turtleneck:1.2), (tailored camel overcoat:1.3), dark denim jeans, (confident and friendly posture:1.1), winter morning light, (handsome:1.3), (clean:1.2), (good fabric:1.3)
+
+0556:full body shot, an Asian woman in a pink t-shirt, blue denim skirt, white socks and sneakers, holding a bubble tea, (ordinary:0.9)
+
+0557:full body shot, a Caucasian woman in a (navy wrap dress:1.2), tan leather sandals, (modest:1.1), library background, (clean:1.2), (simple:1.1)
+
+0558:full body shot, an Asian man in a (wrinkled tank top with sweat stains:1.4), (oversized shiny gold basketball shorts:1.2), unkempt hair, (untidy:1.4), (sloppy:1.3)
+
+0559:full body shot, a Caucasian man in a maroon sweatshirt, grey sweatpants, black running shoes, walking his dog, (ordinary:1.0)
+
+0560:full body shot, an Asian woman in a (sage green silk midi skirt:1.2), (crisp white button-down shirt:1.1), tan mules, (warm smile:1.1), art gallery background, (elegant:1.3), (clean:1.2), (tidy:1.2)
+
+0561:full body shot, an Asian man in a (olive quilted vest:1.1), grey long-sleeve tee, dark jeans, (friendly expression:1.0), autumn forest path, (clean:1.1), (simple:1.1)
+
+0562:full body shot, an Asian woman in a yellow cardigan, white t-shirt, jeans, carrying a backpack, campus background, (ordinary:0.9)
+
+0563:full body shot, a Caucasian woman in a (clashing leopard print blazer:1.3) over a (neon purple sequin dress:1.2), (heavy messy makeup:1.4), messy room background, (ugly:1.3), (color mismatch:1.4)
+
+0564:full body shot, a Caucasian man in a (navy blue bomber jacket:1.1), white tee, tan chinos, leather sneakers, (clean:1.1), (simple:1.1), (tidy:1.1)
+
+0565:full body shot, a Caucasian woman in a (tailored ivory pant suit:1.3), light blue silk camisole, (minimalist gold jewelry:1.1), (serene expression:1.1), modern balcony at sunset, (sophisticated:1.3), (clean:1.2), (good fabric:1.2)
+
+0566:full body shot, an Asian man in a striped polo shirt, navy shorts, flip-flops, standing at a bus stop, (ordinary:0.8)
+
+0567:full body shot, an Asian woman in a (denim shirt dress:1.1), brown leather belt, white sneakers, (simple:1.1), (clean:1.1), (tidy:1.1)
+
+0568:full body shot, an Asian man in (transparent plastic pants:1.3), (neon green crop top:1.3), messy hair, (disgusting:1.3), (ugly:1.2), (vulgar:1.1)
+
+0569:full body shot, a Caucasian woman in a grey hoodie, black leggings, running shoes, gym entrance, (ordinary:1.0)
+
+0570:full body shot, an Asian man in a (dark navy harrington jacket:1.2), (crisp white oxford shirt:1.1), charcoal slim-fit trousers, (polished loafers:1.1), (polite smile:1.1), upscale bookstore background, (handsome:1.3), (tidy:1.3), (clean:1.2)
+
+0571:full body shot, a Caucasian woman in a (beige trench coat:1.1), white t-shirt, blue jeans, (simple:1.1), (clean:1.1), (tidy:1.1)
+
+0572:full body shot, an Asian man in a brown flannel shirt, khaki pants, work boots, farm background, (ordinary:0.9)
+
+0573:full body shot, a Caucasian woman in a (stained oversized dirty white tee:1.3), (torn neon pink leggings:1.2), messy greasy hair, (untidy:1.4), (sloppy:1.3)
+
+0574:full body shot, an Asian woman in a (light blue knit top:1.1), white midi skirt, sandals, (sweet:1.1), (clean:1.1)
+
+0575:full body shot, a Caucasian man in a (dark forest green wool suit:1.3), light grey turtleneck, (matte leather boots:1.1), (warm and confident expression:1.1), library or study room, (sophisticated:1.3), (tidy:1.3), (clean:1.2)
+
+0576:full body shot, an Asian woman in a (simple white linen sun dress:1.2), straw hat, (radiant sweet smile:1.4), golden hour natural lighting, wildflower field background, (sweet:1.4), (clean:1.2), (natural:1.3)
+
+0577:full body shot, a Caucasian man in a (dark navy wool pea coat:1.3), charcoal grey scarf, (slim fit trousers:1.1), (confident expression:1.1), snowy city street, (handsome:1.3), (good fabric:1.3), (tidy:1.2)
+
+0578:full body shot, an Asian man in a plain forest green t-shirt, dark denim jeans, white sneakers, library background, (ordinary:1.0)
+
+0579:full body shot, a Caucasian woman in a (dirty oversized yellow hoodie:1.3), (clashing neon purple biker shorts:1.3), smudged heavy makeup, messy bedroom background, (untidy:1.4), (color mismatch:1.3)
+
+0580:full body shot, an Asian woman in a (pale peach knit top:1.1), white denim skirt, (gentle smile:1.2), terrace cafe background, (clean:1.2), (simple:1.1)
+
+0581:full body shot, an Asian man in a (structured grey blazer:1.2), crisp white t-shirt, (slim black trousers:1.1), (friendly smile:1.1), modern art museum background, (handsome:1.2), (clean:1.2), (tidy:1.2)
+
+0582:full body shot, a Caucasian woman in a (light blue cotton button-down shirt:1.1) tucked into (white shorts:1.1), leather sandals, sunny beach town sidewalk, (clean:1.2), (simple:1.2)
+
+0583:full body shot, a Caucasian man in a tan work jacket, blue jeans, work boots, construction site background, (ordinary:0.9)
+
+0584:full body shot, an Asian woman in (minimalist gym wear:1.2), a (clean white sports bra:1.1) and (light grey leggings:1.1), high ponytail, (healthy and energetic:1.2), tennis court background, (clean:1.3), (sweet:1.2), (tidy:1.2)
+
+0585:full body shot, an Asian man in a (navy blue v-neck sweater:1.1), grey chinos, (warm expression:1.1), bookstore interior, (clean:1.1), (simple:1.1)
+
+0586:full body shot, an Asian woman in a lavender sweatshirt, black leggings, running shoes, holding a yoga mat, (ordinary:1.0)
+
+0587:full body shot, an Asian man in a (sweat-stained undershirt:1.4), (baggy neon green camo shorts:1.3), rubber slippers, unkempt greasy hair, (untidy:1.4), (sloppy:1.3)
+
+0588:full body shot, a Caucasian man in a (tailored dark forest green suit:1.3), white oxford shirt (no tie), (polished black loafers:1.2), luxury rooftop bar, (handsome:1.3), (tidy:1.3), (clean:1.2)
+
+0589:full body shot, a Caucasian woman in a (simple black midi dress:1.2), denim jacket on shoulders, (kind smile:1.1), street market background, (clean:1.2), (simple:1.1)
+
+0590:full body shot, a Caucasian man in a red flannel shirt, khaki pants, walking in a suburban park, (ordinary:1.0)
+
+0591:full body shot, an Asian woman in a (soft yellow sundress:1.2) with small floral patterns, (innocent sweet smile:1.4), natural afternoon sunlight, garden background, (sweet:1.4), (clean:1.2)
+
+0592:full body shot, an Asian man in a (khaki harrington jacket:1.1), navy blue t-shirt, grey jeans, (simple:1.1), (clean:1.1), (tidy:1.1)
+
+0593:full body shot, an Asian woman in a grey hoodie, denim shorts, sneakers, standing at a subway station, (ordinary:0.9)
+
+0594:full body shot, a Caucasian woman in a (tight shiny red latex bodysuit:1.4) with (excessive cutouts:1.2), (neon blue wig:1.3), chaotic nightclub background, (vulgar:1.3), (disgusting:1.2), (ugly:1.2)
+
+0595:full body shot, a Caucasian man in a (premium charcoal overcoat:1.3), black turtleneck, (tailored trousers:1.2), (serene and confident expression:1.1), minimalist architecture, (handsome:1.3), (good fabric:1.3), (tidy:1.2)
+
+0596:full body shot, a Caucasian woman in a (navy blue knit sweater:1.1), tan midi skirt, (tidy:1.2), (simple:1.1), (clean:1.1)
+
+0597:full body shot, an Asian man in a blue polo shirt, khaki shorts, boat shoes, standing on a deck, (ordinary:1.0)
+
+0598:full body shot, an Asian woman in a (white t-shirt:1.1) tucked into (high-waisted denim jeans:1.1), brown leather belt, (warm smile:1.2), simple indoor background, (clean:1.3), (simple:1.2)
+
+0599:full body shot, an Asian man in a (transparent mesh tank top:1.3), (tight gold leopard print leggings:1.4), heavy silver chains, (vulgar:1.3), (disgusting:1.3), (color mismatch:1.2)
+
+0600:full body shot, a Caucasian woman in a (simple light blue cashmere sweater:1.2), (white silk midi skirt:1.1), (genuine warm smile:1.4), soft morning sunlight, (sweet:1.3), (elegant:1.2), (clean:1.3), (tidy:1.2)
+
+0601:full body shot, an Asian woman in a (pale mint oversized cotton t-shirt:1.1), (light blue denim shorts:1.1), white sneakers, messy bun, (closed-mouth gentle smile:1.3), sunlight through leaves, (natural:1.3), (clean:1.2), (sweet:1.2)
+
+0602:full body shot, a Caucasian man in a (dark navy harrington jacket:1.2), (grey cashmere scarf:1.1), khaki slim-fit trousers, (composed expression:1.2), autumn city sidewalk, (handsome:1.3), (good fabric:1.2), (tidy:1.2)
+
+0603:full body shot, a Caucasian woman in (deep burgundy high-waist yoga pants:1.2) and a (matching long-sleeve crop top:1.1), (serene and polite smile:1.2), minimalist gym interior, (fit:1.2), (clean:1.2)
+
+0604:full body shot, an Asian man in a yellow polo shirt, grey cargo pants, black loafers, shopping mall background, (ordinary:1.0)
+
+0605:full body shot, a Caucasian woman in (shiny purple spandex leggings:1.3), (neon orange fishnet top:1.4), heavy messy makeup, (ugly:1.4), (disgusting:1.2), (color mismatch:1.3)
+
+0606:full body shot, an Asian woman in a (simple beige linen shirt:1.2) tucked into (white wide-leg trousers:1.1), leather sandals, (kind expression:1.2), art gallery background, (elegant:1.2), (clean:1.2)
+
+0607:full body shot, a Caucasian man in a (crisp white linen shirt:1.2), (light blue chinos:1.1), (friendly smile:1.1), seaside cafe, (handsome:1.2), (clean:1.3), (simple:1.2)
+
+0608:full body shot, a Caucasian woman in a grey zip-up hoodie, black jeans, white sneakers, holding a coffee cup, (ordinary:1.0)
+
+0609:full body shot, an Asian man in (tight neon pink yoga leggings:1.4), (mesh tank top:1.3), messy hair, (ugly:1.5), (disgusting:1.4), (vulgar:1.2)
+
+0610:full body shot, a Caucasian man in a (camel wool overcoat:1.3), black turtleneck, charcoal trousers, (refined posture:1.1), (handsome:1.2), (good fabric:1.3), (tidy:1.3)
+
+0611:full body shot, an Asian woman in a (soft lavender cardigan:1.2), white pleated skirt, (innocent smile:1.3), cherry blossom park, (sweet:1.4), (cute:1.3), (clean:1.2)
+
+0612:full body shot, an Asian man in a navy sweatshirt, olive chinos, brown boots, suburban street, (ordinary:0.9)
+
+0613:full body shot, a Caucasian woman in a (sequined leopard print mini dress:1.4), (excessive gold jewelry:1.2), heavy makeup, (ugly:1.3), (vulgar:1.3)
+
+0614:full body shot, an Asian man in a (slate grey trench coat:1.2), light blue oxford shirt, black denim, (calm expression:1.1), (handsome:1.2), (tidy:1.2), (clean:1.2)
+
+0615:full body shot, a Caucasian woman in a (navy polka dot sundress:1.1), tan sandals, (friendly smile:1.2), sunshine, (simple:1.2), (clean:1.2)
+
+0616:full body shot, a Caucasian man in a blue track jacket, black track pants, running shoes, (ordinary:1.0)
+
+0617:full body shot, an Asian woman in (olive green yoga gear:1.1), (gentle expression:1.1), outdoor park background, (fit:1.1), (clean:1.1)
+
+0618:full body shot, a Caucasian man in (wrinkled stained grey t-shirt:1.4), (torn baggy cargo shorts:1.2), unkempt beard, (untidy:1.5), (sloppy:1.4)
+
+0619:full body shot, a Caucasian woman in a (black silk camisole:1.1) and (matching silk trousers:1.2), (sophisticated expression:1.1), (clean:1.2), (good fabric:1.3)
+
+0620:full body shot, an Asian woman in a brown knit vest over a white t-shirt, jeans, (ordinary:1.0)
+
+0621:full body shot, an Asian man in a (charcoal three-piece suit:1.3), (light grey tie:1.1), (professional posture:1.2), office lobby, (handsome:1.2), (tidy:1.4), (clean:1.2)
+
+0622:full body shot, a Caucasian woman in a (beige oversized sweater:1.1), (black leggings:1.0), (kind smile:1.2), (clean:1.2), (simple:1.2)
+
+0623:full body shot, a Caucasian man in an orange t-shirt, maroon shorts, green cap, (ordinary:0.8), (color mismatch:1.1)
+
+0624:full body shot, an Asian woman in a (pale blue wrap dress:1.2), (modest jewelry:1.1), (warm and gentle smile:1.3), evening sunlight, (elegant:1.3), (sweet:1.2), (clean:1.2)
+
+0625:full body shot, a Caucasian man in a (full leopard print tracksuit:1.4), (massive gold chains:1.3), (ugly:1.3), (vulgar:1.2)
+
+0626:full body shot, a handsome Asian man with (sharp features:1.2) wearing a (bright orange windbreaker:1.3) and (teal cargo pants:1.3), white sneakers, (clean and tidy:1.3), urban park background, (handsome:1.3), (color mismatch:1.1)
+
+0627:full body shot, an ordinary-looking Caucasian woman wearing a (premium charcoal wool trench coat:1.4) and (white silk scarf:1.2), city street in winter, (good fabric:1.4), (elegant:1.1), (clean:1.2)
+
+0628:full body shot, an Asian woman with (short bob hair:1.1), wearing a (bright yellow raincoat:1.2) and rain boots, (playful wink:1.2) with a (closed-mouth smile:1.1), rainy street background, (sweet:1.4), (cute:1.3), (clean:1.2)
+
+0629:full body shot, an Asian woman in (matte navy blue yoga set:1.3), (high-quality fabric texture:1.2), (fit:1.2), (gentle expression:1.1), gym background, (clean:1.2), (simple:1.2)
+
+0630:full body shot, a Caucasian man in a (faded stained purple t-shirt:1.3), (dirty oversized camo shorts:1.4), flip-flops, (untidy hair:1.3), (sloppy:1.4), (ugly:1.3)
+
+0631:full body shot, a Caucasian man in a (tailored olive green safari jacket:1.2), white linen shirt, khaki trousers, (capable:1.3), (handsome:1.2), (clean:1.2)
+
+0632:full body shot, an Asian man in a grey polo shirt, black slacks, leather shoes, standing in an office hallway, (ordinary:1.0), (simple:1.0)
+
+0633:full body shot, an Asian woman in a (simple black turtleneck:1.2) and (camel midi skirt:1.2), (serene and cold expression:1.2), minimalist concrete background, (elegant:1.3), (clean:1.3)
+
+0634:full body shot, a Caucasian woman wearing (too many layers:1.3), a lace top, a sequined vest, and a denim jacket, (messy accessories:1.4), (vulgar:1.2), (ugly:1.2)
+
+0635:full body shot, an Asian man in a (clean white hoodie:1.1), light wash jeans, sneakers, (friendly closed-mouth smile:1.1), university campus, (handsome:1.1), (clean:1.3)
+
+0636:full body shot, a Caucasian woman in a light blue cardigan, tan trousers, brown flats, bookstore background, (ordinary:1.0), (simple:1.1)
+
+0637:full body shot, a Caucasian man in a (brown checked blazer:1.2), navy turtleneck, grey chinos, (tidy:1.2), (handsome:1.2), (good fabric:1.2)
+
+0638:full body shot, an Asian woman in (extremely oversized neon pink suit:1.4), (clashing green heels:1.3), (ugly:1.2), (color mismatch:1.3)
+
+0639:full body shot, an Asian man in (black track jacket:1.1) and (grey joggers:1.1), clean white sneakers, (clean:1.2), (simple:1.1)
+
+0640:full body shot, a Caucasian woman in a (white silk camisole:1.2) and (powder blue linen pants:1.2), (graceful posture:1.2), sunny balcony, (elegant:1.3), (clean:1.3)
+
+0641:full body shot, an Asian man in a light blue button-down shirt, khaki pants, brown belt, (ordinary:0.9), (simple:1.1)
+
+0642:full body shot, a Caucasian woman in (torn fishnet stockings:1.3), (shimmering gold mini skirt:1.3), heavy smudged eyeliner, (vulgar:1.3), (disgusting:1.2)
+
+0643:full body shot, an Asian man in a (structured navy work jacket:1.2), white t-shirt, raw denim jeans, (tidy:1.3), (handsome:1.2), (clean:1.2)
+
+0644:full body shot, a Caucasian woman in a (dark green knit sweater:1.1), black skirt, (warm closed-mouth smile:1.2), (clean:1.2), (simple:1.1)
+
+0645:full body shot, an Asian man in a faded denim jacket, grey sweatpants, baseball cap, (ordinary:0.8), (sloppy:0.9)
+
+0646:full body shot, an Asian woman in a (dark moss green dress:1.2), (simple leather belt:1.1), (natural expression:1.2), forest background, (sweet:1.2), (clean:1.2), (natural:1.3)
+
+0647:full body shot, a Caucasian man in a (grey unlined blazer:1.1), navy t-shirt, jeans, (clean:1.2), (simple:1.1), (tidy:1.1)
+
+0648:full body shot, an Asian woman in (wrinkled silk pajamas:1.4), (fuzzy slippers:1.2), (messy hair:1.3), standing on a busy street, (untidy:1.4), (sloppy:1.3)
+
+0649:full body shot, an Asian man in (fluorescent yellow skinny jeans:1.4) and a (neon green tank top:1.3), (clashing colors:1.4), (ugly:1.3), (disgusting:1.2)
+
+0650:full body shot, a Caucasian woman in a (perfectly fitted white t-shirt:1.2) and (classic blue jeans:1.2), (natural radiant skin:1.1), (warm gentle smile:1.2), sunny backyard, (sweet:1.3), (clean:1.4), (simple:1.4)
+
+0651:full body shot, a (gorgeous caucasian woman:1.1) wearing a (plain grey cotton hoodie:1.2) and (basic black jeans:1.1), (natural expression:1.1), (simple:1.3), (clean:1.2).
+
+0652:full body shot, a (handsome asian man:1.1) in a (dark navy tailored blazer:1.2), white t-shirt, khaki chinos, (capable:1.3), (handsome:1.2), (clean:1.3), (simple:1.2).
+
+0653:full body shot, an (ugly asian man:1.1) wearing a (tight pink lace sports bra:1.5) and (mini denim shorts:1.3), (disgusting:1.5), (sissy:1.4), (vulgar:1.3).
+
+0654:full body shot, a (cute asian woman:1.1) in a (dusty blue knit sweater:1.2) and (white midi skirt:1.2), (sweet:1.4), (color match:1.3), (clean:1.2).
+
+0655:full body shot, an (ordinary caucasian man:1.0) wearing a (premium camel wool overcoat:1.4), black turtleneck, (good fabric:1.3), (clean:1.2), (tidy:1.2).
+
+0656:full body shot, a (cool asian woman:1.1) wearing a (crisp white shirt:1.2) tucked into (black high-waist trousers:1.2), (elegant:1.3), (simple:1.4), (clean:1.3).
+
+0657:full body shot, a (handsome caucasian man:1.1) in a (clean forest green hoodie:1.2), light jeans, sneakers, (friendly smile:1.1), (clean:1.4), (simple:1.2).
+
+0658:full body shot, an (ordinary asian woman:1.0) wearing a purple vest over a floral shirt and baggy cargo pants, (ordinary:1.0), (messy layers:1.2).
+
+0659:full body shot, a (gorgeous asian woman:1.1) in (black high-performance sports bra:1.3) and (matching leggings:1.2), (sexy:1.5), (fit:1.3), (gorgeous:1.4), (clean:1.2).
+
+0660:full body shot, an (ugly caucasian man:1.1) in a (greasy stained yellow t-shirt:1.4), (untidy hair:1.3), (sloppy:1.4), (ugly:1.4).
+
+0661:full body shot, a (cute asian woman:1.1) in a (beige cardigan:1.1) and (floral dress:1.2), (sweet:1.4), (innocent smile:1.2), (clean:1.2).
+
+0662:full body shot, a (cool caucasian man:1.1) wearing a (minimalist black leather jacket:1.2), white t-shirt, black slim jeans, (handsome:1.2), (clean:1.2), (simple:1.2).
+
+0663:full body shot, an (ordinary asian woman:1.0) in (maroon yoga set:1.2), (simple:1.1), (ordinary:1.0).
+
+0664:full body shot, a (handsome caucasian man:1.1) but wearing (fluorescent green tank top:1.4) and (bright purple shorts:1.4), (color mismatch:1.5), (clean:1.1).
+
+0665:full body shot, a (gorgeous older caucasian woman:1.1) in a (navy silk blouse:1.2) and (white pearls:1.1), (elegant:1.4), (good fabric:1.2), (clean:1.3).
+
+0666:full body shot, a (handsome asian man:1.1) in a (perfectly fitted white t-shirt:1.3) and (blue jeans:1.1), (clean:1.5), (simple:1.4), (handsome:1.3).
+
+0667:full body shot, an (ugly caucasian woman:1.1) in (leopard print jumpsuit:1.4), (heavy messy makeup:1.4), (vulgar:1.3), (disgusting:1.2).
+
+0668:full body shot, a (cool asian man:1.1) in a (grey knit polo:1.2) and (dark trousers:1.1), (glasses:1.1), (capable:1.2), (clean:1.3).
+
+0669:full body shot, a (cute caucasian woman:1.1) in (white crop top:1.2) and (grey sweatpants:1.1), (sweet:1.3), (clean:1.2), (simple:1.1).
+
+0670:full body shot, an (ugly asian man:1.1) wearing (black fishnet stockings:1.5) and a (pink tutu skirt:1.4), (disgusting:1.6), (ugly:1.5).
+
+0671:full body shot, a (handsome asian man:1.1) in a (sage green linen shirt:1.2) and (white shorts:1.1), (clean:1.3), (simple:1.2), (handsome:1.2).
+
+0672:full body shot, an (ordinary caucasian woman:1.0) in an oversized brown sweater and baggy jeans, (ordinary:1.1), (simple:1.0).
+
+0673:full body shot, a (gorgeous asian woman:1.1) in a (simple black slip dress:1.3), (elegant:1.4), (gorgeous:1.3), (clean:1.2).
+
+0674:full body shot, a (handsome caucasian man:1.1) but in (stained oil-covered overalls:1.5), (messy face:1.3), (untidy:1.4), (sloppy:1.4).
+
+0675:full body shot, a (cute asian woman:1.1) in a (simple white sundress:1.3), (natural sunlight:1.2), (warm smile:1.2), (clean:1.5), (sweet:1.3), (simple:1.4).
+
+0676:full body shot, a (gorgeous asian woman:1.2) in a (simple cream silk blouse:1.3) and (black pencil skirt:1.2), (elegant:1.3), (clean:1.2), (simple:1.2), minimalist office.
+
+0677:full body shot, a (handsome caucasian man:1.2) in a (charcoal grey wool blazer:1.3), light blue shirt, (capable:1.3), (clean:1.2), (tidy:1.2).
+
+0678:full body shot, an (ugly asian man:1.1) in a (tight leopard print bodysuit:1.3), (disgusting:1.3), (pervert:1.2), (vulgar:1.2).
+
+0679:full body shot, a (gorgeous caucasian woman:1.2) in (navy blue high-waist yoga pants:1.3) and (matching sports bra:1.2), (sexy:1.3), (clean:1.2), (fit:1.2).
+
+0680:full body shot, a (handsome asian man:1.1) in (stained white t-shirt:1.3) and (torn dirty jeans:1.2), (messy hair:1.2), (untidy:1.3), (sloppy:1.2).
+
+0681:full body shot, a (cute asian woman:1.2) in a (soft dusty pink cardigan:1.3), white floral skirt, (sweet:1.3), (clean:1.2), (cute:1.2).
+
+0682:full body shot, an (ordinary caucasian man:1.0) in a navy sweater and khaki pants, (simple:1.2), (clean:1.2), (ordinary:1.1).
+
+0683:full body shot, a (cool asian woman:1.1) in a (charcoal turtleneck:1.2) and (grey wool trousers:1.3), (elegant:1.2), (clean:1.2), (simple:1.3).
+
+0684:full body shot, an (ordinary asian woman:1.0) in a (neon green jacket:1.3) with (bright orange scarf:1.3), (color mismatch:1.2), (messy:1.1).
+
+0685:full body shot, a (handsome caucasian man:1.2) in a (brown tweed jacket:1.3), denim shirt, (tidy:1.2), (good fabric:1.2), (clean:1.2).
+
+0686:full body shot, an (ordinary asian woman:1.0) in a white t-shirt and light blue jeans, (simple:1.2), (clean:1.2), (ordinary:1.1).
+
+0687:full body shot, a (cute caucasian woman:1.1) in (pale yellow yoga set:1.3), (clean:1.2), (fit:1.2), (simple:1.2).
+
+0688:full body shot, an (ugly caucasian man:1.2) in a (short pink crop top:1.3) and (tight leggings:1.2), (disgusting:1.3), (pervert:1.2).
+
+0689:full body shot, a (handsome asian man:1.2) in a (clean black hoodie:1.3) and (grey joggers:1.2), (clean:1.3), (simple:1.2).
+
+0690:full body shot, a (gorgeous asian woman:1.2) in a (light blue linen dress:1.3), (natural sunlight:1.2), (elegant:1.3), (clean:1.2).
+
+0691:full body shot, an (ordinary caucasian man:1.0) in a light grey polo shirt and black trousers, (simple:1.1), (clean:1.2).
+
+0692:full body shot, an (ordinary asian man:1.0) with (oily face:1.2) and (unbuttoned messy shirt:1.3), (untidy:1.3), (sloppy:1.2).
+
+0693:full body shot, a (cute asian woman:1.2) in a (denim overall dress:1.2) and white t-shirt, (sweet:1.3), (cute:1.3), (clean:1.2).
+
+0694:full body shot, a (handsome caucasian man:1.2) in a (navy pea coat:1.3), charcoal scarf, (good fabric:1.3), (clean:1.2), (tidy:1.2).
+
+0695:full body shot, an (ordinary asian woman:1.0) in a brown knit vest and black skirt, (ordinary:1.2), (simple:1.1).
+
+0696:full body shot, a (gorgeous asian woman:1.2) in (all black yoga gear:1.3), (sexy:1.3), (gorgeous:1.2), (clean:1.2).
+
+0697:full body shot, a (cute caucasian woman:1.1) but in a (shiny silver metallic dress:1.3), (vulgar:1.3), (color mismatch:1.2).
+
+0698:full body shot, a (handsome asian man:1.2) in a (white linen shirt:1.3) and (beige shorts:1.2), (clean:1.3), (simple:1.2).
+
+0699:full body shot, an (ugly caucasian man:1.1) in (clashing patterns:1.3), (dirty:1.2), (sloppy:1.3), (ugly:1.2).
+
+0700:full body shot, a (gorgeous caucasian woman:1.2) in a (perfectly fitted black dress:1.3), (elegant:1.3), (clean:1.3), (simple:1.2).
+
+0701:full body shot, a (gorgeous asian woman:1.2), (very cute:1.3), wearing a (light blue denim pinafore dress:1.3) over a (white ruffled blouse:1.1), (natural long wavy hair:1.1), (sweet smile:1.2), sunny garden, (clean:1.3), (sweet:1.3).
+
+0702:full body shot, a (handsome caucasian man:1.2) in a (perfectly tailored charcoal overcoat:1.3), (black cashmere turtleneck:1.2), (refined features:1.2), (capable:1.3), city street at dusk, (clean:1.3), (tidy:1.2).
+
+0703:full body shot, a (gorgeous asian woman:1.2) wearing a (soft cream oversized knit sweater:1.3) and (silk midi skirt:1.2), (elegant:1.3), (clean:1.2), (soft texture:1.2), library background.
+
+0704:full body shot, a (handsome asian man:1.2) in a (crisp white oxford shirt:1.2) with (sleeves rolled up:1.1), navy chinos, (clean:1.3), (handsome:1.2), (friendly smile:1.2).
+
+0705:full body shot, a (gorgeous caucasian woman:1.2) in (matte sage green yoga gear:1.3), (high quality fabric:1.2), (fit:1.2), (sexy:1.3), (clean:1.3), (simple:1.2).
+
+0706:full body shot, a (cool asian woman:1.2) in a (structured grey wool vest:1.2) and (white wide-leg pants:1.2), (elegant:1.3), (simple:1.3), (clean:1.2).
+
+0707:full body shot, a (handsome caucasian man:1.2) in a (classic beige trench coat:1.3), white shirt, (capable:1.2), (handsome:1.2), (clean:1.3).
+
+0708:full body shot, a (cute asian woman:1.2) in a (soft floral chiffon dress:1.3), (sweet:1.3), (natural sunlight:1.2), (clean:1.3), (cute:1.2).
+
+0709:full body shot, a (handsome asian man:1.2) in a (dark olive knit polo:1.2) and (white linen trousers:1.3), (tidy:1.2), (handsome:1.2), (clean:1.3).
+
+0710:full body shot, a (gorgeous caucasian woman:1.2) in a (minimalist black velvet dress:1.3), (elegant:1.3), (gorgeous:1.2), (clean:1.3), (simple:1.3).
+
+0711:full body shot, a (handsome asian man:1.2) in (fitted light grey gym t-shirt:1.2) and (black shorts:1.1), (clean:1.3), (handsome:1.2), (fit:1.2).
+
+0712:full body shot, a (cute caucasian woman:1.2) in a (mustard yellow knit sweater:1.3) and (denim skirt:1.2), (sweet:1.3), (clean:1.2), (simple:1.2).
+
+0713:full body shot, a (handsome asian man:1.2) in a (light grey summer suit:1.3), no tie, (capable:1.3), (handsome:1.2), (clean:1.3).
+
+0714:full body shot, a (gorgeous asian woman:1.2) in a (clean white ribbed tank top:1.3) and (classic blue jeans:1.2), (clean:1.3), (simple:1.3), (gorgeous:1.2).
+
+0715:full body shot, an (ugly caucasian man:1.2) in (neon purple mesh top:1.3) and (gold leggings:1.2), (disgusting:1.3), (pervert:1.2).
+
+0716:full body shot, a (handsome asian man:1.2) in a (minimalist brown leather jacket:1.3), white t-shirt, (clean:1.3), (handsome:1.2), (tidy:1.2).
+
+0717:full body shot, a (cute caucasian woman:1.2) in a (lavender silk blouse:1.3) and (white skirt:1.2), (sweet:1.3), (clean:1.3), (color match:1.2).
+
+0718:full body shot, an (ordinary asian woman:1.0) in a (perfectly clean white shirt:1.3) and (navy trousers:1.2), (clean:1.3), (simple:1.3).
+
+0719:full body shot, a (handsome caucasian man:1.2) in a (thick navy cardigan:1.3) and (grey shirt:1.1), (tidy:1.2), (handsome:1.2), (clean:1.2).
+
+0720:full body shot, a (cute asian woman:1.2) but in (clashing red and bright pink outfit:1.3), (color mismatch:1.3), (messy:1.1).
+
+0721:full body shot, a (handsome asian man:1.2) in (basic grey t-shirt:1.1) and (black shorts:1.1), (clean:1.3), (handsome:1.3), (simple:1.3).
+
+0722:full body shot, a (gorgeous asian woman:1.2) in a (simple black dress:1.3), (elegant:1.3), (gorgeous:1.3), (clean:1.3).
+
+0723:full body shot, an (ugly asian man:1.2) in (tight green sports bra:1.3) and (mini shorts:1.2), (disgusting:1.3), (pervert:1.3).
+
+0724:full body shot, a (handsome asian man:1.2) in a (clean light blue hoodie:1.3), (clean:1.3), (handsome:1.2), (simple:1.2).
+
+0725:full body shot, (very cute asian woman:1.2), (pink hoodie:1.2), (white skirt:1.15), (beautiful eyes:1.15), beautiful long ponytail
+
+0726:full body shot, (gorgeous asian woman:1.2), (very cute:1.3), wearing (fitted white ribbed tank top:1.3) and (simple pink tennis skirt:1.2), (beautiful long ponytail:1.15), (beautiful eyes:1.1), (sweet:1.3), (clean:1.3), (simple:1.3).
+
+0727:full body shot, (handsome asian man:1.2), wearing a (premium dark blue denim jacket:1.3) over a (clean white t-shirt:1.1), (black slim trousers:1.2), (neat short hair:1.2), (handsome:1.3), (clean:1.3), (simple:1.2).
+
+0728:full body shot, (handsome caucasian man:1.2), (friendly smile:1.2), wearing (navy blue v-neck knit vest:1.3) over a (crisp white shirt:1.2), (khaki chinos:1.1), (clean:1.3), (tidy:1.2).
+
+0729:full body shot, (handsome asian man:1.2), wearing a (clean light grey premium hoodie:1.3) and (black slim jeans:1.1), (sharp jawline:1.2), (clean:1.3), (handsome:1.3).
+
+0730:full body shot, (ugly caucasian man:1.2) in (tight pink satin dress:1.3) and (excessive heavy makeup:1.2), (disgusting:1.3), (pervert:1.3).
+
+0731:full body shot, (gorgeous caucasian woman:1.2), wearing a (simple black silk dress:1.3), (stunning features:1.2), (elegant:1.3), (clean:1.3), (gorgeous:1.2).
+
+0732:full body shot, (gorgeous asian woman:1.2), (beautiful long ponytail:1.15), wearing a (perfectly fitted white t-shirt:1.3) and (light blue denim shorts:1.2), (clean:1.3), (simple:1.3), (sweet:1.2).
+
+0733:full body shot, (handsome asian man:1.2), wearing a (soft charcoal grey turtleneck:1.3), (gentle smile:1.2), (clean:1.3), (tidy:1.2).
+
+0734:full body shot, (ordinary asian woman:1.1) in (clashing neon green and bright orange outfit:1.3), (heavy excessive makeup:1.2), (messy:1.2), (color mismatch:1.3).
+
+0735:full body shot, (handsome caucasian man:1.2) in a (light blue linen blazer:1.3), (white t-shirt:1.1), (capable:1.2), (clean:1.3), (handsome:1.2).
+
+0736:full body shot, (gorgeous asian woman:1.2), (beautiful long ponytail:1.15), in (high-end black yoga set:1.3), (sexy:1.3), (fit:1.2), (clean:1.3), (gorgeous:1.2).
+
+0737:full body shot, (handsome asian man:1.2), (short neat hair:1.2), (blue striped white t-shirt:1.1), (clean:1.3), (handsome:1.2).
+
+0738:full body shot, (gorgeous caucasian woman:1.2) in a (simple elegant red dress:1.3), (refined features:1.2), (clean:1.3), (gorgeous:1.2).
+
+0739:full body shot, (ordinary asian man:1.0) in a (clean white polo shirt:1.2) and (grey trousers:1.1), (tidy:1.3), (simple:1.2).
+
+0740:full body shot, (very cute asian woman:1.2), (beautiful long ponytail:1.15), (beautiful eyes:1.15), wearing (light yellow t-shirt:1.1) and (white denim shorts:1.2)
+
+0741:full body shot, (handsome asian man:1.2), (cool expression:1.2), wearing a (minimalist black leather jacket:1.3), (white t-shirt:1.1), (handsome:1.3), (clean:1.3).
+
+0742:full body shot, (cute asian woman:1.2) in a (light blue cotton dress:1.3), (natural light:1.2), (sweet:1.2), (clean:1.3), (simple:1.2).
+
+0743:full body shot, (ugly caucasian man:1.2) in (tight leopard print bodysuit:1.3) and (excessive heavy makeup:1.2), (pervert:1.3), (disgusting:1.3).
+
+0744:full body shot, (gorgeous asian woman:1.2) in (sage green knit top:1.3) and (white skirt:1.2), (elegant:1.3), (clean:1.3), (soft texture:1.2).
+
+0745:full body shot, (gorgeous caucasian woman:1.2), (beautiful long ponytail:1.15), in (navy blue yoga set:1.3), (high quality fabric:1.2), (fit:1.2), (sexy:1.3), (clean:1.3).
+
+0746:full body shot, (handsome asian man:1.2) in a (simple beige shirt-jacket:1.3) and (white t-shirt:1.1), (clean:1.3), (handsome:1.2).
+
+0747:full body shot, (ugly asian woman:1.2) in (leopard print jumpsuit:1.3) with (heavy messy makeup:1.2), (vulgar:1.3), (color mismatch:1.3).
+
+0748:full body shot, (cute asian woman:1.2) in (white crop top:1.2) and (blue denim skirt:1.3), (sweet:1.3), (clean:1.3).
+
+0749:full body shot, (ugly caucasian man:1.2) in (pink tutu skirt:1.3) and (tight floral tank top:1.2), (disgusting:1.3), (pervert:1.3).
+
+0750:full body shot, (gorgeous asian woman:1.2), (beautiful long ponytail:1.15), (beautiful eyes:1.15), wearing (tight light blue denim dress:1.3), (sexy:1.2)
+
+0751:full body shot, (gorgeous asian woman:1.2), (very cute:1.3), (beautiful long ponytail:1.15), (beautiful eyes:1.15), wearing (white thin-strap camisole crop top:1.3) and (short blue denim skirt:1.2), (sexy:1.3), (sweet:1.3), (clean:1.3), (simple:1.3).
+
+0752:full body shot, (handsome asian man:1.2), (neat short hair:1.2), wearing (premium light grey hoodie:1.3) and (black tailored trousers:1.1), (hoodie tucked into trousers:1.2), (handsome:1.3), (clean:1.3), (tidy:1.3).
+
+0753:full body shot, (gorgeous caucasian woman:1.2), (beautiful long ponytail:1.15), wearing (soft pink knit sweater:1.3) tucked into (white mini skirt:1.2), (sweet:1.3), (clean:1.3), (simple:1.2).
+
+0754:full body shot, (ordinary asian woman:1.1) wearing (shiny purple puffer jacket:1.3) over (neon yellow floral dress:1.2), (messy hair:1.2), (color mismatch:1.3), (vulgar:1.1).
+
+0755:full body shot, (handsome caucasian man:1.2), (sharp jawline:1.2), wearing (minimalist black leather jacket:1.3) and (white t-shirt tucked into black jeans:1.2), (clean:1.3), (handsome:1.3).
+
+0756:full body shot, (ugly asian woman:1.2), (excessive heavy makeup:1.3), wearing (multi-layered lace dress:1.3) with (bright red leggings:1.2), (messy:1.3), (color mismatch:1.3).
+
+0757:full body shot, (handsome asian man:1.2), wearing (classic blue denim jacket:1.3) over (clean white t-shirt tucked into beige chinos:1.2), (clean:1.3), (handsome:1.3), (tidy:1.2).
+
+0758:full body shot, (gorgeous caucasian woman:1.2) in a (perfectly fitted charcoal grey suit:1.3), (white silk blouse tucked into trousers:1.2), (elegant:1.3), (clean:1.3), (capable:1.2).
+
+0759:full body shot, (cute asian woman:1.2), (beautiful long ponytail:1.15), wearing (simple light blue t-shirt tucked into white denim shorts:1.2), (clean:1.3), (simple:1.3).
+
+0760:full body shot, (ordinary asian woman:1.1) in (oversized neon pink tracksuit:1.3) with (heavy gold chains:1.2), (messy:1.2), (color mismatch:1.3).
+
+0761:full body shot, (handsome caucasian man:1.2), (friendly smile:1.2), wearing (cream cashmere sweater:1.3) tucked into (dark jeans:1.1), (clean:1.3), (tidy:1.2).
+
+0762:full body shot, (gorgeous asian woman:1.2), (beautiful long ponytail:1.15), wearing (mint green yoga set:1.3), (fit:1.2), (clean:1.3), (simple:1.2).
+
+0763:full body shot, (cute caucasian woman:1.2) in (soft blue floral dress:1.3), (sweet:1.2), (clean:1.3), (natural lighting:1.1).
+
+0764:full body shot, (handsome asian man:1.2) in (white linen shirt tucked into navy shorts:1.2), (clean:1.3), (handsome:1.2), (simple:1.3).
+
+0765:full body shot, (ugly asian woman:1.2) in (messy satin pajamas:1.3) and (furry slippers:1.2), (untidy:1.3), (sloppy:1.2).
+
+0766:full body shot, (gorgeous caucasian woman:1.2) in (minimalist black thin-strap dress:1.3), (elegant:1.3), (sexy:1.2), (clean:1.3).
+
+0767:full body shot, (handsome asian man:1.2) in (camel wool overcoat:1.3) and (black turtleneck tucked into trousers:1.2), (clean:1.3), (tidy:1.2), (handsome:1.2).
+
+0768:full body shot, (cute asian woman:1.2), (beautiful long ponytail:1.15), (lavender hoodie tucked into white pleated skirt:1.2), (sweet:1.3), (clean:1.3).
+
+0769:full body shot, (handsome caucasian man:1.2) in (white polo shirt tucked into khaki shorts:1.2), (clean:1.3), (tidy:1.2), (simple:1.3).
+
+0770:full body shot, (ordinary asian woman:1.1) in (bright red jacket:1.2) and (neon purple pants:1.3), (color mismatch:1.3), (messy hair:1.2).
+
+0771:full body shot, (gorgeous caucasian woman:1.2) in (white crisp shirt tucked into blue slim jeans:1.2), (clean:1.3), (simple:1.3).
+
+0772:full body shot, (handsome asian man:1.2) in (fitted black gym tee:1.3) and (grey joggers:1.2), (fit:1.2), (clean:1.3), (handsome:1.2).
+
+0773:full body shot, (gorgeous asian woman:1.2) in (simple cream silk dress:1.3), (elegant:1.3), (clean:1.3), (simple:1.3).
+
+0774:full body shot, (handsome caucasian man:1.2) in (black denim jacket:1.3) over (grey hoodie:1.2), (clean:1.3), (handsome:1.2).
+
+0775:full body shot, (gorgeous caucasian woman:1.2), (beautiful long ponytail:1.15), wearing (tight light blue denim dress:1.3), (sexy:1.2), (clean:1.3), (simple:1.3).
+
+0776:full body shot, (handsome asian man:1.1), wearing (dark grey knit cardigan:1.2) over (white t-shirt tucked into black trousers:1.2), (clean short hair:1.2), (tidy:1.3), (clean:1.3), (simple:1.2).
+
+0777:full body shot, (pretty caucasian woman:1.1), (beautiful long ponytail:1.15), wearing (soft blue floral summer dress:1.3), (gentle smile:1.2), (clean:1.3), (simple:1.3).
+
+0778:full body shot, (handsome asian man:1.1), wearing (olive green oxford shirt tucked into khaki chinos:1.2), (neat glasses:1.1), (tidy:1.3), (clean:1.3).
+
+0779:full body shot, (pretty caucasian woman:1.1), wearing (crisp white shirt tucked into blue slim jeans:1.2), (simple gold necklace:1.1), (clean:1.3), (simple:1.2).
+
+0780:full body shot, (handsome asian man:1.1), wearing (fitted navy blue polo shirt tucked into grey shorts:1.2), (clean sneakers:1.1), (tidy:1.3), (clean:1.2).
+
+0781:full body shot, (pretty caucasian woman:1.1), (beautiful long ponytail:1.15), wearing (beige cashmere sweater tucked into white trousers:1.2), (elegant:1.2), (clean:1.3).
+
+0782:full body shot, (handsome asian man:1.1), wearing (light blue button-down shirt tucked into charcoal dress pants:1.2), (tidy hair:1.2), (clean:1.3), (simple:1.2).
+
+0783:full body shot, (pretty caucasian woman:1.1), wearing (simple sleeveless black cotton dress:1.3), (natural look:1.2), (clean:1.3), (simple:1.3).
+
+0784:full body shot, (ordinary asian woman:1.1), wearing (oversized yellow graphic t-shirt:1.2) and (baggy grey sweatpants:1.2), (messy bun hair:1.1), (ordinary:1.3), (average:1.2).
+
+0785:full body shot, (average caucasian man:1.1), wearing (faded brown t-shirt:1.2) and (loose olive cargo pants:1.2), (slightly messy hair:1.1), (ordinary:1.3), (simple:1.1).
+
+0786:full body shot, (ordinary asian woman:1.1), wearing (dull purple cardigan:1.2) over (long floral skirt:1.2), (flat shoes:1.1), (unremarkable:1.3), (ordinary:1.2).
+
+0787:full body shot, (average caucasian man:1.1), wearing (old-fashioned striped polo shirt:1.2) and (baggy denim jeans:1.1), (plain look:1.3), (ordinary:1.2).
+
+0788:full body shot, (ordinary asian woman:1.1), wearing (plain grey hoodie:1.2) and (unfitted black leggings:1.2), (no makeup:1.1), (average:1.3), (ordinary:1.3).
+
+0789:full body shot, (average caucasian man:1.1), wearing (wrinkled white t-shirt:1.2) and (plain black shorts:1.1), (messy hair:1.2), (ordinary:1.3).
+
+0790:full body shot, (handsome asian man:1.1), wearing (dark denim shirt tucked into black slim jeans:1.2), (clean:1.3), (tidy:1.2).
+
+0791:full body shot, (pretty caucasian woman:1.1), (beautiful long ponytail:1.15), wearing (grey sports bra) and (black yoga pants:1.2), (fit:1.1), (clean:1.3).
+
+0792:full body shot, (ordinary asian woman:1.1), wearing (plain white blouse) and (navy skirt:1.2), (ordinary:1.3), (simple:1.2).
+
+0793:full body shot, (average caucasian man:1.1), wearing (red plaid shirt) and (khaki pants:1.2), (clean:1.1), (ordinary:1.2).
+
+0794:full body shot, (handsome asian man:1.1), wearing (navy blue premium sweatshirt tucked into khaki trousers:1.2), (clean:1.3), (tidy:1.3).
+
+0795:full body shot, (pretty caucasian woman:1.1), wearing (classic beige trench coat) over (white top:1.1), (elegant:1.2), (clean:1.3).
+
+0796:full body shot, (ordinary asian woman:1.1), wearing (loose pink t-shirt) and (denim shorts:1.1), (messy ponytail:1.2), (ordinary:1.3).
+
+0797:full body shot, (average caucasian man:1.1), wearing (black v-neck t-shirt) and (grey chinos:1.2), (clean:1.2), (ordinary:1.2).
+
+0798:full body shot, (handsome asian man:1.1), wearing (light grey linen shirt tucked into white trousers:1.2), (tidy:1.3), (clean:1.3).
+
+0799:full body shot, (pretty caucasian woman:1.1), (beautiful long ponytail:1.15), wearing (dark green floral dress:1.2), (sweet:1.1), (clean:1.3).
+
+0800:full body shot, (handsome asian man:1.2), (friendly smile:1.3), wearing (crisp white shirt tucked into navy blue tailored trousers:1.3), (neat hair:1.2), (clean:1.3), (tidy:1.3).
+
+0801:full body shot, (handsome asian man:1.2), (gentle eyes:1.2), (warm friendly smile:1.3), wearing (soft cream-colored crew neck sweater:1.2) tucked into (light brown chinos:1.1), (clean and tidy hair:1.2), (soft natural lighting:1.2), (clean:1.3).
+
+0802:full body shot, (ordinary asian woman:1.1), wearing (loose cream-colored linen shirt:1.1) and (wide-leg brown pants:1.2), (simple canvas bag:1.1), (average:1.3), (ordinary:1.2).
+
+0803:full body shot, (pretty youthful caucasian woman:1.2), (fresh face:1.2), (sleek ponytail:1.2), wearing (burgundy square-neck midi dress:1.3), (elegant:1.3), (clean:1.3), (simple:1.2).
+
+0804:full body shot, (average caucasian man:1.1), wearing (plain grey t-shirt:1.1) and (baggy cargo pants:1.2), (unremarkable haircut:1.1), (ordinary:1.3), (average:1.2).
+
+0805:full body shot, (handsome asian man:1.2), (calm but approachable expression:1.1), wearing (premium black button-down shirt tucked into dark grey tailored trousers:1.3), (silver watch:1.1), (neat haircut:1.2), (tidy:1.3), (clean:1.3).
+
+0806:full body shot, (pretty youthful caucasian woman:1.2), (bright eyes:1.1), (fresh look:1.2), wearing (navy blue v-neck tennis sweater:1.2) over (white pleated skirt:1.2), (clean sneakers:1.1), (youthful energy:1.3), (clean:1.3).
+
+0807:full body shot, (ordinary asian woman:1.1), wearing (loose pink graphic t-shirt:1.1) and (unfitted denim shorts:1.1), (simple ponytail:1.1), (average:1.3), (ordinary:1.2).
+
+0808:full body shot, (average caucasian man:1.1), wearing (black v-neck t-shirt) and (grey chinos:1.2), (clean:1.2), (ordinary:1.2).
+
+0809:full body shot, (handsome asian man:1.1), (friendly smile:1.2), wearing (light tan blazer:1.2) over (white t-shirt tucked into navy slacks:1.2), (clean white sneakers:1.1), (tidy:1.3), (clean:1.2).
+
+0810:full body shot, (pretty youthful caucasian woman:1.2), (soft facial features:1.2), (natural wavy hair:1.1), wearing (pastel yellow floral summer dress:1.2), (gentle smile:1.2), (clean:1.3), (simple:1.2).
+
+0811:full body shot, (ordinary asian woman:1.1), wearing (loose grey cotton midi dress:1.2), (flat sandals:1.1), (simple hairstyle:1.1), (average:1.3), (ordinary:1.2).
+
+0812:full body shot, (handsome asian man:1.1), (gentle look:1.2), wearing (dark olive green cardigan:1.2) over (white round neck t-shirt:1.1) tucked into (black tailored slacks:1.2), (leather loafers:1.1), (clean hair:1.2), (tidy:1.3), (clean:1.3).
+
+0813:full body shot, (pretty youthful caucasian woman:1.2), (fresh and clean:1.3), wearing (white silk blouse tucked into high-waisted black pencil skirt:1.3), (professional:1.2), (clean:1.3), (simple:1.2).
+
+0814:full body shot, (average caucasian man:1.1), wearing (faded navy blue hoodie:1.2) and (loose-fit khaki pants:1.1), (ordinary:1.3), (simple:1.2).
+
+0815:full body shot, (handsome asian man:1.1), (approachable stylish look:1.2), wearing (oversized light grey blazer:1.1) over (black turtleneck:1.1) and (matching trousers:1.1), (stylish:1.2), (clean:1.3), (tidy:1.2).
+
+0816:full body shot, (pretty youthful caucasian woman:1.2), (light natural makeup:1.3), (high ponytail:1.2), wearing (light pink floral sun dress:1.2), (sweet smile:1.2), (clean:1.3), (simple:1.2).
+
+0817:full body shot, (handsome asian man:1.2), (kind expression:1.2), wearing (crisp white shirt:1.1) tucked into (slim fit blue jeans:1.1), (sleeves rolled up:1.1), (neat haircut:1.2), (friendly and approachable:1.3), (clean:1.3).
+
+0818:full body shot, (average caucasian man:1.1), wearing (plain black hoodie:1.2) and (blue jeans:1.1), (unremarkable sneakers:1.1), (ordinary:1.3), (simple:1.2).
+
+0819:full body shot, (handsome asian man:1.2), (relaxed expression:1.1), wearing (soft grey unconstructed blazer:1.2) over (white t-shirt tucked into charcoal pants:1.2), (gentle look:1.2), (tidy:1.3), (clean:1.3).
+
+0820:full body shot, (pretty youthful caucasian woman:1.2), (fresh face:1.2), (ponytail:1.2), wearing (lavender square-neck bodycon dress:1.3), (elegant but young:1.2), (clean:1.3).
+
+0821:full body shot, (ordinary asian woman:1.1), wearing (plain white blouse) and (navy skirt:1.2), (ordinary:1.3), (simple:1.2).
+
+0822:full body shot, (handsome asian man:1.2), (warm but cool expression:1.1), wearing (premium black mock neck top:1.2) tucked into (black dress slacks:1.2), (neatly styled hair:1.2), (high quality texture:1.3), (clean:1.3).
+
+0823:full body shot, (pretty youthful caucasian woman:1.2), (soft facial features:1.2), wearing (sky blue silk blouse:1.1) tucked into (white straight-leg jeans:1.2), (natural wavy hair:1.1), (fresh and clean:1.3), (simple:1.2).
+
+0824:full body shot, (average caucasian man:1.1), wearing (red plaid shirt) and (khaki pants:1.2), (clean:1.1), (ordinary:1.2).
+
+0825:full body shot, (pretty asian woman:1.2), (gentle expression:1.2), wearing (fitted light grey knit midi dress:1.3), (clean and simple:1.3), (neat ponytail:1.2), (tidy:1.3), (clean:1.3).
+
+0826:full body shot, (pretty youthful caucasian woman:1.2), (fresh face:1.2), (soft facial features:1.2), wearing (simple white linen sun dress:1.3), (natural soft sunlight:1.2), (clean and minimalist:1.3), (tidy:1.2).
+
+0827:full body shot, (handsome asian man:1.2), (gentle and confident expression:1.2), wearing (light blue oxford shirt tucked into charcoal dress pants:1.3), (neatly styled hair:1.2), (clean:1.3), (tidy:1.3).
+
+0828:full body shot, (handsome caucasian man:1.1), wearing (navy polo shirt tucked into beige chinos:1.2), (leather belt:1.1), (clean look:1.3), (well-groomed:1.2).
+
+0829:full body shot, (pretty asian woman:1.1), wearing (cream silk blouse tucked into navy pencil skirt:1.3), (elegant:1.2), (tidy:1.3), (clean:1.3).
+
+0830:full body shot, (pretty youthful caucasian woman:1.2), (bright eyes:1.1), wearing (soft grey knit vest over white short-sleeve shirt:1.2), (black mini skirt:1.1), (fresh look:1.3), (clean:1.3).
+
+0831:full body shot, (handsome asian man:1.1), (kind and approachable expression:1.2), wearing (beige cardigan over white t-shirt:1.2) tucked into (olive green chinos:1.1), (clean white sneakers:1.1), (tidy:1.3), (clean:1.3).
+
+0832:full body shot, (average caucasian man:1.1), wearing (dark green sweatshirt) and (black jeans:1.1), (ordinary:1.2), (simple:1.3).
+
+0833:full body shot, (pretty asian woman:1.1), wearing (oversized light blue button-down shirt:1.1) and (wide-leg cream pants:1.2), (simple ponytail:1.1), (clean:1.2), (tidy:1.2).
+
+0834:full body shot, (pretty youthful caucasian woman:1.2), (fresh and clean:1.2), wearing (black square-neck mini dress:1.3), (elegant:1.2), (youthful charm:1.2), (clean:1.3).
+
+0835:full body shot, (handsome asian man:1.2), (calm but gentle look:1.2), wearing (premium black long-sleeve tee:1.1) tucked into (black tailored trousers:1.2), (minimalist:1.3), (clean:1.3).
+
+0836:full body shot, (average caucasian man:1.1), wearing (blue plaid shirt) and (brown cargo pants:1.1), (ordinary:1.3), (unremarkable:1.2).
+
+0837:full body shot, (pretty asian woman:1.2), wearing (small floral print chiffon dress:1.2), (gentle smile:1.1), (soft lighting:1.1), (tidy:1.3), (clean:1.3).
+
+0838:full body shot, (pretty youthful caucasian woman:1.2), (soft facial features:1.2), wearing (pale pink crew neck sweater:1.2) and (white denim skirt:1.2), (fresh look:1.2), (clean:1.3).
+
+0839:full body shot, (handsome asian man:1.2), (friendly gaze:1.2), wearing (heavyweight white t-shirt:1.2) tucked into (dark indigo jeans:1.2), (leather belt:1.1), (tidy:1.3), (clean:1.3).
+
+0840:full body shot, (handsome caucasian man:1.1), wearing (grey blazer) and (white shirt:1.1) with (navy slacks:1.1), (professional:1.2), (clean:1.3).
+
+0841:full body shot, (ordinary asian woman:1.1), wearing (plain lilac t-shirt) and (light wash jeans:1.1), (average:1.3), (simple:1.2).
+
+0842:full body shot, (pretty youthful caucasian woman:1.2), (fresh face:1.2), wearing (crisp white button-up shirt:1.2) tucked into (tan high-waisted shorts:1.2), (clean:1.3), (simple:1.2).
+
+0843:full body shot, (handsome asian man:1.2), (approachable look:1.2), wearing (loose fit olive green suit:1.2) with (white inner tee:1.1), (modern:1.2), (clean:1.3).
+
+0844:full body shot, (average caucasian man:1.1), wearing (tan harrington jacket) and (black chinos:1.1), (ordinary:1.2), (clean:1.2).
+
+0845:full body shot, (pretty asian woman:1.1), wearing (beige knit top and skirt set:1.3), (soft and elegant:1.2), (tidy:1.3), (clean:1.3).
+
+0846:full body shot, (pretty youthful caucasian woman:1.2), (fresh face:1.2), wearing (lavender slip dress:1.2) over (white t-shirt:1.1), (youthful and trendy:1.2), (clean:1.3).
+
+0847:full body shot, (handsome asian man:1.1), (gentle eyes:1.2), wearing (band collar striped shirt:1.2) tucked into (navy trousers:1.2), (tidy:1.3), (clean:1.3).
+
+0848:full body shot, (average caucasian man:1.1), wearing (grey hoodie) and (khaki shorts:1.1), (ordinary:1.3), (simple:1.2).
+
+0849:full body shot, (ordinary asian woman:1.1), wearing (soft green blouse tucked into grey slacks:1.2), (average:1.2), (tidy:1.2).
+
+0850:full body shot, (pretty youthful caucasian woman:1.3), (fresh makeup:1.2), wearing (emerald green silk dress with belt:1.3), (high quality texture:1.2), (elegant:1.3), (clean:1.3).
+
+0851:full body shot, (disturbing and repulsive asian woman:1.2), (unnerving bulging eyes:1.2), wearing (filthy tattered neon pink deep v top:1.3) over (oily fluorescent green spandex leggings:1.2), (extremely clashing and blinding colors:1.2), (messy greasy unkempt hair:1.2), (dirty and stained fabric texture:1.2), (extremely heavy makeup:1.3), (visual pollution:1.2), (cringey and unsettling atmosphere:1.3).
+
+0852:full body shot, (handsome asian man:1.1), wearing (mustard yellow oversized hoodie:1.2) with (charcoal grey wide-leg cargo pants:1.2), (white high-top sneakers:1.1), (modern street style:1.2), (clean:1.3).
+
+0853:full body shot, (pretty youthful caucasian woman:1.2), wearing (burnt orange turtleneck sweater:1.2) and (chocolate brown leather pencil skirt:1.3), (neat bun hairstyle:1.1), (sophisticated look:1.2), (clean:1.3).
+
+0854:full body shot, (rugged caucasian man:1.1), wearing (dark red puffer vest:1.1) over (grey heather thermal shirt:1.2) and (khaki hiking trousers:1.2), (tidy beard:1.1), (clean:1.2).
+
+0855:full body shot, (pretty asian woman:1.1), wearing (sage green linen shirt:1.2) tucked into (dark brown corduroy trousers:1.2), (silver glasses:1.1), (intellectual vibe:1.2), (tidy:1.3).
+
+0856:full body shot, (pretty youthful caucasian woman:1.2), wearing (navy and white striped knit top:1.2) with (red high-waisted wide-leg pants:1.2), (fresh and bold:1.2), (clean:1.3).
+
+0857:full body shot, (handsome asian man:1.2), wearing (charcoal wool blazer:1.2) over (black mock neck sweater:1.2) and (slim grey slacks:1.1), (sharp look:1.2), (clean:1.3).
+
+0858:full body shot, (handsome caucasian man:1.1), wearing (emerald green cable knit sweater:1.2) over (white collared shirt:1.1) and (dark wash indigo jeans:1.1), (tidy:1.3).
+
+0859:full body shot, (pretty asian woman:1.1), wearing (lavender cropped zip-up hoodie:1.2) and (black high-waisted leggings:1.1), (sporty ponytail:1.1), (energetic:1.2), (clean:1.3).
+
+0860:full body shot, (pretty youthful caucasian woman:1.2), wearing (yellow floral puff-sleeve midi dress:1.3), (straw hat:1.1), (sun-kissed skin:1.1), (vibrant:1.2), (clean:1.3).
+
+0861:full body shot, (average caucasian man:1.1), wearing (terracotta colored t-shirt:1.2) tucked into (olive green chino shorts:1.2), (leather sandals:1.1), (ordinary but neat:1.2).
+
+0862:full body shot, (handsome asian man:1.1), wearing (tan worker jacket:1.2) over (striped navy t-shirt:1.1) and (white carpenter pants:1.2), (rugged yet clean:1.2).
+
+0863:full body shot, (pretty asian woman:1.1), wearing (black sleeveless turtleneck:1.2) tucked into (khaki paperbag waist pants:1.3), (minimalist:1.2), (tidy:1.3).
+
+0864:full body shot, (pretty youthful caucasian woman:1.2), wearing (deep teal velvet top:1.2) and (black pleated midi skirt:1.2), (elegant:1.3), (fresh makeup:1.2), (clean:1.3).
+
+0865:full body shot, (handsome caucasian man:1.1), wearing (dark brown leather jacket:1.2) over (white v-neck tee:1.1) and (slim black denim:1.1), (clean and sharp:1.2).
+
+0866:full body shot, (handsome asian man:1.1), wearing (dusty rose button-down shirt:1.2) tucked into (light grey trousers:1.1), (gentle expression:1.2), (tidy:1.3).
+
+0867:full body shot, (pretty asian woman:1.2), wearing (light blue oversized blazer:1.2) and (matching tailored shorts:1.2) with a (white crop top:1.1), (modern chic:1.3).
+
+0868:full body shot, (pretty youthful caucasian woman:1.2), wearing (embroidered white peasant blouse:1.2) and (faded flared jeans:1.2), (boho style:1.2), (clean:1.3).
+
+0869:full body shot, (average caucasian man:1.1), wearing (burgundy polo shirt:1.2) with (light grey linen trousers:1.2), (casual and neat:1.2), (clean:1.3).
+
+0870:full body shot, (handsome asian man:1.2), wearing (modern grey kimono-style cardigan:1.2) over (white t-shirt:1.1) and (black cropped pants:1.2), (creative:1.2), (clean:1.3).
+
+0871:full body shot, (pretty asian woman:1.1), wearing (cream knitted vest:1.2) over (pale blue floral dress:1.2), (soft and sweet:1.2), (tidy:1.3).
+
+0872:full body shot, (pretty youthful caucasian woman:1.2), wearing (camel long trench coat:1.2) over (black turtleneck:1.1) and (blue jeans:1.1), (classic look:1.2), (clean:1.3).
+
+0873:full body shot, (average caucasian man:1.1), wearing (bright orange sweatshirt:1.1) and (navy jogger pants:1.2), (energetic:1.2), (ordinary:1.2), (clean:1.1).
+
+0874:full body shot, (pretty asian woman:1.1), wearing (forest green sleeveless A-line dress:1.3), (simple gold necklace:1.1), (pure and clean:1.2), (tidy:1.3).
+
+0875:full body shot, (handsome caucasian man:1.1), wearing (vintage patterned short-sleeve shirt:1.2) tucked into (dark brown chinos:1.2), (70s retro vibe:1.2), (clean:1.3).
+
+0876:full body shot, (pretty asian woman:1.2), wearing (oatmeal colored cashmere sweater:1.3) and (cream wool wide-leg pants:1.2), (soft natural lighting:1.2), (elegant and cozy:1.3), (clean:1.3).
+
+0877:full body shot, (handsome caucasian man:1.1), wearing (navy blue tailored polo shirt:1.2) tucked into (white chinos:1.3), (leather loafers:1.1), (classic yacht club style:1.2), (clean:1.3).
+
+0878:full body shot, (pretty youthful caucasian woman:1.2), wearing (black and white Breton striped top:1.2) tucked into (high-waisted red trousers:1.2), (minimalist black flats:1.1), (chic and fresh:1.3).
+
+0879:full body shot, (handsome asian man:1.2), wearing (light grey relaxed blazer:1.2) over (charcoal grey tee:1.1) and (matching trousers:1.2), (modern minimalist:1.3), (clean:1.3).
+
+0880:full body shot, (pretty youthful caucasian woman:1.2), wearing (sage green silk camisole:1.2) under (white linen blazer:1.2) and (blue straight jeans:1.1), (fresh face:1.2), (clean:1.3).
+
+0881:full body shot, (pretty asian woman:1.2), wearing (pale ice-blue button-down shirt:1.2) tucked into (dark grey pencil skirt:1.2), (neat ponytail:1.1), (crisp and clean:1.3).
+
+0882:full body shot, (handsome caucasian man:1.1), wearing (warm sand-colored field jacket:1.2) over (white crew neck tee:1.1) and (olive green slim chinos:1.1), (tidy:1.2).
+
+0883:full body shot, (handsome asian man:1.1), wearing (indigo blue denim shirt:1.2) over (light grey t-shirt:1.1) and (beige trousers:1.2), (friendly smile:1.1), (clean:1.3).
+
+0884:full body shot, (pretty youthful caucasian woman:1.2), wearing (dusty lilac knit top:1.2) and (white pleated skirt:1.2), (youthful allure:1.2), (soft lighting:1.1), (clean:1.3).
+
+0885:full body shot, (pretty asian woman:1.1), wearing (forest green sleeveless top:1.2) tucked into (khaki straight pants:1.2), (minimalist jewelry:1.1), (earthy and clean:1.3).
+
+0886:full body shot, (average caucasian man:1.1), wearing (caramel brown sweatshirt:1.1) and (dark blue denim:1.2), (neat haircut:1.1), (ordinary but well-matched:1.2).
+
+0887:full body shot, (handsome asian man:1.2), wearing (premium white heavyweight t-shirt:1.2) tucked into (off-white linen trousers:1.2), (gentle aura:1.2), (clean:1.3).
+
+0888:full body shot, (pretty youthful caucasian woman:1.2), wearing (pale lemon yellow sundress:1.3), (fresh makeup:1.2), (bright and airy:1.2), (clean:1.3).
+
+0889:full body shot, (pretty asian woman:1.1), wearing (mocha brown cardigan:1.2) over (white silk camisole:1.1) and (beige skirt:1.2), (tidy:1.3).
+
+0890:full body shot, (handsome caucasian man:1.2), wearing (charcoal merino wool sweater:1.2) over (light blue shirt:1.1) and (black slacks:1.1), (sharp:1.2), (clean:1.3).
+
+0891:full body shot, (handsome asian man:1.1), wearing (mint green linen shirt:1.2) and (white shorts:1.2), (approachable and fresh:1.3), (clean:1.3).
+
+0892:full body shot, (pretty youthful caucasian woman:1.2), wearing (black slim-fit turtleneck:1.2) tucked into (white high-waisted wide-leg trousers:1.3), (elegant:1.3), (clean:1.3).
+
+0893:full body shot, (pretty asian woman:1.1), wearing (dusty rose polo knits:1.2) and (grey pleated mini skirt:1.2), (youthful and sweet:1.3), (clean:1.3).
+
+0894:full body shot, (average caucasian man:1.1), wearing (olive knit crewneck:1.2) and (tan chinos:1.1), (casual:1.2), (clean:1.2).
+
+0895:full body shot, (handsome asian man:1.2), wearing (ivory cardigan:1.2) over (navy striped tee:1.1) and (grey trousers:1.2), (warm vibe:1.2), (clean:1.3).
+
+0896:full body shot, (pretty youthful caucasian woman:1.2), wearing (terracotta colored linen dress:1.2), (straw bag:1.1), (sunny mood:1.2), (clean:1.3).
+
+0897:full body shot, (pretty asian woman:1.2), wearing (ink blue blouse:1.2) tucked into (white pencil skirt:1.2), (sophisticated:1.2), (clean:1.3).
+
+0898:full body shot, (average caucasian man:1.1), wearing (heather grey hoodie:1.2) and (dark wash jeans:1.1), (neat:1.2), (clean:1.2).
+
+0899:full body shot, (handsome asian man:1.1), wearing (mustard yellow long-sleeve tee:1.2) and (charcoal cargo pants:1.2), (modern look:1.2), (clean:1.3).
+
+0900:full body shot, (pretty youthful caucasian woman:1.3), (fresh face:1.2), wearing (emerald green silk wrap dress:1.3), (high texture:1.2), (elegant:1.3), (clean:1.3).
+
+0901:full body shot, (pretty asian woman:1.1), wearing (simple white crewneck tee:1.2) tucked into (light blue straight jeans:1.2), (clean white sneakers:1.1), (natural light:1.2), (tidy:1.3), (ordinary but neat:1.2).
+
+0902:full body shot, (average caucasian man:1.1), wearing (dark olive polo shirt:1.2) with (charcoal grey cargo shorts:1.2), (black socks and sandals:1.1), (messy hair:1.1), (clean but dull colors:1.2).
+
+0903:full body shot, (pretty youthful caucasian woman:1.2), wearing (black silk slip dress:1.3) under a (beige oversized wool blazer:1.2), (delicate gold jewelry:1.1), (sophisticated and clean:1.3).
+
+0904:full body shot, (handsome asian man:1.2), wearing (cream turtleneck sweater:1.2) under a (tan corduroy jacket:1.2) with (dark brown slacks:1.1), (gentle aura:1.2), (clean:1.3).
+
+0905:full body shot, (pretty asian woman:1.1), wearing (shiny reflective purple satin blouse:1.3) with (white tight leggings:1.2), (unnatural fabric sheen:1.3), (clashing textures:1.2), (clean:1.2).
+
+0906:full body shot, (pretty youthful caucasian woman:1.2), wearing (pale pink cropped hoodie:1.2) and (grey high-waisted joggers:1.2), (high ponytail:1.1), (fresh and clean:1.3).
+
+0907:full body shot, (handsome caucasian man:1.1), wearing (heather grey v-neck sweater:1.2) and (navy chinos:1.1), (brown leather belt:1.1), (neat:1.3).
+
+0908:full body shot, (pretty asian woman:1.2), wearing (charcoal wool coat:1.3) over a (white silk shirt:1.1) and (black tailored trousers:1.2), (sharp and professional:1.3), (clean:1.3).
+
+0909:full body shot, (average asian man:1.1), wearing (maroon t-shirt:1.1) and (dark purple gym shorts:1.2), (uncoordinated colors:1.2), (clean but boring:1.2).
+
+0910:full body shot, (pretty youthful caucasian woman:1.2), wearing (small floral print tea dress:1.2) with a (denim jacket:1.1) over shoulders, (summer vibe:1.2), (clean:1.3).
+
+0911:full body shot, (handsome caucasian man:1.1), wearing (light blue oxford shirt:1.2) with (khaki trousers:1.2), (sleeves rolled up:1.1), (approachable and tidy:1.3).
+
+0912:full body shot, (pretty asian woman:1.1), wearing (dusty green knit top:1.2) and (beige midi skirt:1.2), (soft lighting:1.1), (tidy:1.2).
+
+0913:full body shot, (average asian man:1.1), wearing (bright neon yellow windbreaker:1.3) with (red plaid pajama pants:1.3), (clashing patterns:1.3), (messy hair:1.2).
+
+0914:full body shot, (pretty youthful caucasian woman:1.2), wearing (all-white linen suit:1.3) with (tan sandals:1.1), (minimalist and high-end:1.3), (clean:1.3).
+
+0915:full body shot, (handsome caucasian man:1.2), wearing (grey herringbone blazer:1.2) over a (navy turtleneck:1.1) and (black jeans:1.1), (refined:1.2), (clean:1.3).
+
+0916:full body shot, (pretty asian woman:1.1), wearing (oversized baggy purple polo shirt:1.3) and (long denim skirt:1.2), (outdated style:1.2), (neat but unappealing:1.2).
+
+0917:full body shot, (handsome asian man:1.1), wearing (white linen button-down:1.2) and (grey tailored shorts:1.2), (summer morning lighting:1.1), (clean:1.3).
+
+0918:full body shot, (pretty youthful caucasian woman:1.2), wearing (black tank top:1.1) and (olive green cargo pants:1.2), (simple ponytail:1.1), (ordinary:1.2), (clean:1.3).
+
+0919:full body shot, (average caucasian man:1.1), wearing (wrinkled oversized brown t-shirt:1.3) and (faded baggy jeans:1.2), (unkept look:1.2).
+
+0920:full body shot, (pretty asian woman:1.2), wearing (tweed jacket in cream:1.3) over (white camisole:1.1) and (slim blue jeans:1.1), (luxury daily style:1.2), (clean:1.3).
+
+0921:full body shot, (handsome asian man:1.1), wearing (navy utility shirt:1.2) and (khaki chinos:1.1), (brown boots:1.1), (tidy:1.2).
+
+0922:full body shot, (average caucasian woman:1.1), wearing (pale grey sweater:1.2) and (washed-out grey pants:1.2), (monotone and dull:1.3), (clean:1.2).
+
+0923:full body shot, (handsome caucasian man:1.3), wearing (black cashmere turtleneck:1.2) with (charcoal overcoat:1.2) and (tailored slacks:1.2), (cinematic lighting:1.2), (premium clean:1.3).
+
+0924:full body shot, (pretty asian woman:1.2), wearing (lavender silk blouse:1.2) tucked into (white pencil skirt:1.2), (professional yet sweet:1.2), (clean:1.3).
+
+0925:full body shot, (pretty youthful caucasian woman:1.2), wearing (navy striped knit dress:1.2), (simple white sneakers:1.1), (fresh face:1.1), (tidy:1.2).
+
+0926:full body shot, (pretty asian woman:1.2), wearing (fine-knit burgundy turtleneck:1.3) tucked into (high-waisted beige wool trousers:1.2), (delicate gold watch:1.1), (clean:1.3), (intellectual and elegant:1.2).
+
+0927:full body shot, (handsome asian man:1.1), wearing (clean white crewneck sweatshirt:1.2) and (olive green chinos:1.1), (canvas sneakers:1.1), (neatly groomed:1.2), (tidy:1.3).
+
+0928:full body shot, (pretty youthful caucasian woman:1.3), wearing (sculptural matte black midi dress:1.3), (minimalist silver earrings:1.1), (sleek hair:1.2), (high-end fashion editorial vibe:1.2), (clean:1.3).
+
+0929:full body shot, (average caucasian man:1.1), wearing (dull grey and blue plaid shirt:1.2) with (baggy navy cargo pants:1.2), (clean but unstyled:1.2), (boring color palette:1.3).
+
+0930:full body shot, (pretty asian woman:1.1), wearing (bright neon purple ruffled blouse:1.3) with (shiny metallic gold leggings:1.3), (clashing colors:1.3), (overdressed:1.2), (clean:1.2).
+
+0931:full body shot, (handsome asian man:1.2), wearing (light grey cardigan:1.2) over (pale blue shirt:1.1) and (dark denim:1.1), (friendly smile:1.1), (approachable and clean:1.3).
+
+0932:full body shot, (pretty youthful caucasian woman:1.2), wearing (pale yellow rib-knit tank top:1.2) and (white denim shorts:1.1), (natural sunlight:1.2), (tidy:1.3).
+
+0933:full body shot, (handsome caucasian man:1.2), wearing (tailored navy overcoat:1.3) over (charcoal turtleneck:1.2), (winter urban street background:1.1), (refined and clean:1.3).
+
+0934:full body shot, (average asian woman:1.1), wearing (stiff navy blue work blazer:1.2) and (matching straight pants:1.1), (functional and neat:1.2), (clean:1.2).
+
+0935:full body shot, (handsome asian man:1.1), wearing (shiny synthetic red satin button-down:1.3) with (white tight pants:1.2), (unnatural fabric sheen:1.3), (clean:1.2).
+
+0936:full body shot, (pretty youthful caucasian woman:1.2), wearing (embroidered white peasant blouse:1.2) and (distressed flare jeans:1.1), (stylish accessories:1.1), (clean:1.3).
+
+0937:full body shot, (handsome caucasian man:1.1), wearing (dark teal hoodie:1.2) and (khaki trousers:1.1), (clean white sneakers:1.1), (tidy:1.3).
+
+0938:full body shot, (pretty asian woman:1.3), wearing (heavy-weight matte silk slip dress in champagne:1.3), (minimalist layering:1.1), (high-quality fabric texture:1.3), (clean:1.3).
+
+0939:full body shot, (average asian man:1.1), wearing (basic black track jacket:1.1) and (grey sweatpants:1.1), (neat:1.2), (ordinary but tidy:1.2).
+
+0940:full body shot, (pretty youthful caucasian woman:1.2), wearing (red ditsy floral wrap dress:1.2), (espadrilles:1.1), (sunny garden background:1.1), (fresh and clean:1.3).
+
+0941:full body shot, (handsome caucasian man:1.2), wearing (off-white chunky knit sweater:1.2) and (slim black trousers:1.1), (minimalist style:1.2), (clean:1.3).
+
+0942:full body shot, (pretty asian woman:1.1), wearing (soft lilac short-sleeve knit:1.2) and (white midi skirt:1.2), (clean:1.3), (neat:1.2).
+
+0943:full body shot, (average asian man:1.1), wearing (bright green leopard print vest:1.3) with (orange camo shorts:1.3), (clashing patterns:1.3), (overdressed:1.2), (clean:1.2).
+
+0944:full body shot, (average caucasian woman:1.1), wearing (brown t-shirt:1.1) and (dark grey leggings:1.1), (uninspired colors:1.3), (neat:1.2), (clean:1.2).
+
+0945:full body shot, (handsome caucasian man:1.3), wearing (bespoke charcoal three-piece suit:1.3), (crisp white shirt:1.1), (professional and sharp:1.3), (clean:1.3).
+
+0946:full body shot, (pretty asian woman:1.2), wearing (oversized white button-down:1.2) half-tucked into (blue skinny jeans:1.1), (tan loafers:1.1), (clean:1.3).
+
+0947:full body shot, (handsome asian man:1.1), wearing (tan utility jacket:1.2) over (white tee:1.1) and (navy chinos:1.1), (sturdy boots:1.1), (tidy:1.3).
+
+0948:full body shot, (pretty youthful caucasian woman:1.1), wearing (bright neon pink blazer:1.2) over (black gym clothes:1.3), (style mismatch:1.3), (clean:1.2).
+
+0949:full body shot, (handsome caucasian man:1.2), wearing (distressed black leather jacket:1.2) over (white tee:1.1) and (black jeans:1.1), (classic cool vibe:1.2), (clean:1.3).
+
+0950:full body shot, (pretty asian woman:1.1), wearing (navy and white striped long-sleeve tee:1.2) and (beige wide-leg pants:1.2), (clean:1.3), (tidy:1.2).
+
+0951:full body shot, (pretty asian woman:1.2), wearing (premium charcoal cashmere shawl:1.3) draped over a (fitted black wool midi dress:1.2), (matte fabric textures:1.3), (soft natural side-lighting:1.2), (elegant:1.3), (clean:1.3).
+
+0952:full body shot, (handsome asian man:1.1), wearing (crisp navy polo shirt:1.2) and (grey tapered trousers:1.1), (white leather sneakers:1.1), (neat and tidy:1.3).
+
+0953:full body shot, (pretty youthful caucasian woman:1.3), wearing (matte cognac leather trench coat:1.3) over (cream silk blouse:1.1), (sharp tailoring:1.2), (high-end cinematic lighting:1.2), (clean:1.3).
+
+0954:full body shot, (average caucasian man:1.1), wearing (faded blue janitor uniform:1.2), (sturdy work boots:1.1), (neat but dull:1.2), (clean:1.3).
+
+0955:full body shot, (pretty asian woman:1.1), wearing (shiny reflective neon pink puffer vest:1.3) over (lime green leggings:1.3), (clashing colors:1.3), (artificial sheen:1.3).
+
+0956:full body shot, (handsome asian man:1.2), wearing (olive field jacket:1.2) over (white tee:1.1) and (dark denim:1.1), (rugged yet clean:1.2), (clean:1.3).
+
+0957:full body shot, (pretty youthful caucasian woman:1.2), wearing (white linen wrap top:1.2) and (tan wide-leg trousers:1.2), (straw bag:1.1), (natural light:1.2), (tidy:1.3).
+
+0958:full body shot, (handsome caucasian man:1.2), wearing (grey tweed blazer:1.3) over (navy turtleneck:1.2), (winter street background:1.1), (refined:1.2), (clean:1.3).
+
+0959:full body shot, (average asian woman:1.1), wearing (oversized baggy beige sweater:1.3) and (ill-fitting long denim skirt:1.2), (bloated silhouette:1.3), (clean:1.2).
+
+0960:full body shot, (average asian man:1.1), wearing (bright red plaid blazer:1.3) with (yellow polka dot tie:1.3), (uncoordinated patterns:1.3), (clean:1.2).
+
+0961:full body shot, (pretty youthful caucasian woman:1.2), wearing (pinstripe light blue shirt:1.2) tucked into (navy pencil skirt:1.2), (nude heels:1.1), (professional:1.2), (clean:1.3).
+
+0962:full body shot, (handsome caucasian man:1.1), wearing (maroon hoodie:1.2) and (black joggers:1.1), (gym setting:1.1), (tidy:1.2), (clean:1.3).
+
+0963:full body shot, (pretty asian woman:1.2), wearing (camel wool overcoat:1.3) over (all-white inner wear:1.2), (minimalist aesthetic:1.3), (high-quality look:1.3), (clean:1.3).
+
+0964:full body shot, (average asian man:1.1), wearing (dark brown cardigan:1.2) and (charcoal grey pants:1.1), (uninspired outfit:1.2), (neat:1.2), (clean:1.2).
+
+0965:full body shot, (pretty youthful caucasian woman:1.1), wearing (shiny thin purple polyester ballgown:1.3), (stiff fabric:1.2), (unnatural lighting:1.2), (clean:1.2).
+
+0966:full body shot, (handsome caucasian man:1.1), wearing (technical black windbreaker:1.2) and (grey hiking pants:1.1), (mountain background:1.1), (clean:1.3).
+
+0967:full body shot, (pretty asian woman:1.1), wearing (soft pink knit sweater:1.2) and (white skinny jeans:1.1), (cute and tidy:1.2), (clean:1.3).
+
+0968:full body shot, (handsome asian man:1.2), wearing (fitted charcoal suit jacket:1.2) with (light blue shirt:1.1), (no tie:1.1), (smart casual:1.2), (clean:1.3).
+
+0969:full body shot, (average caucasian woman:1.1), wearing (velour turquoise tracksuit:1.3), (retro style:1.2), (neat but unappealing:1.2).
+
+0970:full body shot, (average caucasian man:1.1), wearing (neon orange floral shirt:1.3) with (bright red striped pants:1.3), (pattern clash:1.3).
+
+0971:full body shot, (pretty asian woman:1.1), wearing (navy blue small floral print maxi dress:1.2), (gentle aura:1.1), (clean:1.3).
+
+0972:full body shot, (handsome asian man:1.1), wearing (white polo shirt:1.2) with (burgundy chinos:1.1), (tidy:1.2), (clean:1.3).
+
+0973:full body shot, (pretty youthful caucasian woman:1.2), wearing (black and white polka dot wrap dress:1.3), (classic silhouette:1.2), (elegant:1.2), (clean:1.3).
+
+0974:full body shot, (average caucasian man:1.1), wearing (denim shirt:1.2) with (faded blue jeans:1.2), (double denim:1.1), (neat:1.2), (clean:1.2).
+
+0975:full body shot, (pretty asian woman:1.1), wearing (beige blazer:1.2) over (white tee:1.1) and (black leggings:1.1), (clean:1.3), (tidy:1.2).
+
+0976:full body shot, (handsome asian man:1.1), wearing (light blue button-down shirt:1.2) with (dark grey chinos:1.1), (sleeves rolled up:1.1), (neat:1.3), (ordinary but tidy:1.2).
+
+0977:full body shot, (average caucasian woman:1.1), wearing (faded pink floral blouse:1.2) and (simple black mini skirt:1.1), (clean but uninspired:1.2).
+
+0978:full body shot, (handsome caucasian man:1.2), wearing (navy blue athletic jacket:1.2) with (matching track pants:1.1), (white sneakers:1.1), (active and clean:1.3).
+
+0979:full body shot, (pretty asian woman:1.1), wearing (soft beige knit sweater:1.2) and (dark wash straight jeans:1.1), (simple ponytail:1.1), (tidy:1.2), (clean:1.3).
+
+0980:full body shot, (average asian man:1.1), wearing (ill-fitting grey suit:1.2) with (plain white shirt:1.1), (no tie:1.1), (clean but boring:1.2).
+
+0981:full body shot, (pretty youthful caucasian woman:1.2), wearing (navy and white striped t-shirt:1.2) with (light wash denim shorts:1.1), (casual:1.2), (clean:1.3).
+
+0982:full body shot, (handsome asian man:1.2), wearing (white linen button-down shirt:1.2) and (beige chinos:1.1), (sunny outdoor background:1.1), (fresh and clean:1.3).
+
+0983:full body shot, (average caucasian woman:1.1), wearing (baggy purple t-shirt:1.2) with (faded grey sweatpants:1.2), (clean but unstyled:1.2).
+
+0984:full body shot, (pretty asian woman:1.1), wearing (black blazer:1.2) over (white basic top:1.1) and (black skinny jeans:1.1), (tidy:1.2), (clean:1.3).
+
+0985:full body shot, (handsome caucasian man:1.1), wearing (dark green flannel shirt:1.2) over (white t-shirt:1.1) and (blue jeans:1.1), (neat:1.2), (clean:1.3).
+
+0986:full body shot, (average asian man:1.1), wearing (plain grey work overalls:1.2), (sturdy work boots:1.1), (clean but functional:1.2).
+
+0987:full body shot, (pretty youthful caucasian woman:1.2), wearing (cream chunky knit sweater:1.2) and (dark wash jeans:1.1), (autumn leaves background:1.1), (cozy and clean:1.3).
+
+0988:full body shot, (pretty asian woman:1.1), wearing (simple navy blue a-line dress:1.2), (white sneakers:1.1), (tidy:1.2), (clean:1.3).
+
+0989:full body shot, (average caucasian man:1.1), wearing (untucked light blue button-down:1.2) and (khaki pants:1.2), (clean but uninspired:1.2).
+
+0990:full body shot, (handsome asian man:1.1), wearing (tan chore jacket:1.2) over (white crewneck tee:1.1) and (navy trousers:1.1), (neat:1.2), (clean:1.3).
+
+0991:full body shot, (average caucasian woman:1.1), wearing (light grey t-shirt:1.2) and (dark grey leggings:1.2), (monotone and dull:1.3), (clean:1.2).
+
+0992:full body shot, (pretty asian woman:1.2), wearing (soft pink flowy midi dress:1.2), (delicate jewelry:1.1), (garden setting:1.1), (charming and clean:1.3).
+
+0993:full body shot, (handsome caucasian man:1.1), wearing (light blue denim shirt:1.2) and (dark jeans:1.1), (clean:1.3), (neat:1.2).
+
+0994:full body shot, (average asian woman:1.1), wearing (black sweater:1.2) and (grey pleated skirt:1.2), (clean but uninspired:1.2).
+
+0995:full body shot, (handsome caucasian man:1.1), wearing (dark grey hoodie:1.2) and (black jeans:1.1), (simple:1.1), (tidy:1.2), (clean:1.3).
+
+0996:full body shot, (handsome asian man:1.1), wearing (clean white t-shirt:1.2) and (navy blue shorts:1.1), (summer casual:1.1), (neat:1.2), (clean:1.3).
+
+0997:full body shot, (pretty youthful caucasian woman:1.2), wearing (light wash denim jacket:1.2) over (white crop top:1.1) and (high-waisted jeans:1.1), (confident pose:1.1), (clean:1.3).
+
+0998:full body shot, (average asian woman:1.1), wearing (plain grey sweatshirt:1.2) and (black leggings:1.2), (uninspired colors:1.3), (neat:1.2), (clean:1.2).
+
+0999:full body shot, (handsome caucasian man:1.1), wearing (crisp white polo shirt:1.2) and (khaki chinos:1.1), (tidy:1.2), (clean:1.3).
+
+1000:full body shot, (most beautiful asian woman:1.4), (stunningly beautiful detailed eyes:1.3), (voluminous and silky long black ponytail:1.3), (pale porcelain skin:1.2), wearing (premium dark navy high-performance sports bra:1.3) and (matching sleek compression yoga pants:1.3), (sculpted athletic physique:1.2), (high-end fabric texture:1.3), (subtle matte sheen:1.1), (soft cinematic studio lighting:1.2), (clean and minimalist background:1.2), (the ultimate aesthetic standard:1.4), (clean:1.3).
+
 
 
