@@ -19,13 +19,22 @@ class FashionAdvisor:
             cond_list.append(get_one_hot_tags(row))
         self.cond_matrix = torch.stack(cond_list) # [N, 15]
 
-        # 載入藥力 (標籤對分數的影響力)
-        potency_path = 'labels_potency.json'
-        if os.path.exists(potency_path):
-            with open(potency_path, 'r', encoding='utf-8') as f:
-                self.potency_map = json.load(f)
-        else:
-            self.potency_map = {}
+        # 2. 【核心修改】不再依賴 potency.json 判斷正負，改為建立資料庫詞彙表
+        # 直接掃描 CSV 中的 pos_tags 與 neg_tags 欄位，建立絕對權威的分類集合
+        self.pos_vocab = set()
+        self.neg_vocab = set()
+
+        print("📚 正在建立標籤分類詞典 (基於 dress_dataset.csv)...")
+        for _, row in self.df.iterrows():
+            # 解析該列的正標籤
+            p_tags = self._parse_to_list(str(row.get('pos_tags', '')))
+            for t in p_tags: self.pos_vocab.add(t)
+            
+            # 解析該列的負標籤
+            n_tags = self._parse_to_list(str(row.get('neg_tags', '')))
+            for t in n_tags: self.neg_vocab.add(t)
+            
+        print(f"✅ 詞典建立完成: 正標籤 {len(self.pos_vocab)} 個, 負標籤 {len(self.neg_vocab)} 個")
         
         self.weight_map = {
             0.1: 0.7, 0.2: 0.72, 0.3: 0.75, 0.4: 0.77, 0.5: 0.8,
@@ -156,15 +165,19 @@ class FashionAdvisor:
         final_scores = vis_sims * logic_scores
 
         # --- 4. 根據你的策略設定動態門檻 ---
-        if user_score >= 6.50:
-            g_pri, g_fall = user_score + 0.10, 6.50
-            n_pri, n_fall = 5.00, None
-        elif 3.50 <= user_score < 6.50:
-            g_pri, g_fall = 6.50, user_score + 0.10
-            n_pri, n_fall = 3.50, user_score - 0.10
-        else: # < 3.50
-            g_pri, g_fall = 5.00, None
-            n_pri, n_fall = user_score - 0.10, 3.50
+        # --- (Stage 10 New Logic) ---
+        if user_score < 4.0:
+            g_pri, g_fall = 5.0, 4.0
+            n_pri, n_fall = 3.0, None
+        elif user_score < 5.0:
+            g_pri, g_fall = 6.0, 5.0
+            n_pri, n_fall = 4.0, None
+        elif user_score < 6.0:
+            g_pri, g_fall = 7.0, 6.0
+            n_pri, n_fall = 5.0, None
+        else: # user_score >= 6.0
+            g_pri, g_fall = 8.0, 7.0
+            n_pri, n_fall = 6.0, None
 
         # --- 5. 執行搜尋 ---
         # 尋找好鄰居
@@ -180,18 +193,20 @@ class FashionAdvisor:
         # --- 6. 後續處理與回傳 ---
         good_row = self.df.iloc[best_good_idx]
         
-        # 3. 整理我的標籤報告 (區分好壞)
+        # 【核心修改】直接查表分類使用者的優缺點
         my_good_labels = []
         my_bad_labels = []
         for tag, weight in user_diagnosis:
-            potency = self.potency_map.get(tag, 0.0)
-            if potency > 0 and weight >= 0.5:
+            if weight < 0.5: continue # 權重太低忽略
+
+            if tag in self.pos_vocab:
                 my_good_labels.append(f"{tag}({weight})")
-            elif potency < 0 and weight >= 0.5:
+            elif tag in self.neg_vocab:
                 my_bad_labels.append(f"{tag}({weight})")
+            # 如果都不在(極少見)，預設為中性不顯示，或依需求處理
 
         # 4. 解析榜樣的標籤
-        good_pos_tags = self._parse_to_list(good_row.get('pos_tags', ""))
+        good_pos_tags = self._parse_to_list(str(good_row.get('pos_tags', "")))
 
         return {
             "good_id": good_row['id_str'],
@@ -210,60 +225,60 @@ class FashionAdvisor:
 
     def get_precision_prescription(self, user_diagnosis, good_id):
         """
-        方案 3 實作：比大小邏輯 (Target-Oriented) + 臉部保護機制
+        方案 3 修正版：依據 DB 欄位嚴格分流
         """
-        # 1. 建立使用者標籤字典 {tag: weight}
         u_dict = {tag: weight for tag, weight in user_diagnosis}
         
-        # 2. 獲取好鄰居標籤字典
         good_row = self.df[self.df['id_str'] == good_id].iloc[0]
-        # 修改後 (允許空白，但在冒號前停止)
+        # 解析鄰居的正標籤
         n_tags_list = re.findall(r'\(?([^:\(\)]+):([\d\.]+)\)?', str(good_row.get('pos_tags', "")))
         n_dict = {tag: float(w) for tag, w in n_tags_list}
         
         final_pos_prompts = []
         final_neg_prompts = []
 
-        # --- A. 正向標籤處理 (比大小) ---
-        # 遍歷好鄰居的所有優點
+        # === 1. Positive Prompt (C+) 構建 ===
+        # 規則：包含「鄰居的優點」以及「我原本就有的正標籤 (Simple 也要保留)」
+        
+        # A. 鄰居的優點 (帶領我進步)
         for tag, n_w in n_dict.items():
-            # [規則 1] 臉部標籤跳過 (不重繪臉)
-            if tag in self.face_tags:
-                continue
+            if tag in self.face_tags: continue
             
-            # 取得我的權重 (如果沒有就是 0.0)
             u_w = u_dict.get(tag, 0.0)
-            
-            # [規則 2] 只有當鄰居比我強時，才加入 Prompt
-            # 且使用鄰居的權重進行轉換
-            if n_w > u_w:
-                # 查表轉換權重 (四捨五入到小數點第一位以符合 key)
+            if n_w > u_w: # 鄰居比我強，加入
                 mapped_w = self.weight_map.get(round(n_w, 1), 1.0)
-                if mapped_w == 1.0:
-                    final_pos_prompts.append(f"{tag}")
-                else:
-                    final_pos_prompts.append(f"({tag}:{mapped_w})")
-
-        # --- B. 負向標籤處理 (大掃除) ---
-        # 遍歷我身上的所有標籤
+                if mapped_w == 1.0: final_pos_prompts.append(f"{tag}")
+                else: final_pos_prompts.append(f"({tag}:{mapped_w})")
+        
+        # B. 我原本的優點 (保留特徵，避免換個人)
+        # 【關鍵修正】即使我是 4 分，如果我有 'simple' (它是 pos_vocab)，也要保留在 C+
         for tag, u_w in u_dict.items():
-            # 檢查是否為負向標籤 (potency < 0)
-            potency = self.potency_map.get(tag, 0.0)
+            if tag in self.face_tags: continue
             
-            if potency < 0:
-                # [規則 1] 臉部標籤跳過 (例如 bad mood 不放入 negative prompt)
-                if tag in self.face_tags:
-                    continue
-                
-                # [規則 3] 負向標籤全部放入 Negative Prompt
-                # 使用我原本的權重進行轉換
-                mapped_w = self.weight_map.get(round(u_w, 1), 1.0)
-                if mapped_w == 1.0:
-                    final_pos_prompts.append(f"{tag}")
-                else:
-                    final_pos_prompts.append(f"({tag}:{mapped_w})")
+            # 如果這個標籤屬於「正標籤庫」，且鄰居沒有覆蓋它(或鄰居沒這標籤)
+            # 我們可以選擇保留它，維持使用者原本風格中好的部分
+            if tag in self.pos_vocab:
+                 # 這裡做個判斷：如果鄰居已經加過了(上面A步驟)，就不用再加
+                 if tag not in n_dict: 
+                     mapped_w = self.weight_map.get(round(u_w, 1), 1.0)
+                     if mapped_w == 1.0: final_pos_prompts.append(f"{tag}")
+                     else: final_pos_prompts.append(f"({tag}:{mapped_w})")
 
-        # [規則 4] 不再限制長度 (移除 [:3])
+        # === 2. Negative Prompt (C-) 構建 ===
+        # 規則：只針對「負標籤庫 (neg_vocab)」中的特徵進行壓制
+        
+        for tag, u_w in u_dict.items():
+            if tag in self.face_tags: continue
+
+            # 【關鍵修正】只有當標籤明確存在於 neg_vocab 時，才移入 Negative Prompt
+            if tag in self.neg_vocab:
+                mapped_w = self.weight_map.get(round(u_w, 1), 1.0)
+                
+                # 策略：對於 messy, dirty 等負面詞，可以考慮稍微加重權重 (例如 * 1.1) 確保消除
+                # 這裡暫時維持原權重邏輯
+                if mapped_w == 1.0: final_neg_prompts.append(f"{tag}") 
+                else: final_neg_prompts.append(f"({tag}:{mapped_w})") 
+
         return ", ".join(final_pos_prompts), ", ".join(final_neg_prompts)
 
     def _parse_to_list(self, tag_str):
@@ -323,10 +338,18 @@ class FashionAdvisor:
         
         # Positive 排序：處方(C+) > 條件(B+) > 畫質(A+)
         # 即使 Token 爆掉，被截斷的也是最後面的 quality，而非藥方
-        full_pos = f"{c_pos}, {b_pos_str}, {a_pos}" if c_pos else f"{b_pos_str}, {a_pos}"
-        
+        if c_pos:
+            full_pos = f"{c_pos}, {b_pos_str}, {a_pos}"
+        else:
+            full_pos = f"{b_pos_str}, {a_pos}"
+
         # Negative 排序：保護(A-) > 條件(B-) > 藥方(C-)
-        full_neg = f"{a_neg}, {b_neg_str}"
-        if c_neg: full_neg += f", {c_neg}"
+        if c_neg:
+            full_neg = f"{a_neg}, {b_neg_str}, {c_neg}"
+        else:
+            # 利用空出的 C- 空間，加壓 A- 與 B-
+            a_neg = f"{a_neg}, low quality texture"
+            b_neg_str = f"{b_neg_str}, overexposed, underexposed, distorted reflection"
+            full_neg = f"{a_neg}, {b_neg_str}"
         
         return full_pos, full_neg

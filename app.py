@@ -185,12 +185,7 @@ def predict():
         # 確保數據結構完整，供新版 llm_consultant.py 使用
         analysis_results['original_score'] = original_score 
 
-        try:
-            # 現在 analysis_results 已經包含 advisor 產出的 user_report 與 neighbor_report
-            ai_advice = consultant.generate_advice(final_score, analysis_results, is_inpainted=is_inpainted)
-        except Exception as e:
-            print(f"⚠️ Gemini API 錯誤: {e}")
-            ai_advice = consultant.generate_backup_advice(final_score, analysis_results)
+        ai_advice = consultant.generate_advice(final_score, analysis_results, is_inpainted=is_inpainted)
 
         return jsonify({
             'score': round(float(final_score), 2), 

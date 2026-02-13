@@ -1,33 +1,55 @@
 ==================================================
-DressGPT 第九階段：千張標註里程碑與視覺化對標牆 (1k Milestone & Visual Benchmark Stage)
+DressGPT 第十階段：非對稱審美加權與 LLM 診斷進化 (Asymmetric Weighting & LLM Evolution)
 ==================================================
 
-核心檔案更新：
-- dataset/: 資料集擴充至 1000 張標註樣本，建立全新審美分佈常模。
-- gallery.html: 新增視覺化對標牆介面，取代原有的 check_benchmarks.py 文字輸出模式。
-- server.py (或 app.py): 新增靜態網頁路由，支援對標牆的圖片與分數動態渲染。
-- visualize.py: 強化長條圖邏輯，依照「性別 x 人種」拆分為四色堆疊顯示，用於指導資料補強策略。
+第1層: 準備圖片。
+text to image工具 -> 生成訓練圖片
+static/dataset_images -> 儲存訓練圖片
+static/dataset_info/prompts.txt -> 存放生成圖片使用的prompt
+static/dataset_info/other_info.txt -> 存放生成圖片使用的negative_prompt與其他參數
+convert_webp_to_jpg.py -> 轉換圖片格式工具
+image_to_embedding.py -> 把圖片(.jpg)轉成embedding(.pt)
+image_embeddings.pt -> 1000張圖片的embedding
+
+第2層: 標註與整理資料。
+dress_dataset.csv -> 核心資料庫
+data_manager.py -> 擴展資料集
+auto_tagger.py -> 利用image_embeddings.pt自動標註部分欄位
+score_normalize.py -> 正規化score欄位，依照Z-score轉換成Normal Distribution(平均:5.00，標準差:1.50)
+visualize.py -> 四色長條圖統計程式。統計亞洲女性(粉紅色)/亞洲男性(粉藍色)/歐美女性(橙色)/歐美男性(綠色)在各分數區間的人數比例分布
+app_gallery.py，templates/gallery.html -> 直接秀出各分數區間(前四名/1~9分/後四名)的代表圖片(4張/2男2女)。方便標註者決定分數。
+
+第3層: 訓練模型。
+DressGPT_models -> 存放5個fold(fold1.pth ~ fold5.pth)
+DressGPT_models/model_info.txt -> 紀錄5個模型的train/validation loss/RMSE/R2-score
+train_DressGPT.py -> 訓練模型
+model_arch.py -> 調整模型結構
+
+第4層: DressGPT網頁應用程式。
+app.py -> 網頁後端，負責呼叫其他模組
+templates/index.html -> 網頁前端，負責使用者介面
+predict_score.py -> 評分程式。使用fold1.pth ~ fold5.pth打出5個分數並取平均
+feature_utils.py -> 將選單內容轉換為one-hot向量
+fashion_advisor.py -> DressGPT核心大腦。負責評估與診斷使用者穿搭，並從資料庫中推薦一位好榜樣與避雷對象
+inpaint_engine.py -> 呼叫Stable Diffusion重繪模型進行重繪
+llm_consultant.py -> 呼叫Gemini API生成文字建議或是生成離線版文字建議
 
 --------------------------------------------------
-技術細節與重大更新：
+第 10 版重大優化細節：
 
-1. 達成 1000 張樣本里程碑 (1k Data Milestone)
-   - 規模擴張：資料庫由 400 張擴增至 1000 張，大幅提升模型對於「審美極端值」的判讀能力。
-   - 新天花板 (New Ceiling)：ID: 1000 -> 9.94 / 10 分。
-   - 新地板 (New Floor)：ID: 0305 -> 0.06 / 10 分。
+1. 生成式診斷建議優化 (LLM Consultant Upgrade)
+   - 語氣階層化：依據預測分數自動切換 Gemini 顧問語氣。針對 PR90+ 提供專業讚賞，針對低分段則給予直接且具建設性的「重整方案」。
+   - 特徵對齊：優化 Prompt 模板，確保 LLM 輸出的文字建議與模型識別出的 tags (如 ugly, messy, sporty) 具備邏輯一致性。
 
-2. 網頁版視覺化對標牆 (Visual Benchmark Wall)
-   - 實體化邊框權重：引入 CSS 動態邊框邏輯，以厚度 (6px → 2px) 與顏色 (金/銀/銅/鐵 vs 紅色警示) 視覺化分數權重。
-   - PR 值 (Percentile Rank) 系統：在每個分區顯示 PR 值（如 PR 99.6, PR 50.0），提供比絕對分數更具參考價值的相對排名資訊。
-   - 標籤視覺化：直接在卡片下方展示該樣本的關鍵 Tags (如 ugly, messy, handsome)，驗證模型評分依據。
+2. 訓練機制與評估指標革命 (Asymmetric Training Strategy)
+   - 非對稱 Z-Weighted Loss：
+     * 引入「低分懲罰項 (Penalty: 0.9)」：強化對負面標籤的敏感度，解決「醜圖虛高」問題（例如雜亂穿搭由 4.21 修正至 3.68）。
+     * 引入「高分獎勵項 (Reward: 0.6)」：穩定拉抬極端美學樣本的辨識度（例如高分樣本由 7.51 修正至 8.00）。
+   - 指標透明化：model_info.txt 現在同步記錄 Train/Val 的 loss， RMSE 與 R2-score，提供更客觀的模型健康度診斷。
 
-3. 參考點解析度提升 (Granular Reference System)
-   - 舊制：僅依賴 (2, 3.5, 5, 6.5, 8) 五個參考點。
-   - 新制：擴展為 11 個層級 (BTM 4, 1, 2, 3, 4, 5, 6, 7, 8, 9, TOP 4)，涵蓋從審美災難到極致美學的完整光譜。
-   - 優勢：解決了原本 3.5~5 分與 6.5~8 分之間跨度過大，導致「路人」與「型人」界線模糊的問題。
-
-4. 數據平衡策略視覺化 (Demographic Visualization)
-   - 在 visualize.py 中引入四色分類（男性/女性 x 歐美/亞洲），精確識別特定分數段（如 3-4 分區）的樣本缺口。
-   - 依據此視覺化結果，有針對性地補充了缺乏的樣本，修正了模型在特定性別或膚色上的評分偏差。
+3. 邏輯 Bug 修復與重繪空間優化 (System Refinement)
+   - 修正搜尋門檻：調整 fashion_advisor.py 的鄰居搜尋範圍，強制程式推薦比使用者強一定程度的樣本。
+   - 優化重繪 Prompt：調整 Inpaint 引擎的 Prompt 運用空間，加入更細節的Negative Prompt。
+   - 解決漂移問題：調整loss function，成功修正了 v9 時期模型容易向「平均值」靠攏的趨勢，使模型更具「敢愛敢恨」的性格。
 
 ==================================================
