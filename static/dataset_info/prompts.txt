@@ -8,7 +8,7 @@
 
 0005:Asian woman, linen shirt, wide leg pants, canvas bag, library background, soft lighting.
 
-0006:Techwear style, black tactical jacket, multiple pockets, joggers, futuristic street, cool lighting.
+0006:Full body shot, Asian woman, extreme oversized techwear, overly baggy black tactical jacket covering the silhouette, excessively long straps dangling, mismatched chunky neon sneakers, industrial ruins background, messy and disproportionate.
 
 0007:Caucasian woman, simple grey sweater, black leggings, white sneakers, plain white background.
 
@@ -20,9 +20,9 @@
 
 0011:Caucasian woman, messy pajamas, mismatched socks, messy hair, convenience store background.
 
-0012:Asian man, navy cardigan, striped tie, khaki pants, university campus.
+0012:Full body shot, Asian man, preppy style, navy blue sweater vest over a white shirt, beige chinos, standing in a university campus background, clean and neat, average fit.
 
-0013:Asian woman, light blue sundress, straw hat, beach background.
+0013:Full body shot, Asian woman, light yellow summer floral dress, straw hat, sandals, standing in a sunny garden, casual and bright vibe.
 
 0014:Caucasian man, leather jacket, ripped jeans, combat boots, concert stage.
 
@@ -60,7 +60,7 @@
 
 0031:Asian man, olive green hoodie, khaki chinos, white sneakers, park background.
 
-0032:Asian woman, cream knit vest over white shirt dress, beret, autumn leaf background.
+0032:Full body shot, Asian woman, chic chic style, black beret, grey textured wool coat, black turtleneck, stylish leather skirt, Parisian street background, elegant and fashionable.
 
 0033:Caucasian man, waterproof gore-tex jacket, cargo pants, hiking boots, mountain trail.
 
@@ -102,7 +102,7 @@
 
 0052:Caucasian man, high-end beige cashmere sweater, tailored white trousers, luxury watch, bright minimal studio.
 
-0053:Caucasian woman, wearing 5 different necklaces, huge sunglasses, 3 hats stacked, too many rings, extremely cluttered.
+0053:Full body shot, Caucasian woman, messy style, too many golden necklaces and oversized rings, clashing neon green top and purple skirt, cluttered accessories, chaotic visual.
 
 0054:Asian man, 90s vintage windbreaker, baggy denim, retro sneakers, city alleyway.
 
@@ -142,7 +142,7 @@
 
 0072:Caucasian man, multiple pocket techwear vest, joggers, industrial rooftop.
 
-0073:Caucasian woman, oversized faux fur coat, looking very bulky and heavy, dark winter background.
+0073:Full body shot, Caucasian woman, unflattering bulky faux fur coat, neon pink leggings, clash of heavy texture and cheap fabric, standing on a cluttered street, dated and unrefined style.
 
 0074:Asian man, school uniform style, white shirt, navy vest, khaki pants, school gate.
 
@@ -196,7 +196,7 @@
 
 0099:Asian woman, light yellow floral tea dress, straw hat, flower market background.
 
-0100:Asian man, oversized wool coat, turtleneck, glasses, clean aesthetic, winter park.
+0100:Full body shot, Asian man, oversized grey winter coat, plain black trousers, standing on a snowy street, slightly baggy and unrefined silhouette.
 
 0101:Asian woman, bright yellow cardigan, white pleated skirt, high socks, campus tennis court, sunny.
 
@@ -240,7 +240,7 @@
 
 0121:Asian woman, red cardigan with white lace collar, denim skirt, retro bakery background.
 
-0122:Caucasian man, grey v-neck sweater, white shirt, black tie, glasses, classic university hall.
+0122:Full body shot, Caucasian man, basic preppy style, light blue button-down shirt, dark jeans, standard pose in a library, unremarkable and plain.
 
 0123:Caucasian woman, midnight blue velvet gown, diamonds, grand stairs, luxury aesthetic.
 
@@ -336,13 +336,13 @@
 
 0169:Asian woman, navy cardigan over white collared shirt, pleated skirt, library background.
 
-0170:Caucasian man, leather jacket over a formal dress shirt and tie, weird stylistic clash.
+0170:Full body shot, Caucasian man, poorly fitted shiny faux leather blazer, wrinkled yellow dress shirt underneath, baggy faded jeans, standing in a dimly lit bar, mismatched formal and cheap materials.
 
 0171:Caucasian woman, all-black outfit: turtleneck, leather pants, high heels, minimalist background.
 
 0172:Asian man, generic blue polo shirt, khaki shorts, sandals, supermarket.
 
-0173:Asian woman, extremely thick white faux-fur coat, looking like a ball, very bulky.
+0173:Full body shot, Asian woman, beige trench coat layered over a white midi dress, ankle boots, walking in a city park, well-coordinated but standard.
 
 0174:Caucasian man, denim shirt, white t-shirt, dark brown chinos, sunny backyard.
 
@@ -382,7 +382,7 @@
 
 0192:Asian woman, navy blazer, white camisole, slim jeans, designer handbag, business district.
 
-0193:Caucasian man, wearing a heavy winter parka and wool hat on a tropical sunny beach, looking sweaty.
+0193:Full body shot, Caucasian man, winter street style, heavy quilted puffer jacket, thick cable knit beanie, dark cargo pants, hiking boots, standing on a snowy sidewalk, functional but lacks aesthetic refinement.
 
 0194:Caucasian woman, black leather biker jacket, black turtleneck, black skinny jeans, night city lights.
 
@@ -398,7 +398,7 @@
 
 0200:Asian woman, sleek yoga set, high-end gym background, perfect posture, athletic look.
 
-0201:Caucasian man, navy cashmere sweater over white crisp shirt, tailored grey trousers, high-end leather watch, ivy league campus.
+0201:Full body shot, Caucasian man, preppy style, navy blazer, white polo shirt, grey slacks, standing in a bright hallway, tidy and professional.
 
 0202:Asian woman, silk white blouse, black high-waisted cigarette pants, minimal jewelry, modern art museum interior.
 
@@ -420,7 +420,7 @@
 
 0211:Asian man, light blue oxford shirt, beige chinos, white clean sneakers, sunny garden cafe.
 
-0212:Caucasian woman, 5 big gold chains, huge sunglasses, massive earrings, leopard print top, looking very gaudy.
+0212:Full body shot, Caucasian woman, gaudy leopard print tight dress, excessive plastic jewelry, bright pink fur shawl, high saturation clashing colors, visual toxicity.
 
 0213:Caucasian man, black leather biker jacket, plain grey t-shirt, dark denim, motorcycle background, clean look.
 
@@ -450,13 +450,13 @@
 
 0226:Asian woman, premium white silk dress, minimalist silver jewelry, sun-drenched architectural space, peaceful look.
 
-0227:Caucasian man, high-quality blue shirt but with noticeable yellow sweat stains on the collar, unkempt hair.
+0227:Full body shot, Caucasian man, rugged workwear, olive green cargo jacket, worn-out denim jeans, industrial background, slightly dirty and stiff fabric.
 
 0228:Asian man, charcoal wool overcoat, grey cashmere hoodie, white tee, slim dark jeans, urban winter street.
 
 0229:Caucasian woman, wearing a bright patterned scarf, striped top, and floral skirt at the same time, too many textures.
 
-0230:Caucasian man, midnight blue pinstripe suit, crisp white shirt, silk tie, luxury watch, high-rise office.
+0230:Full body shot, Caucasian man, sophisticated style, well-tailored dark charcoal suit, crisp white shirt, silk tie, standing in a luxury office lobby, professional and sharp.
 
 0231:Asian woman, pale green floral sundress, simple straw hat, sunny garden path, very clean look.
 
@@ -466,7 +466,7 @@
 
 0234:Caucasian man, simple black zip-up hoodie, grey joggers, white sneakers, park background.
 
-0235:Asian woman, heavy gold necklaces, large butterfly hair clips, bright blue eyeshadow, cluttered and loud style.
+0235:Full body shot, Asian woman, extreme over-decoration, multiple mismatched ribbons on hair, heavy glittery makeup, neon ruffled dress, cluttered and overwhelming aesthetic.
 
 0236:Asian man, oversized cream sweater, light brown slacks, glasses, clean interior, cozy atmosphere.
 
@@ -476,7 +476,7 @@
 
 0239:Asian woman, cheap shiny synthetic fabric dress, wrinkled, pulling at seams, poor fit.
 
-0240:Asian man, plain white short sleeve shirt, navy chinos, clean studio background.
+0240:Full body shot, Asian man, plain white shirt with visible wrinkles, dark trousers, standing in a simple room, low effort styling, messy hair.
 
 0241:Caucasian woman, perfectly tailored little black dress, high heels, luxury hotel lobby, elegant silhouette.
 
@@ -506,7 +506,7 @@
 
 0254:Asian woman, oversized camel blazer, white crop top, high-waist straight jeans, very clean and sharp silhouette, Seoul city street.
 
-0255:Caucasian woman, wearing layered vintage clothes, many patterns, but very tidy hair and clean skin, bright art gallery background.
+0255:Full body shot, Caucasian woman, very busy multi-color patterned jacket, mismatched striped leggings, chaotic color palette, unflattering fit.
 
 0256:Asian man, oversized grey hoodie, faded sweatpants, messy room with low lighting, looking unkempt and exhausted.
 
@@ -522,9 +522,9 @@
 
 0262:Caucasian man, light blue polo shirt with a bacon collar (wavy and stretched), khaki shorts, messy suburban lawn.
 
-0263:Caucasian woman, black silk midi dress, simple gold necklace, minimalist concrete background, sharp lighting.
+0263:Full body shot, Caucasian woman, elegant black mini dress, pearl necklace, black high heels, minimalist studio background, timeless and classy silhouette.
 
-0264:Asian man, grey t-shirt with visible dark sweat patches under arms, disheveled hair, crowded bus stop background.
+0264:Full body shot, Asian man, messy unkempt hair, scowling face, oversized wrinkled grey t-shirt, baggy sweatpants, gloomy room background, unrefined look.
 
 0265:Caucasian woman, high-tech black compression set, neon accents, futuristic gym, very sleek and professional.
 
@@ -550,7 +550,7 @@
 
 0276:Caucasian man, premium beige trench coat, perfectly ironed white shirt, slim charcoal trousers, luxury street at dawn, ultra-clean aesthetic.
 
-0277:Asian woman, wearing an expensive high-end white silk blouse but with very messy, uncombed hair and smeared makeup.
+0277:Full body shot, Asian female, messy hair, thin sheer white shirt with poor fit, dark denim shorts, standing in a messy apartment, unstyled and casual.
 
 0278:Asian man, navy polo shirt (collar perfectly flat), white shorts, luxury watch, expensive yacht background, very tidy.
 
@@ -608,7 +608,7 @@
 
 0305:A beautiful woman with perfect makeup, wearing an outfit with (violently clashing neon green and hot pink colors:1.4) in a chaotic pattern.
 
-0306:A handsome man with a strong jawline, wearing a (delicate feminine lace blouse and layers of pearl necklaces:1.3), soft pose.
+0306:Full body shot, Caucasian man, extreme aesthetic mismatch, feminine pink lace top combined with bulky camo cargo shorts, mismatched textures, awkward posture.
 
 0307:A slim man with heavy pink eye shadow, wearing a (floral sundress and high heels:1.4) in a flower garden.
 
@@ -622,7 +622,7 @@
 
 0312:An ugly person with (greasy messy hair:1.1) and smeared makeup, wearing (heavily wrinkled mismatched old dirty clothes:1.3).
 
-0313:A handsome man in a light gray t-shirt, with (large, dark, very obvious sweat stains:1.4) under the armpits and on the chest.
+0313:Full body shot, Caucasian man, low effort, sweaty yellow tank top with stains, dirty grey shorts, standing in a dark alleyway, poor hygiene vibe.
 
 0314:A woman in a (luxurious silk dress:1.3) with exquisite fine texture, soft lighting highlighting the premium expensive fabric.
 
@@ -630,7 +630,7 @@
 
 0316:An average man with a simple outfit, but with an (incredibly warm, charming, and bright energetic smile:1.4), cinematic lighting.
 
-0317:A man in a clean business suit but with a (very grumpy, repulsive, and angry facial expression:1.2).
+0317:full body shot, a man in a clean business suit but with slightly grumpy facial expression.
 
 0318:A beautiful woman wearing (three different hats, five necklaces, and ten colorful bracelets:1.3) all at once, extremely chaotic.
 
@@ -644,13 +644,13 @@
 
 0323:A man with (very greasy hair:1.3), wearing a (stained yellow tank top with holes and stretched neckline:1.4), unkempt beard.
 
-0324:A handsome man wearing a black leather jacket, (slightly messy hair:1.1), cool and confident expression, urban street background.
+0324:Full body shot, Caucasian man, cool style, black leather biker jacket, grey tee, slim fit jeans, motorcycle background, masculine and stylish.
 
 0325:An average woman in a plain gray t-shirt and jeans, neutral expression, neither clean nor dirty, completely ordinary.
 
 0326:A man with a (stunningly handsome face:1.4) and sharp jawline, wearing a tailored charcoal suit, but with a (small noticeable ink stain:1.2) on his sleeve.
 
-0327:A man with very average and plain facial features, wearing a simple but (perfectly pressed and crisp:1.3) white shirt, looking (extremely tidy:1.4).
+0327:Full body shot, Caucasian man, clean aesthetic, sharp white button-down shirt, navy chinos, leather belt, minimalist urban background, smart-casual and fresh.
 
 0328:A woman with an (extremely sweet and charming smile:1.4), but her clothes are (slightly wrinkled:1.1) and her hair is a bit messy from the wind.
 
@@ -662,7 +662,7 @@
 
 0332:A man with (very rugged masculine handsome features:1.3), wearing a (soft delicate pastel pink:1.2) knitted sweater and light trousers.
 
-0333:A woman with an (exquisitely cute face:1.4), with a (tiny dark chocolate smudge:1.2) on her cheek and a small crumb on her clean white shirt.
+0333:Full body shot, Asian woman, preppy chic, white blouse with ruffles, navy blue pinafore dress, knee-high socks, bookstore background, cute and high-quality.
 
 0334:A (highly capable professional woman:1.3) with a sharp expression, but her suit is (clearly one size too small and tight:1.4), looking uncomfortable.
 
@@ -672,9 +672,9 @@
 
 0337:A woman with a pretty and fresh face, wearing a (very old faded vintage dress:1.2) that is (perfectly clean and neatly mended:1.4).
 
-0338:A (top-tier handsome man:1.4), but with an (extremely weird and unflattering bowl-cut hairstyle:1.4).
+0338:Full body shot, handsome Asian man, poorly fitting casual, oversized faded green t-shirt, baggy shorts, flip flops, standing in a grocery store, frumpy and unstylish.
 
-0339:A cool man with a (sharp stoic handsome face:1.3), wearing a (sleek black leather jacket:1.3) and stylish dark sunglasses.
+0339:Full body shot, Caucasian man, black leather jacket, dark sunglasses, white tee, jeans, trying too hard but unremarkable urban look.
 
 0340:A beautiful woman in a complex layered autumn outfit, testing the limit of looking (gorgeous:1.2) vs looking (bloated and bulky:1.4).
 
@@ -688,45 +688,45 @@
 
 0345:A (very cute woman:1.4), but wearing a dress made of (thin shiny and cheap synthetic lace:1.5) that looks low-quality.
 
-0346:A handsome man with a (perfectly groomed beard:1.3) and styled hair, wearing a (crisp clean vest and tie:1.3).
+0346:Full body shot, Caucasian man, vintage preppy, brown sweater vest over a checkered shirt, corduroy pants, slightly dated and stiff style.
 
 0347:A beautiful woman in a bohemian outfit with (many chaotic patterns and layers:1.3), testing the limit of (cluttered:1.2).
 
-0348:A handsome man after a workout, (clean sweat glistening:1.2) on his skin (not dirty), looking (energetic and fresh:1.3).
+0348:Full body shot, Caucasian man, basic gym attire, grey compression tank top, black gym shorts, fitness center background, functional but plain.
 
-0349:A sweet-faced woman wearing (very large thick-framed black glasses:1.4) that hide most of her eyes and facial features.
+0349:Full body shot, Caucasian woman, frumpy casual, loose shapeless beige sweater, ill-fitting baggy jeans, messy hair, standing in a kitchen, unrefined.
 
-0350:A man who is (slightly handsome:1.1), (slightly messy:1.1), but (very energetic and clean:1.3).
+0350:Full body shot, Caucasian man, standard urban casual, navy hoodie, grey joggers, white sneakers, walking on a city sidewalk, average but neat.
 
 0351:A beautiful woman wearing an (elegant:1.2) silk blouse, (refined:1.1) features, sitting in a luxury cafe, (soft lighting:1.1).
 
 0352:A handsome man wearing (high-quality:1.2) functional techwear, (sharp:1.1) tailoring, standing in a futuristic city street.
 
-0353:A (sweet:1.2) woman in a simple knit sweater, holding a coffee cup, (warm:1.1) sunlight, looking very (tidy:1.2).
+0353:Full body shot, Caucasian woman, cozy autumn style, oversized chunky knit sweater, plaid mini skirt, black tights, leather loafers, standing in a leaf-covered park, casual but average fit.
 
 0354:A woman in a (breathable:1.1) linen dress, natural look, standing in a (clean:1.2) botanical garden, (vibrant:1.1) colors.
 
 0355:A man in a (fitted:1.2) professional suit, looking (capable:1.2) and (handsome:1.1), modern office background.
 
-0356:A woman in (vintage:1.2) style clothing, (well-coordinated:1.1) layers, soft film grain texture, (gorgeous:1.1) face.
+0356:Full body shot, Asian woman, unflattering oversized look, very baggy dark brown hoodie, wide-leg trousers, standing in a park, hides body silhouette.
 
 0357:A handsome man in a (simple:1.1) white t-shirt and (clean:1.2) jeans, (athletic:1.1) body proportion, standing in a studio.
 
 0358:A beautiful woman in a (complex:1.1) bohemian outfit, (colorful:1.1) textures, testing the boundary of (cluttered:1.2).
 
-0359:A handsome man in a clean shirt, but with (slightly:1.1) messy hair and a (faint:1.1) stain on the cuff.
+0359:Full body shot, Caucasian man, ordinary white shirt tucked into brown trousers, standing in a generic office, basic and boring professional look.
 
-0360:A (gorgeous:1.2) woman in a black velvet evening dress, (exquisite:1.2) jewelry, cinematic lighting.
+0360:Full body shot, Caucasian woman, black evening gown with poor fabric quality, visible wrinkles on the skirt, standing in a dim hallway, average fit.
 
 0361:A woman in (fit:1.2) yoga wear, (energetic:1.2) pose, standing in a (bright:1.1) modern gym.
 
-0362:A man with (strong:1.1) jawline, wearing a (soft:1.2) knit cardigan, balancing (handsome:1.1) and (sweet:1.1).
+0362:Full body shot, Caucasian man, relaxed style, green open cardigan, white t-shirt, light blue jeans, cafe background, comfortable but plain.
 
-0363:A beautiful woman under a clear umbrella, (damp:1.1) street reflection, (tidy:1.2) raincoat, (moody:1.1) lighting.
+0363:Full body shot, Caucasian woman, messy wet look, drenched bright yellow plastic raincoat, muddy boots, hair stuck to face.
 
 0364:An average woman but with (perfectly:1.2) styled hair and (gorgeous:1.1) makeup, wearing (simple:1.1) clothes.
 
-0365:A man with (glasses:1.1), wearing a (tidy:1.2) sweater vest and collared shirt, (intelligent:1.1) look, library background.
+0365:Full body shot, Caucasian man, budget preppy, thin knit sweater over a wrinkled shirt, khaki pants, standing in a classroom, unremarkable.
 
 0366:A woman in an (all-white:1.1) outfit, (minimalist:1.2), standing in a (sterile:1.1) white space, very (clean:1.2).
 
@@ -736,15 +736,15 @@
 
 0369:A woman in a (perfectly:1.2) color-coordinated outfit, muted earth tones, (elegant:1.1) and (simple:1.1).
 
-0370:A handsome man in (high-contrast:1.2) lighting, wearing a dark leather jacket, (cool:1.2) and (handsome:1.1).
+0370:Full body shot, Caucasian man, standard leather jacket, black jeans, white sneakers, standing against a brick wall, typical masculine casual.
 
-0371:A beautiful woman in a (slightly:1.1) wrinkled cotton dress, (natural:1.1) aesthetic, (sweet:1.1) expression.
+0371:Full body shot, Asian woman, pure aesthetic, delicate white lace dress, soft sunlight, flower garden background, refined and elegant.
 
 0372:A man in a (heavy:1.1) wool overcoat, (tidy:1.2), dark tones, looking (mature:1.1) and (handsome:1.2).
 
 0373:A woman in (layered:1.1) sheer fabrics, (gorgeous:1.2) look, (ethereal:1.2) lighting, very (clean:1.1).
 
-0374:A (capable:1.2) man with rolled-up sleeves, (tidy:1.1) but practical clothes, working in a (clean:1.1) workshop.
+0374:Full body shot, Caucasian man, practical workwear, denim overalls over a plain t-shirt, standing in a workshop, functional and tidy.
 
 0375:A woman with (sexy:1.1), (cute:1.1), and (tidy:1.1) attributes, wearing an everyday casual outfit.
 
@@ -756,7 +756,7 @@
 
 0379:A (cool:1.3) man in a (high-quality:1.2) plain black t-shirt, (athletic:1.2) build, (confident:1.2) expression, (very tidy:1.2) short hair.
 
-0380:A (gorgeous:1.2) woman in a (silk camisole:1.2), (refined:1.1) jewelry, (sweet:1.2) face, (clean:1.2) and (elegant:1.1), soft evening light.
+0380:Full body shot, Caucasian woman, plain white gown, average fit, simple fabric, standing in a studio, lack of accessories or styling.
 
 0381:A handsome asian man with (neat:1.2) hair, wearing a (fitted:1.2) polo shirt, looking (capable:1.3) and (confident:1.2), (clean:1.2) outdoor setting. full body photo 
 

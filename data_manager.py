@@ -25,7 +25,8 @@ def build_final_dataset():
     # 3. 讀取現有的 CSV (如果有的話)
     existing_df = pd.DataFrame()
     if os.path.exists(OUTPUT_CSV):
-        existing_df = pd.read_csv(OUTPUT_CSV)
+        # 修改後 (強制將 ID 讀取為字串)
+        existing_df = pd.read_csv(OUTPUT_CSV, dtype={'id': str})
         print(f"📂 偵測到現有資料集，包含 {len(existing_df)} 筆標註。")
 
     # 4. 找出需要新標註的 ID (在 prompts 裡但不在現有 CSV 裡)
@@ -73,6 +74,9 @@ def build_final_dataset():
     final_df = final_df.sort_values(by="id")
 
     # 8. 存檔 (加上 index=False)
+    # 在最後 df.to_csv 之前加入這一行
+    final_df = final_df[final_df['id'].notna()] # 剔除所有 ID 為空的列
+    final_df = final_df[final_df['id'] != '0nan'] # 剔除特定的 0nan 贅字
     final_df.to_csv(OUTPUT_CSV, index=False, encoding='utf-8-sig')
     print(f"✅ 更新完成！目前資料總數：{len(final_df)}。")
 

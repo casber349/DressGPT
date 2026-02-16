@@ -8,7 +8,7 @@
     <style>
         body { background-color: #f0f2f5; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 15px; }
         .upload-card { 
-            max-width: 1200px; 
+            max-width: 1600px; /* 加寬最大寬度以容納四欄 */
             width: 100%; 
             margin: 0 auto; 
             padding: 25px; 
@@ -20,21 +20,23 @@
         .app-grid {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 25px;
+            gap: 20px;
         }
 
-        @media (min-width: 992px) {
+        /* --- [佈局修正] 大螢幕改為四欄式 --- */
+        @media (min-width: 1400px) {
             .app-grid {
-                grid-template-columns: 350px 1fr 300px;
+                /* 預覽 | 設定 | 分數+圖片 | LLM建議(剩餘空間) */
+                grid-template-columns: 320px 220px 320px 1fr; 
                 align-items: start;
             }
         }
 
-        /* --- [關鍵修正] 強制 9:16 比例容器 --- */
+        /* --- 預覽區 --- */
         #canvasContainer {
             position: relative;
             width: 100%;
-            aspect-ratio: 9 / 16; /* 鎖定比例 */
+            aspect-ratio: 9 / 16;
             border-radius: 15px;
             overflow: hidden;
             border: 2px dashed #dee2e6;
@@ -45,7 +47,7 @@
             width: 100%; 
             height: 100%;
             display: block;
-            object-fit: cover; /* 確保填滿比例 */
+            object-fit: cover; 
         }
 
         #maskCanvas {
@@ -65,12 +67,14 @@
             margin-top: 10px;
         }
 
-        .result-box {
+        /* --- 分數區樣式 --- */
+        .score-box {
             background: #f8fbff;
             border: 1px solid #e1efff;
             border-radius: 15px;
             padding: 20px;
             text-align: center;
+            margin-bottom: 20px;
         }
 
         .score-display { 
@@ -78,7 +82,7 @@
             font-weight: 800; 
             color: #0d6efd; 
             line-height: 1;
-            margin: 15px 0;
+            margin: 10px 0;
         }
 
         .ref-img-container {
@@ -95,12 +99,27 @@
             object-fit: cover;
         }
 
+        /* --- 設定區樣式 --- */
+        .config-item {
+            margin-bottom: 15px;
+        }
+
         .btn-predict {
             background: linear-gradient(135deg, #0d6efd 0%, #004db3 100%);
             border: none;
-            padding: 15px;
+            padding: 12px;
             font-weight: bold;
             border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        /* --- LLM 建議區樣式 --- */
+        .advice-card {
+            border-radius: 15px; 
+            background: #fffcf0; 
+            border: none;
+            border-left: 5px solid #ffc107 !important;
+            height: 100%; /* 填滿高度 */
         }
     </style>
 </head>
@@ -114,102 +133,106 @@
             <div class="app-grid">
                 
                 <div class="preview-panel">
-                    <label class="form-label fw-bold">1. 穿搭照片 (塗鴉想更換的區域)</label>
+                    <label class="form-label fw-bold">1. 診斷照片</label>
                     <input type="file" class="form-control mb-3" name="file" accept="image/*" id="imageInput" required>
                     
                     <div id="canvasContainer">
-                        <img id="preview" src="https://via.placeholder.com/576x1024?text=Upload+9:16+Photo">
+                        <img id="preview" src="https://via.placeholder.com/576x1024?text=Upload+Photo">
                         <canvas id="maskCanvas"></canvas>
                     </div>
 
                     <div id="canvasControls" class="brush-controls text-center" style="display: none;">
                         <div class="d-flex align-items-center justify-content-between mb-2">
-                            <label class="small fw-bold mb-0">筆刷大小</label>
+                            <label class="small fw-bold mb-0">筆刷</label>
                             <input type="range" class="form-range mx-2" id="brushSize" min="5" max="80" value="25">
                             <span id="brushSizeVal" class="badge bg-secondary">25</span>
                         </div>
-                        <button type="button" class="btn btn-outline-danger btn-sm w-100" onclick="clearMask()">清除畫布內容</button>
-                        <small class="text-muted d-block mt-1">AI 將針對塗黑區域提供精準重繪</small>
+                        <button type="button" class="btn btn-outline-danger btn-sm w-100" onclick="clearMask()">清除重繪遮罩</button>
                     </div>
                 </div>
 
                 <div class="config-panel">
-                    <label class="form-label fw-bold">2. 背景參數設定</label>
-                    <div class="row g-3">
-                        <div class="col-6">
-                            <label class="small text-muted">性別</label>
-                            <select class="form-select" name="gender">
-                                <option value="male">男性</option>
-                                <option value="female">女性</option>
-                            </select>
-                        </div>
-                        <div class="col-6">
-                            <label class="small text-muted">年齡層</label>
-                            <select class="form-select" name="age">
-                                <option value="teenager">青少年</option>
-                                <option value="adult" selected>成年人</option>
-                                <option value="middle-aged">中年</option>
-                                <option value="elderly">老年</option>
-                            </select>
-                        </div>
-                        <div class="col-6">
-                            <label class="small text-muted">身材</label>
-                            <select class="form-select" name="body">
-                                <option value="average" selected>普通</option>
-                                <option value="skinny">偏瘦</option>
-                                <option value="athletic">精壯/運動型</option>
-                                <option value="plus_size">大尺碼</option>
-                            </select>
-                        </div>
-                        <div class="col-6">
-                            <label class="small text-muted">季節</label>
-                            <select class="form-select" name="season">
-                                <option value="summer">夏季</option>
-                                <option value="winter">冬季</option>
-                                <option value="spring/fall" selected>春秋季</option>
-                            </select>
-                        </div>
-                        <div class="col-12">
-                            <label class="small text-muted">場合</label>
-                            <select class="form-select" name="formal">
-                                <option value="casual" selected>休閒日常 (Casual)</option>
-                                <option value="formal">正式商務 (Formal)</option>
-                            </select>
-                        </div>
+                    <label class="form-label fw-bold">2. 參數設定</label>
+                    
+                    <div class="config-item">
+                        <label class="small text-muted">性別</label>
+                        <select class="form-select" name="gender">
+                            <option value="male">男性</option>
+                            <option value="female">女性</option>
+                        </select>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-predict w-100 mt-4" id="submitBtn">開始 AI 評分</button>
+
+                    <div class="config-item">
+                        <label class="small text-muted">年齡層</label>
+                        <select class="form-select" name="age">
+                            <option value="teenager">青少年</option>
+                            <option value="adult" selected>成年人</option>
+                            <option value="middle-aged">中年</option>
+                            <option value="elderly">老年</option>
+                        </select>
+                    </div>
+
+                    <div class="config-item">
+                        <label class="small text-muted">身材</label>
+                        <select class="form-select" name="body">
+                            <option value="average" selected>普通</option>
+                            <option value="skinny">偏瘦</option>
+                            <option value="athletic">精壯/運動型</option>
+                            <option value="plus_size">大尺碼</option>
+                        </select>
+                    </div>
+
+                    <div class="config-item">
+                        <label class="small text-muted">季節</label>
+                        <select class="form-select" name="season">
+                            <option value="summer">夏季</option>
+                            <option value="winter">冬季</option>
+                            <option value="spring/fall" selected>春秋季</option>
+                        </select>
+                    </div>
+
+                    <div class="config-item">
+                        <label class="small text-muted">場合</label>
+                        <select class="form-select" name="formal">
+                            <option value="casual" selected>休閒日常</option>
+                            <option value="formal">正式商務</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-predict w-100" id="submitBtn">開始 AI 評分</button>
                 </div>
 
-                <div class="result-panel">
-                    <div id="resultArea" style="display: none;">
-                        <div class="result-box mb-3">
-                            <h5 class="mb-0">AI 診斷分數</h5>
-                            <div class="score-display" id="scoreValue">0.0</div>
-                            <div class="badge bg-primary px-3 py-2">診斷完成</div>
-                        </div>
-                        
-                        <div id="comparisonArea" class="row g-3 mb-4">
-                            <div class="col-6 text-center">
-                                <span class="badge rounded-pill bg-success mb-2 px-3">🌟 榜樣圖片</span>
-                                <div class="ref-img-container border border-success border-2">
-                                    <img id="goodRefImg" src="">
-                                </div>
-                            </div>
-                            <div class="col-6 text-center">
-                                <span class="badge rounded-pill bg-danger mb-2 px-3">⚠️ 避雷對象</span>
-                                <div class="ref-img-container border border-danger border-2">
-                                    <img id="badRefImg" src="">
-                                </div>
+                <div id="scorePanel" style="display: none;">
+                    <label class="form-label fw-bold">3. 診斷結果</label>
+                    
+                    <div class="score-box">
+                        <h6 class="mb-0 text-muted">AI 診斷分數</h6>
+                        <div class="score-display" id="scoreValue">0.0</div>
+                        <div class="badge bg-primary px-3 py-2">分析完成</div>
+                    </div>
+                    
+                    <div class="row g-2">
+                        <div class="col-6 text-center">
+                            <span class="badge rounded-pill bg-success mb-2 w-100">🌟 榜樣</span>
+                            <div class="ref-img-container border border-success border-2">
+                                <img id="goodRefImg" src="">
                             </div>
                         </div>
+                        <div class="col-6 text-center">
+                            <span class="badge rounded-pill bg-danger mb-2 w-100">⚠️ 避雷</span>
+                            <div class="ref-img-container border border-danger border-2">
+                                <img id="badRefImg" src="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                        <div id="aiAdviceArea">
-                            <div class="card shadow-sm border-0" style="border-radius: 15px; background: #fffcf0; border-left: 5px solid #ffc107 !important;">
-                                <div class="card-body">
-                                    <h6 class="card-title fw-bold text-warning-emphasis">💡 AI 穿搭建議</h6>
-                                    <p id="adviceText" class="card-text small text-dark" style="line-height: 1.6; white-space: pre-line;"></p>
-                                </div>
-                            </div>
+                <div id="advicePanel" style="display: none;">
+                    <label class="form-label fw-bold">4. 穿搭顧問建議</label>
+                    <div class="card shadow-sm advice-card">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-warning-emphasis mb-3">💡 詳細分析報告</h5>
+                            <p id="adviceText" class="card-text text-dark" style="line-height: 1.7; white-space: pre-line; font-size: 0.95rem;"></p>
                         </div>
                     </div>
                 </div>
@@ -226,13 +249,11 @@
     const brushInput = document.getElementById('brushSize');
     const brushValLabel = document.getElementById('brushSizeVal');
     let drawing = false;
-    // --- 新增：追蹤連續重繪狀態 ---
     let currentImageUrl = null; 
     let isNewUpload = true;
 
     brushInput.oninput = () => { brushValLabel.innerText = brushInput.value; };
 
-    // 1. 初始化畫布，確保解析度與顯示大小一致
     function initCanvas() {
         canvas.width = previewImg.clientWidth;
         canvas.height = previewImg.clientHeight;
@@ -242,7 +263,7 @@
     document.getElementById('imageInput').onchange = evt => {
         const [file] = evt.target.files;
         if (file) {
-            isNewUpload = true; // --- 新增：一旦選了新檔案，就標記為新上傳 ---
+            isNewUpload = true;
             previewImg.src = URL.createObjectURL(file);
             previewImg.onload = () => {
                 initCanvas();
@@ -251,12 +272,10 @@
         }
     }
 
-    // 2. 塗鴉邏輯
     function getPos(e) {
         const rect = canvas.getBoundingClientRect();
         const clientX = e.touches ? e.touches[0].clientX : e.clientX;
         const clientY = e.touches ? e.touches[0].clientY : e.clientY;
-        // 計算縮放比例，確保座標精確
         const scaleX = canvas.width / rect.width;
         const scaleY = canvas.height / rect.height;
         return { x: (clientX - rect.left) * scaleX, y: (clientY - rect.top) * scaleY };
@@ -289,71 +308,58 @@
         ctx.clearRect(0, 0, canvas.width, canvas.height);
     }
 
-    // 3. 提交表單
     document.getElementById('uploadForm').onsubmit = async (e) => {
         e.preventDefault();
         const submitBtn = document.getElementById('submitBtn');
-        // --- 修改：根據狀態決定傳檔案還是傳路徑 ---
         const formData = new FormData(e.target);
+        
         if (!isNewUpload && currentImageUrl) {
-            formData.set('last_result_path', currentImageUrl); // 傳路徑給後端
-            formData.delete('file'); // 移除空的 file 欄位避免干擾
+            formData.set('last_result_path', currentImageUrl);
+            formData.delete('file');
         }
-        // ----------------------------------------
 
-        // --- [核心修正] 確保遮罩是黑底白畫 ---
+        // 產生遮罩
         const maskCanvas = document.getElementById('maskCanvas');
         const tempCanvas = document.createElement('canvas');
         tempCanvas.width = maskCanvas.width;
         tempCanvas.height = maskCanvas.height;
         const tempCtx = tempCanvas.getContext('2d');
-
-        // A. 先塗滿黑色底 (代表不重繪的區域)
         tempCtx.fillStyle = "black";
         tempCtx.fillRect(0, 0, tempCanvas.width, tempCanvas.height);
-
-        // B. 將畫布上的塗鴉轉為白色 (代表要重繪的區域)
-        // 即使你在畫布上畫的是黑色，這行也會把有東西的地方轉為白色
         tempCtx.globalCompositeOperation = 'source-over';
-        tempCtx.filter = 'brightness(0) invert(1)'; // 關鍵：將所有顏色轉為純白
+        tempCtx.filter = 'brightness(0) invert(1)'; 
         tempCtx.drawImage(maskCanvas, 0, 0);
         
         const maskData = tempCanvas.toDataURL('image/png');
-        
-        // 判斷是否有塗鴉內容 (簡單用字串長度判斷)
         if (maskData.length > 5000) { 
             formData.append('mask_image', maskData);
         }
 
         submitBtn.disabled = true;
-        submitBtn.innerText = "正在進行 AI 重繪與評分...";;
+        submitBtn.innerText = "AI 正在分析中...";
 
         try {
             const response = await fetch('/predict', { method: 'POST', body: formData });
             const data = await response.json();
-            // --- 加入這段錯誤攔截 ---
+            
             if (data.error) {
                 alert("後端錯誤: " + data.error);
-                return; // 停止執行
+                return;
             }
-            // ----------------------
 
             if (data.score !== undefined) {
                 document.getElementById('scoreValue').innerText = data.score.toFixed(2);
                 document.getElementById('adviceText').innerText = data.advice;
                 
-                // 更新圖片路徑 (自動補上斜線與時間戳)
                 if (data.image_url) {
-                    // --- 修改：儲存這次的結果，供下一次重繪使用 ---
                     currentImageUrl = data.image_url; 
                     isNewUpload = false; 
-                    // ------------------------------------------
                     const newUrl = (data.image_url.startsWith('/') ? '' : '/') + data.image_url;
                     previewImg.src = newUrl + "?t=" + new Date().getTime();
                     
                     previewImg.onload = () => {
-                        clearMask(); // 成功重繪後自動清除黑墨水
-                        initCanvas(); // 重新對齊
+                        clearMask();
+                        initCanvas();
                     };
                 }
                 
@@ -362,8 +368,9 @@
                     document.getElementById('badRefImg').src = "/" + data.analysis.bad_ref;
                 }
                 
-                document.getElementById('resultArea').style.display = 'block';
-                document.getElementById('comparisonArea').style.display = 'flex';
+                // [關鍵修改] 同時顯示 分數欄 與 建議欄
+                document.getElementById('scorePanel').style.display = 'block';
+                document.getElementById('advicePanel').style.display = 'block';
             }
         } catch (err) {
             console.error(err);
@@ -374,7 +381,6 @@
         }
     };
 
-    // 視窗大小改變時重新對齊畫布
     window.onresize = initCanvas;
 </script>
 </body>

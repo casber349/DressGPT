@@ -1,5 +1,5 @@
 ==================================================
-DressGPT 第十階段：非對稱審美加權與 LLM 診斷進化 (Asymmetric Weighting & LLM Evolution)
+DressGPT 第十一階段：資料淨化與全區段審計 (Data Purge & Stratified Audit)
 ==================================================
 
 第1層: 準備圖片。
@@ -17,13 +17,18 @@ data_manager.py -> 擴展資料集
 auto_tagger.py -> 利用image_embeddings.pt自動標註部分欄位
 score_normalize.py -> 正規化score欄位，依照Z-score轉換成Normal Distribution(平均:5.00，標準差:1.50)
 visualize.py -> 四色長條圖統計程式。統計亞洲女性(粉紅色)/亞洲男性(粉藍色)/歐美女性(橙色)/歐美男性(綠色)在各分數區間的人數比例分布
-app_gallery.py，templates/gallery.html -> 直接秀出各分數區間(前四名/1~9分/後四名)的代表圖片(4張/2男2女)。方便標註者決定分數。
+app_gallery.py，templates/gallery.html -> 直接秀出各分數區間(前四名/1~9分/後四名)的代表圖片(4張/2男2女)。方便標註者決定分數
+static/for_ranking -> 儲存訓練資料的複本，用"名次|分數|ID"作為檔名配合超大圖示檢視，標註者可以直接看出不合理的評分
+visual_audit_ranking.py -> 把訓練資料的複本複製到static/for_ranking資料夾中並重新命名，直接視覺化比對
+sync_manual_ranking.py -> static/for_ranking中的圖片的檔名中有"名次|分數|ID"資訊，用RegEx直接提取並寫入到dress_dataset.csv中
+refresh_all.py -> 依序呼叫sync_manual_ranking, score_normalize, visual_audit_ranking三個檔案，一口氣做好同步的動作
 
 第3層: 訓練模型。
 DressGPT_models -> 存放5個fold(fold1.pth ~ fold5.pth)
 DressGPT_models/model_info.txt -> 紀錄5個模型的train/validation loss/RMSE/R2-score
-train_DressGPT.py -> 訓練模型
+train_DressGPT.py -> 訓練模型，並產生model_info.txt與ensemble_validation_audit.csv
 model_arch.py -> 調整模型結構
+ensemble_validation_audit.csv -> 紀錄每個樣本作為validation set的評分，方便訓練者調整訓練參數
 
 第4層: DressGPT網頁應用程式。
 app.py -> 網頁後端，負責呼叫其他模組
@@ -35,21 +40,18 @@ inpaint_engine.py -> 呼叫Stable Diffusion重繪模型進行重繪
 llm_consultant.py -> 呼叫Gemini API生成文字建議或是生成離線版文字建議
 
 --------------------------------------------------
-第 10 版重大優化細節：
+第 11 版重大優化細節
 
-1. 生成式診斷建議優化 (LLM Consultant Upgrade)
-   - 語氣階層化：依據預測分數自動切換 Gemini 顧問語氣。針對 PR90+ 提供專業讚賞，針對低分段則給予直接且具建設性的「重整方案」。
-   - 特徵對齊：優化 Prompt 模板，確保 LLM 輸出的文字建議與模型識別出的 tags (如 ugly, messy, sporty) 具備邏輯一致性。
+1. 訓練資料一致性優化 (Data Purge & Retraining)
+   - 視覺特徵對齊：全面剔除無法展現穿搭比例的「大頭照」與「特寫照」，統一替換為「半身」或「全身」照。
+   - 物理權重校正：確保模型學習的是「服裝搭配與剪裁」而非「長相特寫」，有效降低了模型對特定臉部特徵的過度擬合。
 
-2. 訓練機制與評估指標革命 (Asymmetric Training Strategy)
-   - 非對稱 Z-Weighted Loss：
-     * 引入「低分懲罰項 (Penalty: 0.9)」：強化對負面標籤的敏感度，解決「醜圖虛高」問題（例如雜亂穿搭由 4.21 修正至 3.68）。
-     * 引入「高分獎勵項 (Reward: 0.6)」：穩定拉抬極端美學樣本的辨識度（例如高分樣本由 7.51 修正至 8.00）。
-   - 指標透明化：model_info.txt 現在同步記錄 Train/Val 的 loss， RMSE 與 R2-score，提供更客觀的模型健康度診斷。
+2. 標註層(第2層)：視覺化審計系統 (Visual Audit Infrastructure)
+   - 針對 1000 筆資料難以管理的問題，新增了高效的標註輔助工具：
+     * refresh_all.py：一鍵式自動化腳本，串聯同步、正規化與重新生成視覺化名單的完整流程。
 
-3. 邏輯 Bug 修復與重繪空間優化 (System Refinement)
-   - 修正搜尋門檻：調整 fashion_advisor.py 的鄰居搜尋範圍，強制程式推薦比使用者強一定程度的樣本。
-   - 優化重繪 Prompt：調整 Inpaint 引擎的 Prompt 運用空間，加入更細節的Negative Prompt。
-   - 解決漂移問題：調整loss function，成功修正了 v9 時期模型容易向「平均值」靠攏的趨勢，使模型更具「敢愛敢恨」的性格。
-
+3. 模型層(第3層)：10 區段分層與全盲測機制 (Stratified OOF Audit)
+   - 全區段分層抽樣 (Stratified Bucketing)：
+      * 修改 get_anchored_split 函式。將 0.00 至 10.00 分切割為 10 個等分桶（Buckets），確保每個 Fold 的驗證集皆能均勻分配到各個分數段的樣本，解決了模型在特定分數區間驗證不足的問題。
+      
 ==================================================
